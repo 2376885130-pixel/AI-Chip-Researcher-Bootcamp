@@ -1,4 +1,4 @@
-# AI Chip Researcher Bootcamp
+# AI-Chip-Researcher-Bootcamp
 
 
 <p align="center">
@@ -17,7 +17,6 @@ This repository records my journey
 towards becoming an AI hardware researcher.
 
 
-
 The goal is not only to learn HDL syntax,
 but to develop the ability to:
 
@@ -29,13 +28,11 @@ but to develop the ability to:
 - Build complete AI hardware systems
 
 
-
 Learning philosophy:
 
 
 > Project-driven learning.
 > Understanding before implementation.
-
 
 
 ---
@@ -72,11 +69,10 @@ Future focus:
 
 
 - MAC array
-- Processing Element
+- Processing Element (PE)
 - Systolic Array
 - Memory architecture
 - Control architecture
-
 
 
 ---
@@ -84,7 +80,7 @@ Future focus:
 # Learning Roadmap
 
 
-## Phase 1
+# Phase 1
 
 ## Development Environment
 
@@ -94,8 +90,7 @@ Status:
 ✅ Completed
 
 
-
-Contents:
+Completed:
 
 
 - Linux environment
@@ -108,7 +103,8 @@ Contents:
 
 ---
 
-## Phase 2
+
+# Phase 2
 
 ## RTL Design Fundamentals
 
@@ -117,6 +113,24 @@ Status:
 
 🚧 In Progress
 
+
+Completed:
+
+
+- Verilog module design
+- Combinational logic
+- MUX design
+- Bus signals
+- RTL simulation workflow
+
+
+Current:
+
+
+- Sequential logic
+- Clock and reset
+- Registers
+- FSM
 
 
 Topics:
@@ -131,16 +145,10 @@ Topics:
 
 
 
-Projects:
-
-
-Coming soon.
-
-
-
 ---
 
-## Phase 3
+
+# Phase 3
 
 ## Hardware Verification
 
@@ -152,12 +160,14 @@ Topics:
 - Simulation
 - Waveform analysis
 - Assertions
+- Verification strategy
 
 
 
 ---
 
-## Phase 4
+
+# Phase 4
 
 ## Digital Hardware Architecture
 
@@ -175,7 +185,8 @@ Topics:
 
 ---
 
-## Phase 5
+
+# Phase 5
 
 ## AI Accelerator Design
 
@@ -195,60 +206,38 @@ Logic Gate
 
 ↓
 
+
 RTL Module
 
 
 ↓
+
 
 MAC Unit
 
 
 ↓
 
+
 Processing Element
 
 
 ↓
+
 
 Systolic Array
 
 
 ↓
 
+
 Matrix Multiplication Accelerator
 
 
 ↓
 
+
 NPU Architecture
-
-
-
----
-
-# Current Environment
-
-
-## Platform
-
-
-Windows 11
-
-+
-
-WSL2 Ubuntu
-
-
-
-## Tools
-
-
-| Tool | Version |
-|-|-|
-| Git | 2.43.0 |
-| Icarus Verilog | 12.0 |
-| GTKWave | 3.3.116 |
-| Tree | 2.1.1 |
 
 
 
@@ -257,7 +246,8 @@ WSL2 Ubuntu
 # Completed Projects
 
 
-## Day01
+
+# Day01
 
 ## First RTL Simulation
 
@@ -269,11 +259,20 @@ AND Gate
 
 
 Files:
+
+
+```
 Day01/
+
 ├── and_gate.v
+
 ├── and_gate_tb.v
+
 ├── and_gate_sim
+
 └── and_gate.vcd
+```
+
 
 
 Workflow:
@@ -284,17 +283,154 @@ RTL
 
 ↓
 
+
 Compilation
 
 
 ↓
+
 
 Simulation
 
 
 ↓
 
+
 Waveform Verification
+
+
+
+Key Concepts:
+
+
+- Basic Verilog module
+- Testbench
+- Simulation workflow
+- GTKWave analysis
+
+
+Result:
+
+
+✅ Completed
+
+
+
+---
+
+
+# Day02
+
+## Combinational Logic and Data Path
+
+
+Projects:
+
+
+## 1-bit MUX
+
+
+Files:
+
+
+```
+RTL/Day02/
+
+└── mux2.v
+```
+
+
+Concepts:
+
+
+- Multiplexer
+- Conditional operator
+- Combinational logic
+
+
+
+---
+
+
+## 8-bit MUX
+
+
+Files:
+
+
+```
+RTL/Day02/
+
+└── mux8.v
+```
+
+
+Concepts:
+
+
+- Bus
+- Data width
+- Vector signals
+- Parallel hardware structure
+
+
+
+Verification:
+
+
+```
+Testbench/Day02/
+
+├── mux2_tb.v
+
+└── mux8_tb.v
+```
+
+
+
+Simulation:
+
+
+```
+Simulation/Day02/
+
+├── mux2
+
+└── mux8
+```
+
+
+
+Workflow:
+
+
+RTL Design
+
+
+↓
+
+
+Testbench Creation
+
+
+↓
+
+
+Simulation
+
+
+↓
+
+
+Waveform Verification
+
+
+
+Key Understanding:
+
+
+Verilog describes hardware structure,
+not software execution.
 
 
 
@@ -313,6 +449,7 @@ Result:
 This repository maintains:
 
 
+
 ## AI_Mentor_DNA.md
 
 
@@ -327,6 +464,7 @@ Defines:
 
 ---
 
+
 ## Bootcamp_Progress.md
 
 
@@ -334,13 +472,13 @@ Tracks:
 
 
 - Current learning status
-- Environment state
 - Completed tasks
-- Next objectives
+- Future objectives
 
 
 
 ---
+
 
 ## Environment_Log.md
 
@@ -355,6 +493,7 @@ Records:
 
 
 ---
+
 
 ## Engineering_Debrief.md
 
@@ -375,6 +514,7 @@ Records:
 # Engineering Principles
 
 
+
 ## 1. Understand before copying
 
 
@@ -382,31 +522,41 @@ Code execution is not equal to knowledge.
 
 
 
+---
+
+
 ## 2. Debug by layers
 
 
-Problem:
+Problem
 
 
 ↓
+
 
 Locate layer
 
 
 ↓
 
+
 Verify hypothesis
 
 
 ↓
+
 
 Fix
 
 
 ↓
 
+
 Confirm
 
+
+
+---
 
 
 ## 3. Hardware thinking
@@ -425,6 +575,9 @@ Structure and timing
 
 
 
+---
+
+
 ## 4. Verification matters
 
 
@@ -436,21 +589,42 @@ until it is verified.
 ---
 
 # Repository Structure
+
+
+```
 AI-Chip-Researcher-Bootcamp
-│
+
 ├── Day01
+
 ├── RTL
+
+│   ├── Day02
+
 ├── Testbench
+
+│   ├── Day02
+
 ├── Simulation
+
+│   ├── Day02
+
 ├── Python
+
 ├── Papers
+
 ├── Docs
+
 │
 ├── AI_Mentor_DNA.md
+
 ├── Bootcamp_Progress.md
+
 ├── Environment_Log.md
+
 ├── Engineering_Debrief.md
+
 └── README.md
+```
 
 
 
@@ -465,15 +639,23 @@ This repository uses:
 SSH authentication
 
 
+
 Remote:
+
+
+```
 git@github.com:2376885130-pixel/
 AI-Chip-Researcher-Bootcamp.git
+```
+
 
 
 Workflow:
 
 
 ```bash
+git pull --rebase
+
 git status
 
 git add .
@@ -481,15 +663,28 @@ git add .
 git commit -m "message"
 
 git push
-________________________________________
-Future Goals
+```
+
+
+
+---
+
+# Future Goals
+
+
 Build capability to independently:
-•	Design RTL systems
-•	Develop hardware accelerators
-•	Understand NPU architecture
-•	Conduct AI hardware research
+
+
+- Design RTL systems
+- Develop hardware accelerators
+- Understand NPU architecture
+- Conduct AI hardware research
+
+
+
 Final goal:
+
+
 Design and implement
+
 a complete AI accelerator system.
-
-
