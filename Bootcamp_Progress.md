@@ -1057,3 +1057,113 @@ Engineering Debrief Status
 
 
 Next Action
+# Day02 Completed
+
+## Topic
+
+Combinational Logic and Data Path
+
+
+## Completed Modules
+
+### mux2
+
+Location:
+
+RTL/Day02/mux2.v
+
+
+Learned:
+
+- 2-to-1 multiplexer
+- conditional operator
+- combinational logic
+
+
+---
+
+### mux8
+
+Location:
+
+RTL/Day02/mux8.v
+
+
+Learned:
+
+- bus
+- vector signal
+- [7:0] data width
+- parallel hardware structure
+
+
+---
+
+## Verification
+
+Completed:
+
+- mux2_tb
+- mux8_tb
+
+Tools:
+
+- Icarus Verilog
+- GTKWave
+
+
+---
+
+## Key Engineering Understanding
+
+Verilog describes hardware structure,
+not software execution.
+
+
+assign creates combinational hardware.
+
+wire represents hardware connection.
+
+reg is used for testbench-driven signals.
+
+
+---
+
+## Debug Experience
+
+Problem:
+
+iverilog cannot find source file.
+
+
+Cause:
+
+Incorrect relative path.
+
+
+Solution:
+
+Understand project directory hierarchy.
+
+
+Lesson:
+
+Before debugging code,
+check environment and file organization.
+
+
+---
+
+## Next Goal
+
+Day03:
+
+Sequential Logic
+
+Topics:
+
+- Clock
+- Reset
+- Register
+- always block
+- Non-blocking assignment
