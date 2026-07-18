@@ -40,10 +40,10 @@ Learning philosophy:
 # Research Direction
 
 
-Current interests:
-
-
 ## AI Accelerator
+
+
+Current interests:
 
 
 - Matrix multiplication acceleration
@@ -53,6 +53,9 @@ Current interests:
 
 
 ## Digital IC Design
+
+
+Focus:
 
 
 - RTL design
@@ -122,15 +125,18 @@ Completed:
 - MUX design
 - Bus signals
 - RTL simulation workflow
+- Sequential logic
+- Clock and reset
+- Registers
+- Counters
 
 
 Current:
 
 
-- Sequential logic
-- Clock and reset
-- Registers
-- FSM
+- Finite State Machine (FSM)
+- Hardware controller design
+
 
 
 Topics:
@@ -260,8 +266,6 @@ AND Gate
 
 Files:
 
-
-```
 Day01/
 
 ├── and_gate.v
@@ -271,7 +275,6 @@ Day01/
 ├── and_gate_sim
 
 └── and_gate.vcd
-```
 
 
 
@@ -280,24 +283,17 @@ Workflow:
 
 RTL
 
-
 ↓
-
 
 Compilation
 
-
 ↓
-
 
 Simulation
 
-
 ↓
 
-
 Waveform Verification
-
 
 
 Key Concepts:
@@ -330,14 +326,12 @@ Projects:
 ## 1-bit MUX
 
 
-Files:
+File:
 
-
-```
 RTL/Day02/
 
 └── mux2.v
-```
+
 
 
 Concepts:
@@ -355,14 +349,12 @@ Concepts:
 ## 8-bit MUX
 
 
-Files:
+File:
 
-
-```
 RTL/Day02/
 
 └── mux8.v
-```
+
 
 
 Concepts:
@@ -377,52 +369,21 @@ Concepts:
 
 Verification:
 
-
-```
 Testbench/Day02/
 
 ├── mux2_tb.v
 
 └── mux8_tb.v
-```
 
 
 
 Simulation:
 
-
-```
 Simulation/Day02/
 
 ├── mux2
 
 └── mux8
-```
-
-
-
-Workflow:
-
-
-RTL Design
-
-
-↓
-
-
-Testbench Creation
-
-
-↓
-
-
-Simulation
-
-
-↓
-
-
-Waveform Verification
 
 
 
@@ -431,6 +392,147 @@ Key Understanding:
 
 Verilog describes hardware structure,
 not software execution.
+
+
+Result:
+
+
+✅ Completed
+
+
+
+---
+
+
+# Day03
+
+## Sequential Logic Fundamentals
+
+
+Projects:
+
+
+## D Flip-Flop
+
+
+File:
+
+RTL/Day03/dff.v
+
+
+
+Concepts:
+
+
+- Clock edge
+- always @(posedge clk)
+- Non-blocking assignment
+- Single bit storage
+
+
+
+---
+
+
+## D Flip-Flop with Reset
+
+
+File:
+
+RTL/Day03/dff_reset.v
+
+
+
+Concepts:
+
+
+- Synchronous reset
+- Hardware initialization
+- Known system state
+
+
+
+---
+
+
+## 8-bit Register
+
+
+File:
+
+RTL/Day03/register8.v
+
+
+
+Concepts:
+
+
+- Data bus
+- Parallel storage
+- Register design
+
+
+
+---
+
+
+## Counter
+
+
+File:
+
+RTL/Day03/counter8.v
+
+
+
+Concepts:
+
+
+- Feedback path
+- Register + Adder
+- State update
+- Clock-driven operation
+
+
+
+Verification:
+
+Testbench/Day03/
+
+├── dff_tb.v
+
+├── dff_reset_tb.v
+
+├── register8_tb.v
+
+└── counter8_tb.v
+
+
+
+Simulation:
+
+Simulation/Day03/
+
+├── dff
+
+├── dff_reset
+
+├── register8
+
+└── counter8
+
+
+
+Key Understanding:
+
+
+Sequential logic introduces:
+
+
+- Clock
+- State
+- Memory
+- Timing relationship
 
 
 
@@ -495,7 +597,7 @@ Records:
 ---
 
 
-## Engineering_Debrief.md
+## Engineering_Debrief/
 
 
 Records:
@@ -530,27 +632,19 @@ Code execution is not equal to knowledge.
 
 Problem
 
-
 ↓
-
 
 Locate layer
 
-
 ↓
-
 
 Verify hypothesis
 
-
 ↓
-
 
 Fix
 
-
 ↓
-
 
 Confirm
 
@@ -590,23 +684,25 @@ until it is verified.
 
 # Repository Structure
 
-
-```
 AI-Chip-Researcher-Bootcamp
-
-├── Day01
 
 ├── RTL
 
-│   ├── Day02
+│ ├── Day02
+
+│ └── Day03
 
 ├── Testbench
 
-│   ├── Day02
+│ ├── Day02
+
+│ └── Day03
 
 ├── Simulation
 
-│   ├── Day02
+│ ├── Day02
+
+│ └── Day03
 
 ├── Python
 
@@ -624,7 +720,7 @@ AI-Chip-Researcher-Bootcamp
 ├── Engineering_Debrief.md
 
 └── README.md
-```
+
 
 
 
@@ -642,11 +738,8 @@ SSH authentication
 
 Remote:
 
-
-```
 git@github.com:2376885130-pixel/
 AI-Chip-Researcher-Bootcamp.git
-```
 
 
 
@@ -663,27 +756,18 @@ git add .
 git commit -m "message"
 
 git push
-```
-
-
-
----
-
-# Future Goals
-
-
+Future Goals
 Build capability to independently:
 
+Design RTL systems
 
-- Design RTL systems
-- Develop hardware accelerators
-- Understand NPU architecture
-- Conduct AI hardware research
+Develop hardware accelerators
 
+Understand NPU architecture
 
+Conduct AI hardware research
 
 Final goal:
-
 
 Design and implement
 
