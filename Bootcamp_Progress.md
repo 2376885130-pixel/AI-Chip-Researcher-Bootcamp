@@ -1167,3 +1167,35 @@ Topics:
 - Register
 - always block
 - Non-blocking assignment
+---
+
+# Day03 Completed
+
+## Sequential Logic
+
+
+Completed:
+
+- D Flip-Flop
+- Synchronous Reset
+- 8-bit Register
+- Counter
+
+
+Key Concepts:
+
+- Clock
+- Register
+- State
+- Non-blocking assignment
+- Sequential circuit
+
+
+Result:
+
+✅ Completed
+
+
+Next:
+
+Day04 FSM Design
