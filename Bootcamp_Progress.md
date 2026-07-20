@@ -1194,8 +1194,89 @@ Key Concepts:
 Result:
 
 ✅ Completed
+---
+
+# Day04 Completed
 
 
-Next:
+## Topic
 
-Day04 FSM Design
+Finite State Machine and Hardware Controller
+
+
+## Project
+
+Traffic Light FSM Controller
+
+
+## Completed
+
+
+Implemented:
+
+
+- Moore FSM
+- Three-stage FSM
+- State encoding
+- State register
+- Next state logic
+- Output logic
+
+
+Verification:
+
+
+Completed:
+
+
+- Testbench
+- Icarus Verilog simulation
+- GTKWave waveform verification
+
+
+## Engineering Understanding
+
+
+FSM consists of:
+
+
+Current State
+
++
+
+Next State Logic
+
++
+
+Output Logic
+
+
+Hardware connection:
+
+
+FSM
+
+↓
+
+Controller
+
+↓
+
+Accelerator Scheduler
+
+
+## Result
+
+
+✅ Completed
+
+
+## Next Mission
+
+
+Day05:
+
+Parameterized RTL Design
+
+
+

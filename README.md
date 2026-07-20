@@ -540,7 +540,58 @@ Result:
 
 
 ✅ Completed
+# Day04
 
+## Finite State Machine Controller
+
+
+Project:
+
+Traffic Light FSM
+
+
+Completed:
+
+
+- Moore FSM design
+- Three-stage FSM architecture
+- State encoding
+- State register
+- Next state logic
+- Output logic
+- Testbench verification
+- Waveform analysis
+
+
+Files:
+
+
+RTL/Day04/
+
+└── traffic_light_fsm.v
+
+
+Testbench/Day04/
+
+└── traffic_light_tb.v
+
+
+Simulation:
+
+
+traffic_light.vcd
+
+
+Key Understanding:
+
+
+FSM converts behavioral requirements
+into synchronous hardware control logic.
+
+
+Result:
+
+✅ Completed
 
 
 ---
