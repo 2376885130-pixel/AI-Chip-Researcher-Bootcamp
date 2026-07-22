@@ -1,0 +1,53 @@
+#! /usr/bin/vvp
+:ivl_version "12.0 (stable)";
+:ivl_delay_selection "TYPICAL";
+:vpi_time_precision + 0;
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/system.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_sys.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/vhdl_textio.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/v2005_math.vpi";
+:vpi_module "/usr/lib/x86_64-linux-gnu/ivl/va_math.vpi";
+S_0x55b340e444c0 .scope module, "counter_param" "counter_param" 2 1;
+ .timescale 0 0;
+    .port_info 0 /INPUT 1 "clk";
+    .port_info 1 /INPUT 1 "reset";
+    .port_info 2 /INPUT 1 "enable";
+    .port_info 3 /OUTPUT 8 "count";
+P_0x55b340e44650 .param/l "WIDTH" 0 2 3, +C4<00000000000000000000000000001000>;
+o0x7f5b57ab7018 .functor BUFZ 1, C4<z>; HiZ drive
+v0x55b340e46400_0 .net "clk", 0 0, o0x7f5b57ab7018;  0 drivers
+v0x55b340e8c0a0_0 .var "count", 7 0;
+o0x7f5b57ab7078 .functor BUFZ 1, C4<z>; HiZ drive
+v0x55b340e8c180_0 .net "enable", 0 0, o0x7f5b57ab7078;  0 drivers
+o0x7f5b57ab70a8 .functor BUFZ 1, C4<z>; HiZ drive
+v0x55b340e8c250_0 .net "reset", 0 0, o0x7f5b57ab70a8;  0 drivers
+E_0x55b340e7d530 .event posedge, v0x55b340e46400_0;
+    .scope S_0x55b340e444c0;
+T_0 ;
+    %wait E_0x55b340e7d530;
+    %load/vec4 v0x55b340e8c250_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.0, 8;
+    %pushi/vec4 0, 0, 8;
+    %assign/vec4 v0x55b340e8c0a0_0, 0;
+    %jmp T_0.1;
+T_0.0 ;
+    %load/vec4 v0x55b340e8c180_0;
+    %flag_set/vec4 8;
+    %jmp/0xz  T_0.2, 8;
+    %load/vec4 v0x55b340e8c0a0_0;
+    %addi 1, 0, 8;
+    %assign/vec4 v0x55b340e8c0a0_0, 0;
+    %jmp T_0.3;
+T_0.2 ;
+    %load/vec4 v0x55b340e8c0a0_0;
+    %assign/vec4 v0x55b340e8c0a0_0, 0;
+T_0.3 ;
+T_0.1 ;
+    %jmp T_0;
+    .thread T_0;
+# The file index is used to find the file name in the following table.
+:file_names 3;
+    "N/A";
+    "<interactive>";
+    "RTL/Day05/counter_param.v";
