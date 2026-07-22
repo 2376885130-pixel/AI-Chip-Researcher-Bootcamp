@@ -593,7 +593,56 @@ Result:
 
 ✅ Completed
 
+# Day05
 
+## Parameterized RTL Counter
+
+
+Project:
+
+Parameterized Counter
+
+
+Completed:
+
+
+- Parameter design
+- Configurable data width
+- Sequential logic
+- Enable control
+- Reset control
+- Testbench verification
+- Waveform analysis
+
+
+Files:
+
+
+RTL/Day05/
+
+└── counter_param.v
+
+
+Testbench/Day05/
+
+└── counter_param_tb.v
+
+
+Simulation:
+
+
+counter_param.vcd
+
+
+Key Understanding:
+
+
+Parameterized RTL creates reusable hardware IP.
+
+
+Result:
+
+✅ Completed
 ---
 
 # Engineering Documentation

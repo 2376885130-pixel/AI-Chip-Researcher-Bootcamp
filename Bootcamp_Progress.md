@@ -1277,6 +1277,90 @@ Accelerator Scheduler
 Day05:
 
 Parameterized RTL Design
+# Day05 Completed
 
+## Topic
+
+Parameterized RTL Design
+
+
+## Project
+
+Parameterized Counter
+
+
+## Completed
+
+
+Implemented:
+
+- parameterized counter
+- configurable WIDTH
+- synchronous reset
+- enable control
+
+
+Files:
+
+RTL/Day05/counter_param.v
+
+
+Verification:
+
+Testbench:
+
+Testbench/Day05/counter_param_tb.v
+
+
+Simulation:
+
+Icarus Verilog
+
+GTKWave
+
+
+Result:
+
+✅ Completed
+
+
+## Key Engineering Understanding
+
+
+Parameterized RTL allows reusable hardware IP design.
+
+
+Parameter controls hardware generation,
+not runtime software behavior.
+
+
+Hardware connection:
+
+
+Parameterized Module
+
+↓
+
+Reusable IP
+
+↓
+
+MAC/FIFO/Buffer
+
+↓
+
+AI Accelerator
+
+
+## Git Commit
+
+34d61df
+
+
+## Next Mission
+
+Day06:
+
+Reusable Hardware IP Design
 
 
