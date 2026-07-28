@@ -644,6 +644,72 @@ Result:
 
 ✅ Completed
 ---
+# Day06
+
+## Parameterized Register Bank IP
+
+
+Project:
+
+Register Bank Hardware IP
+
+
+Completed:
+
+
+- Register bank architecture design
+- Parameterized DATA_WIDTH and DEPTH
+- Register array implementation
+- Synchronous write logic
+- Combinational read logic
+- Self-checking testbench
+- Parameter scalability verification
+- Waveform generation and analysis
+
+
+Files:
+
+
+RTL/Day06/
+
+└── register_bank.v
+
+
+Testbench/Day06/
+
+└── register_bank_tb.v
+
+
+Simulation:
+
+
+register_bank.vcd
+
+
+Key Understanding:
+
+
+Parameterized RTL enables reusable hardware IP design.
+
+
+Register Bank provides fast internal storage
+for processors and AI accelerator architectures.
+
+
+Verification:
+
+
+- Multiple register address testing
+- Automatic PASS/FAIL checking
+- Configurable DATA_WIDTH
+- Configurable DEPTH
+
+
+Result:
+
+
+
+✅ Completed
 
 # Engineering Documentation
 
