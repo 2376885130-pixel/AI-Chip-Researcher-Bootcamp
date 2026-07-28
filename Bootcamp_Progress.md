@@ -4,12 +4,12 @@
 
 Version:
 
-2.0
+3.0
 
 
 Last Update:
 
-2026-07-15
+2026-07-28
 
 
 
@@ -64,30 +64,30 @@ Target areas:
 Current Phase:
 
 
-Phase 1
+Phase 2
 
-Development Environment
+RTL Design Fundamentals
 
 
 
 Current Day:
 
 
-Day 1 Completed
+Day 06 Completed
 
 
 
 Current Mission:
 
 
-Build complete AI chip development environment.
+Develop reusable hardware IP design capability.
 
 
 
 Overall Status:
 
 
-Completed.
+In Progress.
 
 
 
@@ -287,7 +287,7 @@ main
 Repository Status:
 
 
-Clean
+Active
 
 
 
@@ -374,6 +374,13 @@ Switched to SSH authentication.
 
 
 
+Engineering Lesson:
+
+
+Debug problems by layers.
+
+
+
 ================================
 # 7. Repository Structure
 ================================
@@ -385,13 +392,44 @@ Current Structure:
 AI-Chip-Researcher-Bootcamp
 
 
-├── Day01
-
 ├── RTL
+
+│   ├── Day02
+
+│   ├── Day03
+
+│   ├── Day04
+
+│   ├── Day05
+
+│   └── Day06
+
 
 ├── Testbench
 
+│   ├── Day02
+
+│   ├── Day03
+
+│   ├── Day04
+
+│   ├── Day05
+
+│   └── Day06
+
+
 ├── Simulation
+
+│   ├── Day02
+
+│   ├── Day03
+
+│   ├── Day04
+
+│   ├── Day05
+
+│   └── Day06
+
 
 ├── Python
 
@@ -399,7 +437,14 @@ AI-Chip-Researcher-Bootcamp
 
 ├── Docs
 
-└── README.md
+
+├── README.md
+
+├── Bootcamp_Progress.md
+
+├── Environment_Log.md
+
+└── Engineering_Debrief.md
 
 
 
@@ -408,40 +453,34 @@ AI-Chip-Researcher-Bootcamp
 ================================
 
 
-First Commit:
+Repository contains:
 
 
-Commit ID:
-
-
-2e3a3bd
-
-
-
-Message:
-
-
-Day01: Initialize AI Chip Research Environment
+- Environment setup commits
+- RTL development commits
+- Verification commits
+- Hardware IP design milestones
 
 
 
-Commit Content:
+Important milestones:
 
 
-Included:
+Day01:
+
+Environment and first RTL simulation
 
 
-- README.md
 
-- hello.v
+Day05:
 
-- and_gate.v
+Parameterized RTL Counter
 
-- and_gate_tb.v
 
-- simulation files
 
-- waveform files
+Day06:
+
+Parameterized Register Bank IP
 
 
 
@@ -477,13 +516,9 @@ Understanding:
 
 Linux is the foundation of hardware
 development environment.
-
-
-
 ---
 
-
-# Day 1
+# Day01
 
 ## Development Environment + First RTL Experiment
 
@@ -567,10 +602,12 @@ git init
 Create repository.
 
 
+
 git add
 
 
 Add changes to staging area.
+
 
 
 git commit
@@ -579,10 +616,12 @@ git commit
 Create version snapshot.
 
 
+
 git remote
 
 
 Connect remote repository.
+
 
 
 git push
@@ -658,88 +697,585 @@ not software execution flow.
 
 
 
+Result:
+
+
+✅ Completed
+
+
+
+---
+
+
+# Day02 Completed
+
+
+## Topic
+
+
+Combinational Logic and Data Path
+
+
+
+## Completed Modules
+
+
+### mux2
+
+
+Location:
+
+
+RTL/Day02/mux2.v
+
+
+
+Learned:
+
+
+- 2-to-1 multiplexer
+- conditional operator
+- combinational logic
+
+
+
+---
+
+
+### mux8
+
+
+Location:
+
+
+RTL/Day02/mux8.v
+
+
+
+Learned:
+
+
+- bus
+- vector signal
+- data width
+- parallel hardware structure
+
+
+
+---
+
+
+## Verification
+
+
+Completed:
+
+
+- mux2_tb
+- mux8_tb
+
+
+
+Tools:
+
+
+- Icarus Verilog
+- GTKWave
+
+
+
+## Key Engineering Understanding
+
+
+Verilog describes hardware structure,
+not software execution.
+
+
+
+assign creates combinational hardware.
+
+
+
+wire represents hardware connection.
+
+
+
+Result:
+
+
+✅ Completed
+
+
+
+---
+
+
+# Day03 Completed
+
+
+## Topic
+
+
+Sequential Logic Fundamentals
+
+
+
+Completed:
+
+
+- D Flip-Flop
+- Synchronous Reset
+- 8-bit Register
+- Counter
+
+
+
+Key Concepts:
+
+
+- Clock
+- Register
+- State
+- Non-blocking assignment
+- Sequential circuit
+
+
+
+Result:
+
+
+✅ Completed
+
+
+
+---
+
+
+# Day04 Completed
+
+
+## Topic
+
+
+Finite State Machine and Hardware Controller
+
+
+
+Project:
+
+
+Traffic Light FSM Controller
+
+
+
+Completed:
+
+
+Implemented:
+
+
+- Moore FSM
+- Three-stage FSM
+- State encoding
+- State register
+- Next state logic
+- Output logic
+
+
+
+Verification:
+
+
+Completed:
+
+
+- Testbench
+- Icarus Verilog simulation
+- GTKWave waveform verification
+
+
+
+Engineering Understanding:
+
+
+FSM consists of:
+
+
+Current State
+
+
++
+
+
+Next State Logic
+
+
++
+
+
+Output Logic
+
+
+
+Hardware connection:
+
+
+FSM
+
+
+↓
+
+
+Controller
+
+
+↓
+
+
+Accelerator Scheduler
+
+
+
+Result:
+
+
+✅ Completed
+
+
+
+---
+
+
+# Day05 Completed
+
+
+## Topic
+
+
+Parameterized RTL Design
+
+
+
+Project:
+
+
+Parameterized Counter
+
+
+
+Completed:
+
+
+Implemented:
+
+
+- parameterized counter
+- configurable WIDTH
+- synchronous reset
+- enable control
+
+
+
+Files:
+
+
+RTL/Day05/counter_param.v
+
+
+
+Verification:
+
+
+Testbench:
+
+
+Testbench/Day05/counter_param_tb.v
+
+
+
+Simulation:
+
+
+Icarus Verilog
+
+
+GTKWave
+
+
+
+Key Engineering Understanding:
+
+
+Parameterized RTL allows reusable hardware IP design.
+
+
+
+Parameter controls hardware generation,
+not runtime software behavior.
+
+
+
+Hardware connection:
+
+
+Parameterized Module
+
+
+↓
+
+
+Reusable IP
+
+
+↓
+
+
+MAC/FIFO/Buffer
+
+
+↓
+
+
+AI Accelerator
+
+
+
+Result:
+
+
+✅ Completed
+
+
+
+---
+
+
+# Day06 Completed
+
+
+## Topic
+
+
+Reusable Hardware IP Design
+
+
+
+Project:
+
+
+Parameterized Register Bank IP
+
+
+
+Completed:
+
+
+Implemented:
+
+
+- Register bank architecture
+- Parameterized DATA_WIDTH
+- Parameterized DEPTH
+- Register array design
+- Synchronous write logic
+- Combinational read logic
+
+
+
+Files:
+
+
+RTL/Day06/
+
+
+└── register_bank.v
+
+
+
+Testbench/Day06/
+
+
+└── register_bank_tb.v
+
+
+
+Verification:
+
+
+Completed:
+
+
+- Multiple register address testing
+- Parameter-driven verification
+- Self-checking testbench
+- Automatic PASS/FAIL checking
+- Waveform generation
+
+
+
+Verification Result:
+
+
+TEST PASSED
+
+
+
+Key Engineering Understanding:
+
+
+Register Bank:
+
+
+Multiple Registers
+
+
++
+
+
+Address Selection
+
+
++
+
+
+Read/Write Control
+
+
+
+Parameterized RTL:
+
+
+Parameter
+
+
+↓
+
+
+Hardware Configuration
+
+
+↓
+
+
+Reusable Hardware IP
+
+
+
+Hardware connection:
+
+
+Register Bank
+
+
+↓
+
+
+Processing Element
+
+
+↓
+
+
+MAC Unit
+
+
+↓
+
+
+AI Accelerator
+
+
+
+Result:
+
+
+✅ Completed
+
+
+
 ================================
 # 10. Problems Solved
 ================================
 
 
-## GitHub HTTPS Push Failure
+## Reset Control Debugging
 
 
 Problem:
 
 
-Cannot push repository.
+Register Bank simulation returned:
 
 
+Reg0 = xx
 
-Error:
 
-
-GnuTLS recv error (-110)
+Reg1 = xx
 
 
 
 Investigation:
 
 
-Step 1:
-
-
-Checked network.
-
-
-Result:
-
-github.com reachable.
+Checked write behavior.
 
 
 
-Step 2:
+Cause:
 
 
-Checked HTTPS connection.
-
-
-Result:
-
-TLS connection unstable.
-
-
-
-Conclusion:
-
-
-Problem was HTTPS/TLS layer.
+Reset remained active during write operation.
 
 
 
 Solution:
 
 
-Changed:
-
-
-HTTPS remote
-
-
-↓
-
-SSH remote
-
-
-
-Result:
-
-
-Push successful.
+Released reset before write test.
 
 
 
 Engineering Lesson:
 
 
-Debug problems by layers.
+Control signals determine hardware behavior.
+
+Timing and signal priority must be verified.
+
+
+
+---
+
+
+## Parameterized Verification Design
+
+
+Problem:
+
+
+Manual test cases were difficult to scale.
+
+
+
+Solution:
+
+
+Created parameter-driven self-checking testbench.
+
+
+
+Result:
+
+
+Different DATA_WIDTH and DEPTH configurations
+can use the same verification environment.
+
+
+
+Engineering Lesson:
+
+
+Reusable hardware requires reusable verification.
 
 
 
@@ -757,17 +1293,25 @@ Always verify results.
 Example:
 
 
-After command:
+RTL
 
 
-pwd
+↓
 
 
-ls
+Simulation
 
 
+↓
 
-Confirm state before continuing.
+
+Waveform
+
+
+↓
+
+
+Confirmation
 
 
 
@@ -777,17 +1321,35 @@ Confirm state before continuing.
 ## Habit 2
 
 
-Backup/configuration awareness.
+Debug by layers.
 
 
 
-Example:
+Problem
 
 
-Before changing system configuration:
+↓
 
 
-Create backup.
+Locate layer
+
+
+↓
+
+
+Verify hypothesis
+
+
+↓
+
+
+Fix
+
+
+↓
+
+
+Confirm
 
 
 
@@ -797,11 +1359,16 @@ Create backup.
 ## Habit 3
 
 
-Version control.
+Documentation is part of engineering.
 
 
-Important engineering milestones
-should be committed.
+Important milestones should include:
+
+
+- Code
+- Verification
+- Explanation
+- Version control
 
 
 
@@ -819,6 +1386,7 @@ Can:
 - navigate filesystem
 - create/manage files
 - understand directory structure
+- use Linux development workflow
 
 
 
@@ -827,7 +1395,7 @@ Need to learn:
 
 - shell scripting
 - permissions deeply
-- environment variables
+- environment automation
 
 
 
@@ -843,7 +1411,8 @@ Can:
 - create repository
 - commit changes
 - connect GitHub
-- use SSH
+- use SSH workflow
+- maintain engineering history
 
 
 
@@ -859,27 +1428,32 @@ Need to learn:
 ---
 
 
-## Verilog
+## Verilog / RTL
 
 
 Can:
 
 
-- write simple module
+- write RTL modules
+- design combinational logic
+- design sequential logic
+- implement FSM controller
+- create parameterized RTL
 - write testbench
-- simulate
-- view waveform
+- simulate with Icarus Verilog
+- analyze waveform with GTKWave
+- build self-checking verification environment
 
 
 
 Need to learn:
 
 
-- combinational logic
-- sequential logic
-- clock/reset
-- FSM
-- pipeline
+- SystemVerilog
+- pipeline architecture
+- memory interface
+- arithmetic IP design
+- AI accelerator architecture
 
 
 
@@ -897,39 +1471,18 @@ None
 ================================
 
 
-VS Code + WSL Integration
-
-
-Status:
-
-
-Not completed.
+Continue RTL architecture development.
 
 
 
-Goal:
+Future topics:
 
 
-Create complete RTL development workflow:
-
-
-VS Code
-
-↓
-
-WSL Ubuntu
-
-↓
-
-Verilog
-
-↓
-
-Simulation
-
-↓
-
-GTKWave
+- Arithmetic IP
+- MAC Unit
+- Processing Element
+- Pipeline design
+- Memory architecture
 
 
 
@@ -938,10 +1491,10 @@ GTKWave
 ================================
 
 
-Day 2:
+Day07:
 
 
-RTL Design Fundamentals
+Arithmetic IP Design
 
 
 
@@ -951,22 +1504,17 @@ Goal:
 Understand:
 
 
-- module
-- port
-- wire
-- reg
-- always block
-- combinational logic
-- sequential logic
-- clock
-- reset
+- Adder architecture
+- Multiplier architecture
+- MAC operation
+- Datapath design
 
 
 
 Expected Project:
 
 
-Design and verify first synchronous RTL module.
+Design and verify first arithmetic hardware IP.
 
 
 
@@ -1057,310 +1605,3 @@ Engineering Debrief Status
 
 
 Next Action
-# Day02 Completed
-
-## Topic
-
-Combinational Logic and Data Path
-
-
-## Completed Modules
-
-### mux2
-
-Location:
-
-RTL/Day02/mux2.v
-
-
-Learned:
-
-- 2-to-1 multiplexer
-- conditional operator
-- combinational logic
-
-
----
-
-### mux8
-
-Location:
-
-RTL/Day02/mux8.v
-
-
-Learned:
-
-- bus
-- vector signal
-- [7:0] data width
-- parallel hardware structure
-
-
----
-
-## Verification
-
-Completed:
-
-- mux2_tb
-- mux8_tb
-
-Tools:
-
-- Icarus Verilog
-- GTKWave
-
-
----
-
-## Key Engineering Understanding
-
-Verilog describes hardware structure,
-not software execution.
-
-
-assign creates combinational hardware.
-
-wire represents hardware connection.
-
-reg is used for testbench-driven signals.
-
-
----
-
-## Debug Experience
-
-Problem:
-
-iverilog cannot find source file.
-
-
-Cause:
-
-Incorrect relative path.
-
-
-Solution:
-
-Understand project directory hierarchy.
-
-
-Lesson:
-
-Before debugging code,
-check environment and file organization.
-
-
----
-
-## Next Goal
-
-Day03:
-
-Sequential Logic
-
-Topics:
-
-- Clock
-- Reset
-- Register
-- always block
-- Non-blocking assignment
----
-
-# Day03 Completed
-
-## Sequential Logic
-
-
-Completed:
-
-- D Flip-Flop
-- Synchronous Reset
-- 8-bit Register
-- Counter
-
-
-Key Concepts:
-
-- Clock
-- Register
-- State
-- Non-blocking assignment
-- Sequential circuit
-
-
-Result:
-
-✅ Completed
----
-
-# Day04 Completed
-
-
-## Topic
-
-Finite State Machine and Hardware Controller
-
-
-## Project
-
-Traffic Light FSM Controller
-
-
-## Completed
-
-
-Implemented:
-
-
-- Moore FSM
-- Three-stage FSM
-- State encoding
-- State register
-- Next state logic
-- Output logic
-
-
-Verification:
-
-
-Completed:
-
-
-- Testbench
-- Icarus Verilog simulation
-- GTKWave waveform verification
-
-
-## Engineering Understanding
-
-
-FSM consists of:
-
-
-Current State
-
-+
-
-Next State Logic
-
-+
-
-Output Logic
-
-
-Hardware connection:
-
-
-FSM
-
-↓
-
-Controller
-
-↓
-
-Accelerator Scheduler
-
-
-## Result
-
-
-✅ Completed
-
-
-## Next Mission
-
-
-Day05:
-
-Parameterized RTL Design
-# Day05 Completed
-
-## Topic
-
-Parameterized RTL Design
-
-
-## Project
-
-Parameterized Counter
-
-
-## Completed
-
-
-Implemented:
-
-- parameterized counter
-- configurable WIDTH
-- synchronous reset
-- enable control
-
-
-Files:
-
-RTL/Day05/counter_param.v
-
-
-Verification:
-
-Testbench:
-
-Testbench/Day05/counter_param_tb.v
-
-
-Simulation:
-
-Icarus Verilog
-
-GTKWave
-
-
-Result:
-
-✅ Completed
-
-
-## Key Engineering Understanding
-
-
-Parameterized RTL allows reusable hardware IP design.
-
-
-Parameter controls hardware generation,
-not runtime software behavior.
-
-
-Hardware connection:
-
-
-Parameterized Module
-
-↓
-
-Reusable IP
-
-↓
-
-MAC/FIFO/Buffer
-
-↓
-
-AI Accelerator
-
-
-## Git Commit
-
-34d61df
-
-
-## Next Mission
-
-Day06:
-
-Reusable Hardware IP Design
-
-
