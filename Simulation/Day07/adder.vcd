@@ -1,0 +1,44 @@
+$date
+	Wed Jul 29 20:55:12 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module adder_tb $end
+$var wire 9 ! SUM [8:0] $end
+$var parameter 32 " DATA_WIDTH $end
+$var reg 8 # A [7:0] $end
+$var reg 8 $ B [7:0] $end
+$scope module dut $end
+$var wire 8 % A [7:0] $end
+$var wire 8 & B [7:0] $end
+$var wire 9 ' SUM [8:0] $end
+$var parameter 32 ( DATA_WIDTH $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 (
+b1000 "
+$end
+#0
+$dumpvars
+b1000 '
+b11 &
+b101 %
+b11 $
+b101 #
+b1000 !
+$end
+#10000
+b11111111 $
+b11111111 &
+b111111110 !
+b111111110 '
+b11111111 #
+b11111111 %
+#20000
