@@ -711,6 +711,41 @@ Result:
 
 ✅ Completed
 
+## Day07 - Arithmetic IP Design ✅
+
+Completed:
+
+- Parameterized Adder IP
+- Parameterized Multiplier IP
+- MAC Unit
+
+Hardware Concepts:
+
+- Arithmetic datapath
+- Bit-width expansion
+- Carry handling
+- Partial product accumulation
+- Sequential accumulator register
+
+RTL:
+
+- RTL/Day07/adder_param.v
+- RTL/Day07/multiplier_param.v
+- RTL/Day07/mac_unit.v
+
+Verification:
+
+- Icarus Verilog simulation
+- GTKWave waveform analysis
+
+Git Milestone:
+
+- Adder IP completed
+- Multiplier IP completed
+- MAC Unit completed
+
+
+
 # Engineering Documentation
 
 
