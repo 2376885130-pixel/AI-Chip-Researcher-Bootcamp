@@ -743,7 +743,47 @@ Git Milestone:
 - Adder IP completed
 - Multiplier IP completed
 - MAC Unit completed
+## Day08 - Processing Element (PE) ✅
 
+
+Implemented the first AI Accelerator compute unit.
+
+
+Completed:
+
+- PE RTL design
+- MAC + accumulator architecture
+- Partial sum handling
+- Self-checking testbench
+- GTKWave waveform verification
+
+
+Hardware concept:
+
+
+PE = Multiplier + Adder + Register
+
+
+
+The PE performs:
+
+
+partial_sum = partial_sum + activation × weight
+
+
+
+This module is the basic building block for:
+
+
+PE Array
+
+↓
+
+Systolic Array
+
+↓
+
+AI Accelerator
 
 
 # Engineering Documentation

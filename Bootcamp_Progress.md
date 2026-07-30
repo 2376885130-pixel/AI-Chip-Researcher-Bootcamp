@@ -1226,7 +1226,154 @@ Arithmetic datapath foundation completed.
 Next:
 
 Day08 - Processing Element / Datapath Architecture
+# Day08 - Processing Element (PE)
 
+Status: Completed ✅
+
+## Completed Work
+
+### RTL Design
+
+Implemented:
+
+- RTL/Day08/processing_element.v
+
+
+Architecture:
+
+
+activation
+|
+v
+Multiplier
+|
+v
+Adder <---- accumulator register
+|
+v
+partial_sum
+
+
+
+## Hardware Concepts Learned
+
+- Processing Element (PE)
+- MAC vs PE
+- Accumulator Register
+- Partial Sum
+- Feedback data path
+- Sequential accumulation
+
+
+## AI Accelerator Connection
+
+Learned that:
+
+PE = MAC + Register
+
+
+A PE performs:
+
+partial_sum = partial_sum + activation × weight
+
+
+Multiple PE units can form:
+
+Systolic Array
+
+
+Systolic Array enables:
+
+- massive parallel computation
+- efficient matrix multiplication
+- low data movement
+
+
+## Verification
+
+Created:
+
+Testbench/Day08/processing_element_tb.v
+
+
+Verified:
+
+Test1:
+
+2 × 3
+
+Result:
+
+partial_sum = 6
+
+
+Test2:
+
+4 × 5
+
+Result:
+
+partial_sum = 26
+
+
+Test3:
+
+10 × 2
+
+Result:
+
+partial_sum = 46
+
+
+Simulation:
+
+PASS ✅
+
+
+## Debug Experience
+
+Issue:
+
+TEST1 initially failed.
+
+
+Root Cause:
+
+Testbench checked partial_sum before the first clock edge.
+
+
+Lesson:
+
+Sequential hardware requires:
+
+Input setup
+
+↓
+
+Clock edge
+
+↓
+
+Register update
+
+↓
+
+Output verification
+
+
+## Tools Used
+
+- Ubuntu WSL2
+- Icarus Verilog
+- GTKWave
+- Git
+
+
+## Key Achievement
+
+First AI Accelerator hardware block completed.
+
+A single PE was designed, simulated, and verified.
 
 ================================
 # 10. Problems Solved
