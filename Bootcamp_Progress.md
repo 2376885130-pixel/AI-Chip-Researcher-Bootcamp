@@ -1459,6 +1459,85 @@ Engineering Lesson:
 
 Reusable hardware requires reusable verification.
 
+# Day09 Completed
+
+
+## Topic
+
+Pipeline MAC Design
+
+
+## Completed Tasks
+
+
+[x] Designed pipelined MAC RTL
+
+[x] Implemented INT8 × INT8 → INT16 multiplication
+
+[x] Implemented INT32 accumulation path
+
+[x] Added pipeline registers
+
+[x] Created parameterized Testbench
+
+[x] Debugged pipeline timing issues
+
+[x] Verified with GTKWave waveform
+
+
+## Key Understanding
+
+
+### Pipeline
+
+Pipeline increases throughput by overlapping operations.
+
+
+### Latency
+
+Pipeline MAC latency:
+
+2 cycles
+
+
+### Throughput
+
+After pipeline filling:
+
+1 MAC result / cycle
+
+
+### Registers
+
+Registers:
+
+- store intermediate results
+- separate timing stages
+- improve maximum frequency
+
+
+## Simulation Result
+
+
+PASS=6 FAIL=0
+
+
+## Current Architecture Level
+
+
+Completed:
+
+Single MAC Unit
+
+
+Next:
+
+Multiple MAC units → PE Array
+
+
+Future:
+
+PE Array → Systolic Array → NPU Accelerator
 
 
 ================================

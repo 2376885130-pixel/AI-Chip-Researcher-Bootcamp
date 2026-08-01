@@ -1,0 +1,174 @@
+$date
+	Fri Jul 31 11:01:19 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module pipeline_mac_tb $end
+$var wire 32 ! result [31:0] $end
+$var parameter 32 " ACC_WIDTH $end
+$var parameter 32 # DATA_WIDTH $end
+$var reg 8 $ activation [7:0] $end
+$var reg 1 % clk $end
+$var reg 32 & expected_stage1 [31:0] $end
+$var reg 32 ' expected_stage2 [31:0] $end
+$var reg 32 ( partial_sum [31:0] $end
+$var reg 1 ) rst $end
+$var reg 8 * weight [7:0] $end
+$var integer 32 + fail_count [31:0] $end
+$var integer 32 , pass_count [31:0] $end
+$scope module dut $end
+$var wire 8 - activation [7:0] $end
+$var wire 1 % clk $end
+$var wire 32 . partial_sum [31:0] $end
+$var wire 32 / result [31:0] $end
+$var wire 1 ) rst $end
+$var wire 8 0 weight [7:0] $end
+$var parameter 32 1 ACC_WIDTH $end
+$var parameter 32 2 DATA_WIDTH $end
+$var reg 32 3 partial_sum_reg [31:0] $end
+$var reg 16 4 product_reg [15:0] $end
+$var reg 32 5 result_reg [31:0] $end
+$upscope $end
+$scope task check_output $end
+$var reg 32 6 expected [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 2
+b100000 1
+b1000 #
+b100000 "
+$end
+#0
+$dumpvars
+bx 6
+bx 5
+bx 4
+bx 3
+b0 0
+bx /
+b0 .
+b0 -
+b0 ,
+b0 +
+b0 *
+1)
+b0 (
+b0 '
+b0 &
+0%
+b0 $
+bx !
+$end
+#5000
+b0 !
+b0 /
+b0 5
+b0 3
+b0 4
+1%
+#10000
+0%
+#15000
+0)
+1%
+#20000
+b10000 &
+b1010 (
+b1010 .
+b11 *
+b11 0
+b10 $
+b10 -
+0%
+#25000
+b1010 3
+b110 4
+1%
+#26000
+b10000 '
+b1 ,
+b0 6
+#30000
+b101000 &
+b10100 (
+b10100 .
+b101 *
+b101 0
+b100 $
+b100 -
+0%
+#35000
+b10000 !
+b10000 /
+b10000 5
+b10100 3
+b10100 4
+1%
+#36000
+b101000 '
+b10 ,
+b10000 6
+#40000
+b110010 &
+b11110 (
+b11110 .
+b10 *
+b10 0
+b1010 $
+b1010 -
+0%
+#45000
+b101000 !
+b101000 /
+b101000 5
+b11110 3
+1%
+#46000
+b110010 '
+b11 ,
+b101000 6
+#50000
+b0 &
+b0 (
+b0 .
+b0 *
+b0 0
+b0 $
+b0 -
+0%
+#55000
+b110010 !
+b110010 /
+b110010 5
+b0 3
+b0 4
+1%
+#56000
+b0 '
+b100 ,
+b110010 6
+#60000
+0%
+#65000
+b0 !
+b0 /
+b0 5
+1%
+#66000
+b101 ,
+b0 6
+#70000
+0%
+#75000
+1%
+#76000
+b110 ,
+#80000
+0%

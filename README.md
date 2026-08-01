@@ -786,8 +786,78 @@ Systolic Array
 AI Accelerator
 
 
-# Engineering Documentation
 
+# Engineering Documentation
+# Day09 Progress: Pipeline MAC
+
+## Implemented
+
+A two-stage pipelined MAC unit.
+
+
+Architecture:
+
+
+INT8 Activation
+|
+|
+Multiplier
+|
+v
+product_reg
+|
+|
++------+
+|
+v
+Adder
+|
+v
+result_reg
+
+
+
+## Hardware Features
+
+- Parameterized data width
+- INT8 multiplication
+- INT32 accumulation
+- Pipeline registers
+- Self-checking verification
+
+
+## Verification
+
+Simulation environment:
+
+
+RTL/Day09/pipeline_mac.v
+
+Testbench/Day09/pipeline_mac_tb.v
+
+Simulation/Day09/pipeline_mac.vcd
+
+
+
+Result:
+
+
+PASS=6 FAIL=0
+
+
+
+## Key Concepts Learned
+
+- Pipeline latency
+- Pipeline throughput
+- Register boundaries
+- Non-blocking assignment behavior
+- Data synchronization
+
+
+Next:
+
+Day10 - PE Array and parallel MAC architecture
 
 This repository maintains:
 
