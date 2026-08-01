@@ -1,0 +1,124 @@
+# Day10 Engineering Debrief
+
+## Objective
+
+Extend a single Processing Element into a parameterized PE Array.
+
+The goal was to create a scalable parallel MAC architecture.
+
+---
+
+## Implementation
+
+Created:
+
+
+RTL/Day10/pe_array.v
+
+
+The PE Array instantiates multiple Day08 Processing Elements.
+
+Architecture:
+
+
+PE Array
+
+PE0
+PE1
+PE2
+PE3
+
+
+Each PE contains:
+
+- Multiplier
+- Adder
+- Independent accumulator register
+
+---
+
+## Key Design Decisions
+
+### 1. Reuse Processing Element IP
+
+Instead of copying PE logic, the existing:
+
+
+processing_element.v
+
+
+was instantiated multiple times.
+
+Reason:
+
+- Avoid duplicated RTL
+- Improve maintainability
+- Enable scalable hardware design
+
+
+### 2. Generate-based Instantiation
+
+Used:
+
+```verilog
+generate
+for
+
+to create multiple PE instances.
+
+The number of PE units is controlled by:
+
+parameter NUM_PE
+
+Changing NUM_PE changes generated hardware size without modifying RTL.
+
+3. Independent Accumulator
+
+Each PE owns its accumulator.
+
+Reason:
+
+Allow independent parallel computation
+
+Avoid shared state conflicts
+
+4. Packed Bus Interface
+
+Input:
+
+activation[NUM_PE*DATA_WIDTH-1:0]
+
+Output:
+
+result[NUM_PE*ACC_WIDTH-1:0]
+
+This allows scalable PE connections.
+
+Verification
+
+Simulation:
+
+NUM_PE = 4
+
+Results:
+
+PE0 PASS
+PE1 PASS
+PE2 PASS
+PE3 PASS
+
+Calculation:
+
+PE0: 2×3 = 6
+PE1: 4×5 = 20
+PE2: 6×7 = 42
+PE3: 8×9 = 72
+Reflection
+
+Day10 introduced the transition from a single compute unit to parallel hardware architecture.
+
+The design is now ready to evolve toward:
+
+PE Array
+    ↓
+Systolic Array

@@ -861,7 +861,27 @@ Day10 - PE Array and parallel MAC architecture
 
 This repository maintains:
 
+### Day10: Parameterized PE Array
 
+Implemented a scalable Processing Element Array.
+
+Features:
+
+- Parameterized PE count using NUM_PE
+- Generate-based hardware instantiation
+- Independent accumulator for each PE
+- Packed input/output bus design
+- Parallel MAC computation
+
+Verification:
+
+- NUM_PE = 4
+- PE0: 2×3 = 6
+- PE1: 4×5 = 20
+- PE2: 6×7 = 42
+- PE3: 8×9 = 72
+
+All tests passed.
 
 ## AI_Mentor_DNA.md
 

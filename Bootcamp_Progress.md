@@ -1539,6 +1539,47 @@ Future:
 
 PE Array → Systolic Array → NPU Accelerator
 
+## Day10: PE Array and Parallel Computation
+
+Status: Completed ✅
+
+Completed:
+
+- Reviewed Processing Element IP
+- Improved accumulator width handling
+- Designed parameterized PE Array
+- Implemented generate-based PE instantiation
+- Verified NUM_PE scalability
+
+RTL:
+
+
+RTL/Day10/pe_array.v
+
+
+Testbench:
+
+
+Testbench/Day10/pe_array_tb.v
+
+
+Simulation:
+
+
+NUM_PE = 4
+
+PE0 PASS
+PE1 PASS
+PE2 PASS
+PE3 PASS
+
+
+Key concepts:
+
+- Hardware generation
+- Module reuse
+- Parallel MAC architecture
+- Parameterized RTL design
 
 ================================
 # 11. Engineering Habits Learned
