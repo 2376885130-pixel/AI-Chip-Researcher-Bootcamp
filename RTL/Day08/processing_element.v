@@ -28,8 +28,9 @@ begin
 
     else
 
-        partial_sum <= partial_sum + product;
-
+partial_sum <= partial_sum +
+               {{(ACC_WIDTH-2*DATA_WIDTH){product[2*DATA_WIDTH-1]}},
+                product};
 end
 
 
