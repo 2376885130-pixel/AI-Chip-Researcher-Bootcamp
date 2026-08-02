@@ -908,7 +908,32 @@ Tracks:
 - Completed tasks
 - Future objectives
 
+## Latest Progress
 
+### Day11 - Systolic PE Chain
+
+Completed:
+
+- Parameterized PE Unit
+- Weight stationary datapath
+- Partial sum pipeline
+- Activation forwarding
+- Parameterized PE Chain
+
+Verification:
+
+
+PE_CHAIN TEST PASS
+Final Result = 14
+
+
+Hardware concepts:
+
+- Dataflow architecture
+- Systolic pipeline
+- Weight stationary
+- Partial sum accumulation
+- Generate-based hardware scaling
 
 ---
 

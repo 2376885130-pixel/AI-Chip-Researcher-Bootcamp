@@ -1581,6 +1581,62 @@ Key concepts:
 - Parallel MAC architecture
 - Parameterized RTL design
 
+## Day11 - Systolic PE Chain Architecture
+
+Status: PASS
+
+Completed:
+
+- Designed parameterized PE Unit
+- Added weight register with load_weight control
+- Implemented partial sum accumulation datapath
+- Implemented activation forwarding path
+- Built parameterized PE Chain using generate loop
+- Supported configurable NUM_PE
+- Supported parameterized weight input bus
+
+Architecture:
+
+
+Activation
+|
+v
+
+PE0 ---> PE1 ---> PE2 ---> PE3
+
+|
+v
+
+Partial Sum Accumulation
+
+
+Verification:
+
+- pe_unit_tb.v
+    - TEST1 PASS
+    - TEST2 PASS
+
+- pe_chain_tb.v
+    - PE_CHAIN TEST PASS
+    - Final Result = 14
+
+Simulation:
+
+- Icarus Verilog PASS
+- GTKWave VCD generated
+
+Key Learning:
+
+Day11 moved from independent PE computation to dataflow architecture.
+
+Learned:
+
+- Weight Stationary concept
+- Partial Sum propagation
+- PE pipeline structure
+- Systolic Array basic data movement
+- Parameterized hardware generation
+
 ================================
 # 11. Engineering Habits Learned
 ================================
