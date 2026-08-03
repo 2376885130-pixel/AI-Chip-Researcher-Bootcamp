@@ -935,6 +935,62 @@ Hardware concepts:
 - Partial sum accumulation
 - Generate-based hardware scaling
 
+## Current Progress
+
+
+### AI Accelerator Development
+
+
+Completed:
+
+
+### RTL IP
+
+- MAC Unit
+- Processing Element
+- Parameterized PE
+- PE Array
+
+
+### Accelerator Architecture
+
+- Systolic Array structure
+- Controller FSM
+- Data Loader Framework
+
+
+Current Stage:
+
+
+Accelerator integration and memory architecture.
+
+
+Roadmap:
+
+
+RTL Design
+
+↓
+
+MAC
+
+↓
+
+PE
+
+↓
+
+Systolic Array
+
+↓
+
+Tile Matrix Engine
+
+↓
+
+NPU Architecture
+
+
 ---
 
 
