@@ -1,0 +1,860 @@
+$date
+	Tue Aug  4 11:40:03 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module accelerator_top_tb $end
+$var wire 1 ! done $end
+$var parameter 32 " ACC_WIDTH $end
+$var parameter 32 # DATA_WIDTH $end
+$var reg 1 $ clk $end
+$var reg 1 % reset $end
+$var reg 1 & start $end
+$scope module dut $end
+$var wire 1 $ clk $end
+$var wire 1 ! done $end
+$var wire 1 % reset $end
+$var wire 1 & start $end
+$var wire 1 ' output_valid $end
+$var wire 1 ( load_weight $end
+$var wire 1 ) compute $end
+$var wire 1 * clear_acc $end
+$var parameter 32 + ACC_WIDTH $end
+$var parameter 32 , DATA_WIDTH $end
+$scope module activation_mem $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var wire 1 ) load $end
+$var parameter 32 - DATA_WIDTH $end
+$upscope $end
+$scope module array_inst $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var wire 1 ) enable $end
+$var wire 1 * clear_acc $end
+$var parameter 32 . ACC_WIDTH $end
+$var parameter 32 / DATA_WIDTH $end
+$scope begin INPUT[0] $end
+$var parameter 2 0 i $end
+$upscope $end
+$scope begin INPUT[1] $end
+$var parameter 2 1 i $end
+$upscope $end
+$scope begin INPUT[2] $end
+$var parameter 3 2 i $end
+$upscope $end
+$scope begin INPUT[3] $end
+$var parameter 3 3 i $end
+$upscope $end
+$scope begin ROW[0] $end
+$var parameter 2 4 row $end
+$scope begin COL[0] $end
+$var parameter 2 5 col $end
+$scope module pe_inst $end
+$var wire 8 6 activation_in [7:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var wire 8 7 weight_in [7:0] $end
+$var wire 16 8 product [15:0] $end
+$var wire 1 ) enable $end
+$var wire 1 * clear_acc $end
+$var parameter 32 9 ACC_WIDTH $end
+$var parameter 32 : DATA_WIDTH $end
+$var reg 32 ; accumulator [31:0] $end
+$var reg 8 < activation_out [7:0] $end
+$var reg 32 = psum_out [31:0] $end
+$var reg 8 > weight_out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin COL[1] $end
+$var parameter 2 ? col $end
+$scope module pe_inst $end
+$var wire 8 @ activation_in [7:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var wire 8 A weight_in [7:0] $end
+$var wire 16 B product [15:0] $end
+$var wire 1 ) enable $end
+$var wire 1 * clear_acc $end
+$var parameter 32 C ACC_WIDTH $end
+$var parameter 32 D DATA_WIDTH $end
+$var reg 32 E accumulator [31:0] $end
+$var reg 8 F activation_out [7:0] $end
+$var reg 32 G psum_out [31:0] $end
+$var reg 8 H weight_out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin COL[2] $end
+$var parameter 3 I col $end
+$scope module pe_inst $end
+$var wire 8 J activation_in [7:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var wire 8 K weight_in [7:0] $end
+$var wire 16 L product [15:0] $end
+$var wire 1 ) enable $end
+$var wire 1 * clear_acc $end
+$var parameter 32 M ACC_WIDTH $end
+$var parameter 32 N DATA_WIDTH $end
+$var reg 32 O accumulator [31:0] $end
+$var reg 8 P activation_out [7:0] $end
+$var reg 32 Q psum_out [31:0] $end
+$var reg 8 R weight_out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin COL[3] $end
+$var parameter 3 S col $end
+$scope module pe_inst $end
+$var wire 8 T activation_in [7:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var wire 8 U weight_in [7:0] $end
+$var wire 16 V product [15:0] $end
+$var wire 1 ) enable $end
+$var wire 1 * clear_acc $end
+$var parameter 32 W ACC_WIDTH $end
+$var parameter 32 X DATA_WIDTH $end
+$var reg 32 Y accumulator [31:0] $end
+$var reg 8 Z activation_out [7:0] $end
+$var reg 32 [ psum_out [31:0] $end
+$var reg 8 \ weight_out [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin ROW[1] $end
+$var parameter 2 ] row $end
+$scope begin COL[0] $end
+$var parameter 2 ^ col $end
+$scope module pe_inst $end
+$var wire 8 _ activation_in [7:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var wire 8 ` weight_in [7:0] $end
+$var wire 16 a product [15:0] $end
+$var wire 1 ) enable $end
+$var wire 1 * clear_acc $end
+$var parameter 32 b ACC_WIDTH $end
+$var parameter 32 c DATA_WIDTH $end
+$var reg 32 d accumulator [31:0] $end
+$var reg 8 e activation_out [7:0] $end
+$var reg 32 f psum_out [31:0] $end
+$var reg 8 g weight_out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin COL[1] $end
+$var parameter 2 h col $end
+$scope module pe_inst $end
+$var wire 8 i activation_in [7:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var wire 8 j weight_in [7:0] $end
+$var wire 16 k product [15:0] $end
+$var wire 1 ) enable $end
+$var wire 1 * clear_acc $end
+$var parameter 32 l ACC_WIDTH $end
+$var parameter 32 m DATA_WIDTH $end
+$var reg 32 n accumulator [31:0] $end
+$var reg 8 o activation_out [7:0] $end
+$var reg 32 p psum_out [31:0] $end
+$var reg 8 q weight_out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin COL[2] $end
+$var parameter 3 r col $end
+$scope module pe_inst $end
+$var wire 8 s activation_in [7:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var wire 8 t weight_in [7:0] $end
+$var wire 16 u product [15:0] $end
+$var wire 1 ) enable $end
+$var wire 1 * clear_acc $end
+$var parameter 32 v ACC_WIDTH $end
+$var parameter 32 w DATA_WIDTH $end
+$var reg 32 x accumulator [31:0] $end
+$var reg 8 y activation_out [7:0] $end
+$var reg 32 z psum_out [31:0] $end
+$var reg 8 { weight_out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin COL[3] $end
+$var parameter 3 | col $end
+$scope module pe_inst $end
+$var wire 8 } activation_in [7:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var wire 8 ~ weight_in [7:0] $end
+$var wire 16 !" product [15:0] $end
+$var wire 1 ) enable $end
+$var wire 1 * clear_acc $end
+$var parameter 32 "" ACC_WIDTH $end
+$var parameter 32 #" DATA_WIDTH $end
+$var reg 32 $" accumulator [31:0] $end
+$var reg 8 %" activation_out [7:0] $end
+$var reg 32 &" psum_out [31:0] $end
+$var reg 8 '" weight_out [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin ROW[2] $end
+$var parameter 3 (" row $end
+$scope begin COL[0] $end
+$var parameter 2 )" col $end
+$scope module pe_inst $end
+$var wire 8 *" activation_in [7:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var wire 8 +" weight_in [7:0] $end
+$var wire 16 ," product [15:0] $end
+$var wire 1 ) enable $end
+$var wire 1 * clear_acc $end
+$var parameter 32 -" ACC_WIDTH $end
+$var parameter 32 ." DATA_WIDTH $end
+$var reg 32 /" accumulator [31:0] $end
+$var reg 8 0" activation_out [7:0] $end
+$var reg 32 1" psum_out [31:0] $end
+$var reg 8 2" weight_out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin COL[1] $end
+$var parameter 2 3" col $end
+$scope module pe_inst $end
+$var wire 8 4" activation_in [7:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var wire 8 5" weight_in [7:0] $end
+$var wire 16 6" product [15:0] $end
+$var wire 1 ) enable $end
+$var wire 1 * clear_acc $end
+$var parameter 32 7" ACC_WIDTH $end
+$var parameter 32 8" DATA_WIDTH $end
+$var reg 32 9" accumulator [31:0] $end
+$var reg 8 :" activation_out [7:0] $end
+$var reg 32 ;" psum_out [31:0] $end
+$var reg 8 <" weight_out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin COL[2] $end
+$var parameter 3 =" col $end
+$scope module pe_inst $end
+$var wire 8 >" activation_in [7:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var wire 8 ?" weight_in [7:0] $end
+$var wire 16 @" product [15:0] $end
+$var wire 1 ) enable $end
+$var wire 1 * clear_acc $end
+$var parameter 32 A" ACC_WIDTH $end
+$var parameter 32 B" DATA_WIDTH $end
+$var reg 32 C" accumulator [31:0] $end
+$var reg 8 D" activation_out [7:0] $end
+$var reg 32 E" psum_out [31:0] $end
+$var reg 8 F" weight_out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin COL[3] $end
+$var parameter 3 G" col $end
+$scope module pe_inst $end
+$var wire 8 H" activation_in [7:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var wire 8 I" weight_in [7:0] $end
+$var wire 16 J" product [15:0] $end
+$var wire 1 ) enable $end
+$var wire 1 * clear_acc $end
+$var parameter 32 K" ACC_WIDTH $end
+$var parameter 32 L" DATA_WIDTH $end
+$var reg 32 M" accumulator [31:0] $end
+$var reg 8 N" activation_out [7:0] $end
+$var reg 32 O" psum_out [31:0] $end
+$var reg 8 P" weight_out [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin ROW[3] $end
+$var parameter 3 Q" row $end
+$scope begin COL[0] $end
+$var parameter 2 R" col $end
+$scope module pe_inst $end
+$var wire 8 S" activation_in [7:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var wire 8 T" weight_in [7:0] $end
+$var wire 16 U" product [15:0] $end
+$var wire 1 ) enable $end
+$var wire 1 * clear_acc $end
+$var parameter 32 V" ACC_WIDTH $end
+$var parameter 32 W" DATA_WIDTH $end
+$var reg 32 X" accumulator [31:0] $end
+$var reg 8 Y" activation_out [7:0] $end
+$var reg 32 Z" psum_out [31:0] $end
+$var reg 8 [" weight_out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin COL[1] $end
+$var parameter 2 \" col $end
+$scope module pe_inst $end
+$var wire 8 ]" activation_in [7:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var wire 8 ^" weight_in [7:0] $end
+$var wire 16 _" product [15:0] $end
+$var wire 1 ) enable $end
+$var wire 1 * clear_acc $end
+$var parameter 32 `" ACC_WIDTH $end
+$var parameter 32 a" DATA_WIDTH $end
+$var reg 32 b" accumulator [31:0] $end
+$var reg 8 c" activation_out [7:0] $end
+$var reg 32 d" psum_out [31:0] $end
+$var reg 8 e" weight_out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin COL[2] $end
+$var parameter 3 f" col $end
+$scope module pe_inst $end
+$var wire 8 g" activation_in [7:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var wire 8 h" weight_in [7:0] $end
+$var wire 16 i" product [15:0] $end
+$var wire 1 ) enable $end
+$var wire 1 * clear_acc $end
+$var parameter 32 j" ACC_WIDTH $end
+$var parameter 32 k" DATA_WIDTH $end
+$var reg 32 l" accumulator [31:0] $end
+$var reg 8 m" activation_out [7:0] $end
+$var reg 32 n" psum_out [31:0] $end
+$var reg 8 o" weight_out [7:0] $end
+$upscope $end
+$upscope $end
+$scope begin COL[3] $end
+$var parameter 3 p" col $end
+$scope module pe_inst $end
+$var wire 8 q" activation_in [7:0] $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var wire 8 r" weight_in [7:0] $end
+$var wire 16 s" product [15:0] $end
+$var wire 1 ) enable $end
+$var wire 1 * clear_acc $end
+$var parameter 32 t" ACC_WIDTH $end
+$var parameter 32 u" DATA_WIDTH $end
+$var reg 32 v" accumulator [31:0] $end
+$var reg 8 w" activation_out [7:0] $end
+$var reg 32 x" psum_out [31:0] $end
+$var reg 8 y" weight_out [7:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope begin WEIGHT_INPUT[0] $end
+$var parameter 2 z" c $end
+$upscope $end
+$scope begin WEIGHT_INPUT[1] $end
+$var parameter 2 {" c $end
+$upscope $end
+$scope begin WEIGHT_INPUT[2] $end
+$var parameter 3 |" c $end
+$upscope $end
+$scope begin WEIGHT_INPUT[3] $end
+$var parameter 3 }" c $end
+$upscope $end
+$upscope $end
+$scope module ctrl $end
+$var wire 1 $ clk $end
+$var wire 1 % reset $end
+$var wire 1 & start $end
+$var parameter 3 ~" CLEAR $end
+$var parameter 3 !# COMPUTE $end
+$var parameter 3 "# IDLE $end
+$var parameter 3 ## LOAD_WEIGHT $end
+$var parameter 3 $# OUTPUT $end
+$var reg 1 * clear_acc $end
+$var reg 1 ) compute $end
+$var reg 3 %# compute_count [2:0] $end
+$var reg 1 ( load_weight $end
+$var reg 1 ' output_valid $end
+$var reg 3 &# state [2:0] $end
+$upscope $end
+$scope module weight_mem $end
+$var wire 1 $ clk $end
+$var wire 1 ( load $end
+$var wire 1 % reset $end
+$var parameter 32 '# DATA_WIDTH $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+b1000 '#
+b11 $#
+b1 ##
+b0 "#
+b10 !#
+b100 ~"
+b11 }"
+b10 |"
+b1 {"
+b0 z"
+b1000 u"
+b100000 t"
+b11 p"
+b1000 k"
+b100000 j"
+b10 f"
+b1000 a"
+b100000 `"
+b1 \"
+b1000 W"
+b100000 V"
+b0 R"
+b11 Q"
+b1000 L"
+b100000 K"
+b11 G"
+b1000 B"
+b100000 A"
+b10 ="
+b1000 8"
+b100000 7"
+b1 3"
+b1000 ."
+b100000 -"
+b0 )"
+b10 ("
+b1000 #"
+b100000 ""
+b11 |
+b1000 w
+b100000 v
+b10 r
+b1000 m
+b100000 l
+b1 h
+b1000 c
+b100000 b
+b0 ^
+b1 ]
+b1000 X
+b100000 W
+b11 S
+b1000 N
+b100000 M
+b10 I
+b1000 D
+b100000 C
+b1 ?
+b1000 :
+b100000 9
+b0 5
+b0 4
+b11 3
+b10 2
+b1 1
+b0 0
+b1000 /
+b100000 .
+b1000 -
+b1000 ,
+b100000 +
+b1000 #
+b100000 "
+$end
+#0
+$dumpvars
+bx &#
+bx %#
+bx y"
+bx x"
+bx w"
+bx v"
+bx s"
+bx r"
+bx q"
+bx o"
+bx n"
+bx m"
+bx l"
+bx i"
+bx h"
+bx g"
+bx e"
+bx d"
+bx c"
+bx b"
+bx _"
+bx ^"
+bx ]"
+bx ["
+bx Z"
+bx Y"
+bx X"
+bx U"
+bx T"
+bx S"
+bx P"
+bx O"
+bx N"
+bx M"
+bx J"
+bx I"
+bx H"
+bx F"
+bx E"
+bx D"
+bx C"
+bx @"
+bx ?"
+bx >"
+bx <"
+bx ;"
+bx :"
+bx 9"
+bx 6"
+bx 5"
+bx 4"
+bx 2"
+bx 1"
+bx 0"
+bx /"
+bx ,"
+bx +"
+bx *"
+bx '"
+bx &"
+bx %"
+bx $"
+bx !"
+bx ~
+bx }
+bx {
+bx z
+bx y
+bx x
+bx u
+bx t
+bx s
+bx q
+bx p
+bx o
+bx n
+bx k
+bx j
+bx i
+bx g
+bx f
+bx e
+bx d
+bx a
+bx `
+bx _
+bx \
+bx [
+bx Z
+bx Y
+bx V
+bx U
+bx T
+bx R
+bx Q
+bx P
+bx O
+bx L
+bx K
+bx J
+bx H
+bx G
+bx F
+bx E
+bx B
+bx A
+bx @
+bx >
+bx =
+bx <
+bx ;
+bx 8
+bx 7
+bx 6
+x*
+x)
+x(
+x'
+0&
+1%
+0$
+x!
+$end
+#5000
+0*
+0!
+0'
+0)
+0(
+b0 %#
+b0 &#
+b0 V
+b0 U
+b0 L
+b0 K
+b0 B
+b0 A
+b0 8
+b0 7
+b0 U"
+b0 S"
+b0 ,"
+b0 *"
+b0 a
+b0 _
+b0 6
+b0 =
+b0 ;
+b0 >
+b0 `
+b0 <
+b0 @
+b0 G
+b0 E
+b0 k
+b0 H
+b0 j
+b0 F
+b0 J
+b0 Q
+b0 O
+b0 u
+b0 R
+b0 t
+b0 P
+b0 T
+b0 [
+b0 Y
+b0 !"
+b0 \
+b0 ~
+b0 Z
+b0 f
+b0 d
+b0 g
+b0 +"
+b0 e
+b0 i
+b0 p
+b0 n
+b0 6"
+b0 q
+b0 5"
+b0 o
+b0 s
+b0 z
+b0 x
+b0 @"
+b0 {
+b0 ?"
+b0 y
+b0 }
+b0 &"
+b0 $"
+b0 J"
+b0 '"
+b0 I"
+b0 %"
+b0 1"
+b0 /"
+b0 2"
+b0 T"
+b0 0"
+b0 4"
+b0 ;"
+b0 9"
+b0 _"
+b0 <"
+b0 ^"
+b0 :"
+b0 >"
+b0 E"
+b0 C"
+b0 i"
+b0 F"
+b0 h"
+b0 D"
+b0 H"
+b0 O"
+b0 M"
+b0 s"
+b0 P"
+b0 r"
+b0 N"
+b0 Z"
+b0 X"
+b0 ["
+b0 Y"
+b0 ]"
+b0 d"
+b0 b"
+b0 e"
+b0 c"
+b0 g"
+b0 n"
+b0 l"
+b0 o"
+b0 m"
+b0 q"
+b0 x"
+b0 v"
+b0 y"
+b0 w"
+1$
+#10000
+0$
+#15000
+1$
+#20000
+0$
+0%
+#25000
+1$
+#30000
+0$
+1&
+#35000
+1(
+b1 &#
+1$
+#40000
+0$
+0&
+#45000
+1)
+0(
+b10 &#
+b111 A
+b101 7
+1$
+#50000
+0$
+#55000
+b111 H
+b111 j
+b1111 a
+b101 >
+b101 `
+b11 _
+b101 8
+b1 6
+b1 %#
+1$
+#60000
+0$
+#65000
+b10 %#
+b101 ;
+b111 B
+b1 <
+b1 @
+b1111 d
+b101 g
+b101 +"
+b10101 k
+b11 e
+b11 i
+b111 q
+b111 5"
+1$
+#70000
+0$
+#75000
+b111 <"
+b111 ^"
+b101 2"
+b101 T"
+b10101 n
+b11 o
+b11 s
+b1111 f
+b11110 d
+b111 E
+b1 F
+b1 J
+b101 =
+b1010 ;
+b11 %#
+1$
+#80000
+0$
+#85000
+1!
+1'
+0)
+b0 %#
+b11 &#
+b1010 =
+b1111 ;
+b111 G
+b1110 E
+b1 P
+b1 T
+b11110 f
+b101101 d
+b10101 p
+b101010 n
+b11 y
+b11 }
+b101 ["
+b111 e"
+1$
+#90000
+0$
+#95000
+1*
+0!
+0'
+b11 %"
+b101010 p
+b101101 f
+b1 Z
+b1110 G
+b1111 =
+b100 &#
+1$
+#100000
+0$
+#105000
+0*
+b0 &#
+b0 ;
+b0 E
+b0 d
+b0 n
+1$
+#110000
+0$
+#115000
+b0 p
+b0 f
+b0 G
+b0 =
+1$
+#120000
+0$
+#125000
+1$
+#130000
+0$
+#135000
+1$
+#140000
+0$
+#145000
+1$
+#150000
+0$
+#155000
+1$
+#160000
+0$

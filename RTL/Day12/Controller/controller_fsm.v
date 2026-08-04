@@ -4,7 +4,6 @@ module controller_fsm(
 
     input wire reset,
 
-
     input wire start,
 
 
@@ -15,7 +14,6 @@ module controller_fsm(
     output reg output_valid,
 
     output reg clear_acc
-
 
 );
 
@@ -36,6 +34,10 @@ parameter CLEAR = 3'd4;
 reg [2:0] state;
 
 
+reg [2:0] compute_count;
+
+
+
 always @(posedge clk)
 
 begin
@@ -43,11 +45,18 @@ begin
 
     if(reset)
 
+    begin
+
         state <= IDLE;
 
+        compute_count <= 0;
+
+    end
 
 
-    else begin
+    else
+
+    begin
 
 
         case(state)
@@ -56,6 +65,9 @@ begin
         IDLE:
 
         begin
+
+            compute_count <= 0;
+
 
             if(start)
 
@@ -67,42 +79,84 @@ begin
 
         LOAD_WEIGHT:
 
+        begin
+
             state <= COMPUTE;
+
+            compute_count <= 0;
+
+        end
+
 
 
 
         COMPUTE:
 
-            state <= OUTPUT;
+        begin
+
+
+            if(compute_count == 3)
+
+            begin
+
+                state <= OUTPUT;
+
+                compute_count <= 0;
+
+            end
+
+
+            else
+
+            begin
+
+                compute_count <= compute_count + 1;
+
+            end
+
+
+        end
+
 
 
 
         OUTPUT:
 
+        begin
+
             state <= CLEAR;
+
+        end
 
 
 
         CLEAR:
 
+        begin
+
             state <= IDLE;
+
+        end
 
 
 
         default:
 
+        begin
+
             state <= IDLE;
+
+            compute_count <= 0;
+
+        end
 
 
         endcase
 
 
-
     end
 
-
 end
-
 
 
 
@@ -124,6 +178,7 @@ begin
 
 
     case(state)
+
 
 
     LOAD_WEIGHT:

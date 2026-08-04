@@ -990,6 +990,77 @@ Tile Matrix Engine
 
 NPU Architecture
 
+## Day12 - AI Accelerator Framework Integration ✅
+
+Day12 completed the first complete accelerator framework integration.
+
+Implemented:
+
+* Processing Element (PE)
+* 4×4 Systolic Array Framework
+* Controller FSM
+* Weight Loader
+* Activation Loader
+* Accelerator Top
+
+Architecture:
+
+```
+             START
+
+               |
+
+        Controller FSM
+
+          /        \
+
+         /          \
+
+Weight Loader   Activation Loader
+
+         \          /
+
+          \        /
+
+        Systolic Array
+
+               |
+
+             RESULT
+
+               |
+
+              DONE
+
+```
+
+Verification:
+
+```
+PE Unit                    PASS
+
+Systolic Array Framework   PASS
+
+Controller FSM             PASS
+
+Weight Loader              PASS
+
+Activation Loader          PASS
+
+Accelerator Top            PASS
+```
+
+Key lessons:
+
+* Non-blocking assignment introduces clock-cycle latency.
+* Hardware verification must match architecture intent.
+* Systolic arrays rely on controlled data movement.
+* Accelerator performance depends on compute, dataflow, and control together.
+
+Day12 milestone:
+
+Completed transition from individual RTL components to an integrated AI Accelerator Framework.
+
 
 ---
 
