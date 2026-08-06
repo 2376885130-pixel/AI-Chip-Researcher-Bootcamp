@@ -1795,6 +1795,377 @@ Need to learn:
 
 Accelerator integration verification.
 
+# AI-Chip-Researcher-Bootcamp Progress
+
+## Day13 - AI Accelerator Architecture Analysis
+
+### Goal
+
+深入理解 Day12 Accelerator Integration 架构，从 RTL 模块设计进入 AI 芯片系统架构理解。
+
+本日重点不是增加新的 RTL，而是分析已有 Accelerator Framework 中各模块的职责、数据流和控制关系。
+
+---
+
+# Day13 Learning Summary
+
+## 1. Accelerator Top Architecture
+
+分析：
+
+```
+accelerator_top.v
+```
+
+理解完整 Accelerator 的层次结构：
+
+```
+Accelerator
+
+├── Controller FSM
+│
+├── Weight Loader
+│
+├── Activation Loader
+│
+└── Systolic Array
+        |
+        |
+       PE Array
+```
+
+核心思想：
+
+一个 AI Accelerator 由：
+
+* Control Path
+* Data Path
+* Compute Engine
+
+共同组成。
+
+---
+
+# 2. Controller FSM Analysis
+
+学习：
+
+```
+controller_fsm.v
+```
+
+理解 FSM 在 Accelerator 中的作用：
+
+状态：
+
+```
+IDLE
+
+↓
+
+LOAD_WEIGHT
+
+↓
+
+COMPUTE
+
+↓
+
+OUTPUT
+
+↓
+
+CLEAR
+```
+
+FSM 负责：
+
+* 状态管理
+* 控制信号生成
+* 计算流程调度
+
+FSM 不负责：
+
+* 乘法
+* 加法
+* MAC计算
+
+实现：
+
+Control Path 与 Data Path 分离。
+
+---
+
+# 3. Weight Loader Analysis
+
+学习：
+
+```
+weight_loader.v
+```
+
+理解：
+
+Weight Loader 属于数据路径。
+
+作用：
+
+向 Compute Engine 提供权重数据。
+
+当前版本：
+
+固定权重输入：
+
+```
+weight = [5,7,0,0]
+```
+
+属于教学版 Buffer/Register 模型。
+
+未来升级方向：
+
+```
+DRAM
+
+↓
+
+DMA
+
+↓
+
+SRAM Weight Buffer
+
+↓
+
+Compute Engine
+```
+
+---
+
+# 4. Activation Loader Analysis
+
+学习：
+
+```
+activation_loader.v
+```
+
+理解 Activation 与 Weight 的区别：
+
+|      | Weight        | Activation        |
+| ---- | ------------- | ----------------- |
+| 来源   | 模型参数          | 中间计算结果            |
+| 变化   | 固定            | 动态                |
+| 复用   | 高             | 低                 |
+| 存储策略 | Weight Buffer | Activation Buffer |
+
+因此真实 NPU 通常分开管理。
+
+---
+
+# 5. Systolic Array Analysis
+
+学习：
+
+```
+systolic_array_4x4.v
+```
+
+理解：
+
+4×4 Systolic Array：
+
+```
+16 PE
+```
+
+数据流：
+
+Activation:
+
+```
+左 → 右
+```
+
+Weight:
+
+```
+上 → 下
+```
+
+每个 PE 同时执行：
+
+```
+MAC
++
+Data Forwarding
+```
+
+---
+
+# 6. PE Unit Analysis
+
+学习：
+
+```
+pe_unit.v
+```
+
+理解 PE 是 Accelerator 最基本计算单元。
+
+功能：
+
+```
+Multiply
+
++
+
+Accumulate
+
++
+
+Forward
+```
+
+核心计算：
+
+```
+accumulator =
+accumulator + activation * weight
+```
+
+---
+
+# Day13 Architecture Insights
+
+## Control Path
+
+负责：
+
+```
+什么时候计算
+什么时候加载
+什么时候输出
+```
+
+模块：
+
+```
+Controller FSM
+```
+
+---
+
+## Data Path
+
+负责：
+
+```
+数据如何移动
+数据如何计算
+```
+
+模块：
+
+```
+Loader
+
+Systolic Array
+
+PE
+```
+
+---
+
+# Engineering Improvements Identified
+
+当前 Day12 Accelerator：
+
+* Fixed latency
+* Fixed weight
+* Fixed activation
+* No memory interface
+* No compute done handshake
+
+未来升级方向：
+
+```
+Memory Interface
+
++
+
+SRAM Buffer
+
++
+
+DMA
+
++
+
+Compute Done Signal
+
++
+
+Pipeline Control
+```
+
+---
+
+# Day13 Achievement
+
+完成：
+
+从 RTL Module Designer
+
+向
+
+AI Accelerator Architecture Designer
+
+的理解升级。
+
+## Day14
+
+Status
+
+✅ Completed
+
+Implemented
+
+- NPU Controller
+- Data Fetch Controller
+- Weight Buffer
+- Activation Buffer
+- Output Buffer
+- Dot Product Engine
+- NPU Top
+- Full Testbench
+
+Verification
+
+PASS
+
+Simulation
+
+PASS
+
+Waveform
+
+PASS
+
+Final Result
+
+26
+
+Skills Learned
+
+- Controller integration
+- Memory hierarchy
+- Fetch scheduling
+- SRAM timing
+- Dot-product accelerator
+- Output buffering
+- Full-chip verification
+
 ================================
 # 11. Engineering Habits Learned
 ================================

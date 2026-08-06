@@ -1061,6 +1061,194 @@ Day12 milestone:
 
 Completed transition from individual RTL components to an integrated AI Accelerator Framework.
 
+# Day13 - Accelerator Architecture Understanding
+
+Day13 focuses on understanding the architecture behind the Day12 AI Accelerator Framework.
+
+Instead of creating new RTL modules, the goal is to analyze how multiple hardware blocks cooperate to form a complete accelerator.
+
+---
+
+## Architecture Overview
+
+The accelerator consists of:
+
+```
+Accelerator
+
+├── Controller FSM
+│
+├── Weight Loader
+│
+├── Activation Loader
+│
+└── Systolic Array
+        |
+        |
+       PE Units
+```
+
+---
+
+## Key Concepts Learned
+
+### 1. Control Path vs Data Path
+
+Modern AI accelerators separate:
+
+### Control Path
+
+Responsible for:
+
+* scheduling
+* state management
+* generating control signals
+
+Implemented by:
+
+```
+controller_fsm
+```
+
+---
+
+### Data Path
+
+Responsible for:
+
+* moving data
+* performing computation
+
+Implemented by:
+
+```
+weight_loader
+
+activation_loader
+
+systolic_array
+
+PE
+```
+
+---
+
+## 2. FSM Role
+
+FSM does not perform computation.
+
+It controls:
+
+```
+IDLE
+
+LOAD_WEIGHT
+
+COMPUTE
+
+OUTPUT
+
+CLEAR
+```
+
+The FSM decides when computation happens, while PE units execute MAC operations.
+
+---
+
+## 3. Systolic Array
+
+A 4×4 Systolic Array contains:
+
+```
+16 Processing Elements
+```
+
+Each PE performs:
+
+```
+Multiply + Accumulate
+```
+
+Data movement:
+
+Activation:
+
+```
+horizontal flow
+```
+
+Weight:
+
+```
+vertical flow
+```
+
+This enables massive parallel computation.
+
+---
+
+## 4. Future NPU Upgrade Direction
+
+The current accelerator is a learning framework.
+
+Future improvements:
+
+```
+CPU Interface
+
+↓
+
+Memory Controller
+
+↓
+
+SRAM Buffer
+
+↓
+
+Scheduler
+
+↓
+
+Systolic Array
+
+↓
+
+Result
+```
+
+Important future topics:
+
+* DMA
+* SRAM architecture
+* Tile scheduling
+* Pipeline control
+* Compute handshake
+* NPU architecture
+
+Day14
+
+✔ NPU Controller
+
+✔ Data Fetch Controller
+
+✔ Weight Buffer
+
+✔ Activation Buffer
+
+✔ Output Buffer
+
+✔ Dot Product Engine
+
+✔ NPU Top
+
+✔ Complete Verification
+
+✔ GTKWave Verification
+
+Status
+
+PASS
 
 ---
 
