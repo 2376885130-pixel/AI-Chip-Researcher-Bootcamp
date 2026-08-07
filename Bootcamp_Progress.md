@@ -2166,6 +2166,45 @@ Skills Learned
 - Output buffering
 - Full-chip verification
 
+## Day15 Progress
+
+Completed Day15 deep understanding phase.
+
+Topics:
+
+- RTL hierarchy understanding
+- DUT instance concept
+- Testbench and DUT relationship
+- VCD waveform generation
+- GTKWave signal selection methodology
+
+Key learning:
+
+The DUT instance is created by the testbench:
+
+```verilog
+npu_top dut();
+
+The name dut represents the Design Under Test.
+
+Waveform hierarchy reflects Verilog module instantiation hierarchy.
+
+Debugging strategy:
+
+CPU interface
+↓
+Controller FSM
+↓
+Data Fetch
+↓
+Compute Engine
+↓
+Output Buffer
+
+Current milestone:
+
+Able to trace a complete NPU task from start command to result storage.
+
 ================================
 # 11. Engineering Habits Learned
 ================================

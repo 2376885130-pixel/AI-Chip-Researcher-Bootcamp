@@ -1250,6 +1250,59 @@ Status
 
 PASS
 
+## Day15 - Verification and Waveform Debugging
+
+
+Day15 focuses on understanding the verification environment and RTL debugging.
+
+
+### Key Concepts
+
+
+#### DUT Hierarchy
+
+The testbench instantiates the NPU:
+
+```verilog
+npu_top dut();
+
+The hierarchy becomes:
+
+npu_tb
+
+└── dut
+
+    ├── Controller
+
+    ├── Fetch Controller
+
+    ├── Compute Engine
+
+    ├── Memory Blocks
+
+    └── Output Buffer
+
+GTKWave displays this hierarchy because the testbench exports the simulation hierarchy using:
+
+$dumpvars(0,npu_tb);
+Debug Workflow
+
+Verify system handshake
+
+start → processing → done
+
+Verify controller FSM
+
+Verify memory data movement
+
+Verify MAC computation
+
+Verify output storage
+
+Day15 milestone:
+
+Understanding how RTL modules become a complete simulated hardware system.
+
 ---
 
 
