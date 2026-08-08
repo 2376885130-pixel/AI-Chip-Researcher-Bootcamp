@@ -90,7 +90,7 @@ Future focus:
 
 Status:
 
-閴?Completed
+闁?Completed
 
 
 Completed:
@@ -114,7 +114,7 @@ Completed:
 
 Status:
 
-棣冩瘈 In Progress
+妫ｅ啯鐦?In Progress
 
 
 Completed:
@@ -210,32 +210,32 @@ Architecture path:
 Logic Gate
 
 
-閳?
+闁?
 
 RTL Module
 
 
-閳?
+闁?
 
 MAC Unit
 
 
-閳?
+闁?
 
 Processing Element
 
 
-閳?
+闁?
 
 Systolic Array
 
 
-閳?
+闁?
 
 Matrix Multiplication Accelerator
 
 
-閳?
+闁?
 
 NPU Architecture
 
@@ -262,13 +262,13 @@ Files:
 
 Day01/
 
-閳规壕鏀㈤埞鈧?and_gate.v
+闁宠澹曢弨銏ゅ煘閳?and_gate.v
 
-閳规壕鏀㈤埞鈧?and_gate_tb.v
+闁宠澹曢弨銏ゅ煘閳?and_gate_tb.v
 
-閳规壕鏀㈤埞鈧?and_gate_sim
+闁宠澹曢弨銏ゅ煘閳?and_gate_sim
 
-閳规柡鏀㈤埞鈧?and_gate.vcd
+闁宠鏌￠弨銏ゅ煘閳?and_gate.vcd
 
 
 
@@ -277,13 +277,13 @@ Workflow:
 
 RTL
 
-閳?
+闁?
 Compilation
 
-閳?
+闁?
 Simulation
 
-閳?
+闁?
 Waveform Verification
 
 
@@ -299,7 +299,7 @@ Key Concepts:
 Result:
 
 
-閴?Completed
+闁?Completed
 
 
 
@@ -321,7 +321,7 @@ File:
 
 RTL/Day02/
 
-閳规柡鏀㈤埞鈧?mux2.v
+闁宠鏌￠弨銏ゅ煘閳?mux2.v
 
 
 
@@ -344,7 +344,7 @@ File:
 
 RTL/Day02/
 
-閳规柡鏀㈤埞鈧?mux8.v
+闁宠鏌￠弨銏ゅ煘閳?mux8.v
 
 
 
@@ -362,9 +362,9 @@ Verification:
 
 Testbench/Day02/
 
-閳规壕鏀㈤埞鈧?mux2_tb.v
+闁宠澹曢弨銏ゅ煘閳?mux2_tb.v
 
-閳规柡鏀㈤埞鈧?mux8_tb.v
+闁宠鏌￠弨銏ゅ煘閳?mux8_tb.v
 
 
 
@@ -372,9 +372,9 @@ Simulation:
 
 Simulation/Day02/
 
-閳规壕鏀㈤埞鈧?mux2
+闁宠澹曢弨銏ゅ煘閳?mux2
 
-閳规柡鏀㈤埞鈧?mux8
+闁宠鏌￠弨銏ゅ煘閳?mux8
 
 
 
@@ -388,7 +388,7 @@ not software execution.
 Result:
 
 
-閴?Completed
+闁?Completed
 
 
 
@@ -490,13 +490,13 @@ Verification:
 
 Testbench/Day03/
 
-閳规壕鏀㈤埞鈧?dff_tb.v
+闁宠澹曢弨銏ゅ煘閳?dff_tb.v
 
-閳规壕鏀㈤埞鈧?dff_reset_tb.v
+闁宠澹曢弨銏ゅ煘閳?dff_reset_tb.v
 
-閳规壕鏀㈤埞鈧?register8_tb.v
+闁宠澹曢弨銏ゅ煘閳?register8_tb.v
 
-閳规柡鏀㈤埞鈧?counter8_tb.v
+闁宠鏌￠弨銏ゅ煘閳?counter8_tb.v
 
 
 
@@ -504,13 +504,13 @@ Simulation:
 
 Simulation/Day03/
 
-閳规壕鏀㈤埞鈧?dff
+闁宠澹曢弨銏ゅ煘閳?dff
 
-閳规壕鏀㈤埞鈧?dff_reset
+闁宠澹曢弨銏ゅ煘閳?dff_reset
 
-閳规壕鏀㈤埞鈧?register8
+闁宠澹曢弨銏ゅ煘閳?register8
 
-閳规柡鏀㈤埞鈧?counter8
+闁宠鏌￠弨銏ゅ煘閳?counter8
 
 
 
@@ -530,7 +530,7 @@ Sequential logic introduces:
 Result:
 
 
-閴?Completed
+闁?Completed
 # Day04
 
 ## Finite State Machine Controller
@@ -559,12 +559,12 @@ Files:
 
 RTL/Day04/
 
-閳规柡鏀㈤埞鈧?traffic_light_fsm.v
+闁宠鏌￠弨銏ゅ煘閳?traffic_light_fsm.v
 
 
 Testbench/Day04/
 
-閳规柡鏀㈤埞鈧?traffic_light_tb.v
+闁宠鏌￠弨銏ゅ煘閳?traffic_light_tb.v
 
 
 Simulation:
@@ -582,7 +582,7 @@ into synchronous hardware control logic.
 
 Result:
 
-閴?Completed
+闁?Completed
 
 # Day05
 
@@ -611,12 +611,12 @@ Files:
 
 RTL/Day05/
 
-閳规柡鏀㈤埞鈧?counter_param.v
+闁宠鏌￠弨銏ゅ煘閳?counter_param.v
 
 
 Testbench/Day05/
 
-閳规柡鏀㈤埞鈧?counter_param_tb.v
+闁宠鏌￠弨銏ゅ煘閳?counter_param_tb.v
 
 
 Simulation:
@@ -633,7 +633,7 @@ Parameterized RTL creates reusable hardware IP.
 
 Result:
 
-閴?Completed
+闁?Completed
 ---
 # Day06
 
@@ -663,12 +663,12 @@ Files:
 
 RTL/Day06/
 
-閳规柡鏀㈤埞鈧?register_bank.v
+闁宠鏌￠弨銏ゅ煘閳?register_bank.v
 
 
 Testbench/Day06/
 
-閳规柡鏀㈤埞鈧?register_bank_tb.v
+闁宠鏌￠弨銏ゅ煘閳?register_bank_tb.v
 
 
 Simulation:
@@ -700,9 +700,9 @@ Result:
 
 
 
-閴?Completed
+闁?Completed
 
-## Day07 - Arithmetic IP Design 閴?
+## Day07 - Arithmetic IP Design 闁?
 Completed:
 
 - Parameterized Adder IP
@@ -733,7 +733,7 @@ Git Milestone:
 - Adder IP completed
 - Multiplier IP completed
 - MAC Unit completed
-## Day08 - Processing Element (PE) 閴?
+## Day08 - Processing Element (PE) 闁?
 
 Implemented the first AI Accelerator compute unit.
 
@@ -757,7 +757,7 @@ PE = Multiplier + Adder + Register
 The PE performs:
 
 
-partial_sum = partial_sum + activation 鑴?weight
+partial_sum = partial_sum + activation 閼?weight
 
 
 
@@ -766,10 +766,10 @@ This module is the basic building block for:
 
 PE Array
 
-閳?
+闁?
 Systolic Array
 
-閳?
+闁?
 AI Accelerator
 
 
@@ -863,10 +863,10 @@ Features:
 Verification:
 
 - NUM_PE = 4
-- PE0: 2鑴? = 6
-- PE1: 4鑴? = 20
-- PE2: 6鑴? = 42
-- PE3: 8鑴? = 72
+- PE0: 2閼? = 6
+- PE1: 4閼? = 20
+- PE2: 6閼? = 42
+- PE3: 8閼? = 72
 
 All tests passed.
 
@@ -957,28 +957,28 @@ Roadmap:
 
 RTL Design
 
-閳?
+闁?
 MAC
 
-閳?
+闁?
 PE
 
-閳?
+闁?
 Systolic Array
 
-閳?
+闁?
 Tile Matrix Engine
 
-閳?
+闁?
 NPU Architecture
 
-## Day12 - AI Accelerator Framework Integration 閴?
+## Day12 - AI Accelerator Framework Integration 闁?
 Day12 completed the first complete accelerator framework integration.
 
 Implemented:
 
 * Processing Element (PE)
-* 4鑴? Systolic Array Framework
+* 4閼? Systolic Array Framework
 * Controller FSM
 * Weight Loader
 * Activation Loader
@@ -1057,10 +1057,10 @@ The accelerator consists of:
 ```
 Accelerator
 
-閳规壕鏀㈤埞鈧?Controller FSM
-閳?閳规壕鏀㈤埞鈧?Weight Loader
-閳?閳规壕鏀㈤埞鈧?Activation Loader
-閳?閳规柡鏀㈤埞鈧?Systolic Array
+闁宠澹曢弨銏ゅ煘閳?Controller FSM
+闁?闁宠澹曢弨銏ゅ煘閳?Weight Loader
+闁?闁宠澹曢弨銏ゅ煘閳?Activation Loader
+闁?闁宠鏌￠弨銏ゅ煘閳?Systolic Array
         |
         |
        PE Units
@@ -1135,7 +1135,7 @@ The FSM decides when computation happens, while PE units execute MAC operations.
 
 ## 3. Systolic Array
 
-A 4鑴? Systolic Array contains:
+A 4閼? Systolic Array contains:
 
 ```
 16 Processing Elements
@@ -1174,19 +1174,19 @@ Future improvements:
 ```
 CPU Interface
 
-閳?
+闁?
 Memory Controller
 
-閳?
+闁?
 SRAM Buffer
 
-閳?
+闁?
 Scheduler
 
-閳?
+闁?
 Systolic Array
 
-閳?
+闁?
 Result
 ```
 
@@ -1201,23 +1201,23 @@ Important future topics:
 
 Day14
 
-閴?NPU Controller
+闁?NPU Controller
 
-閴?Data Fetch Controller
+闁?Data Fetch Controller
 
-閴?Weight Buffer
+闁?Weight Buffer
 
-閴?Activation Buffer
+闁?Activation Buffer
 
-閴?Output Buffer
+闁?Output Buffer
 
-閴?Dot Product Engine
+闁?Dot Product Engine
 
-閴?NPU Top
+闁?NPU Top
 
-閴?Complete Verification
+闁?Complete Verification
 
-閴?GTKWave Verification
+闁?GTKWave Verification
 
 Status
 
@@ -1243,17 +1243,17 @@ The hierarchy becomes:
 
 npu_tb
 
-閳规柡鏀㈤埞鈧?dut
+闁宠鏌￠弨銏ゅ煘閳?dut
 
-    閳规壕鏀㈤埞鈧?Controller
+    闁宠澹曢弨銏ゅ煘閳?Controller
 
-    閳规壕鏀㈤埞鈧?Fetch Controller
+    闁宠澹曢弨銏ゅ煘閳?Fetch Controller
 
-    閳规壕鏀㈤埞鈧?Compute Engine
+    闁宠澹曢弨銏ゅ煘閳?Compute Engine
 
-    閳规壕鏀㈤埞鈧?Memory Blocks
+    闁宠澹曢弨銏ゅ煘閳?Memory Blocks
 
-    閳规柡鏀㈤埞鈧?Output Buffer
+    闁宠鏌￠弨銏ゅ煘閳?Output Buffer
 
 GTKWave displays this hierarchy because the testbench exports the simulation hierarchy using:
 
@@ -1262,7 +1262,7 @@ Debug Workflow
 
 Verify system handshake
 
-start 閳?processing 閳?done
+start 闁?processing 闁?done
 
 Verify controller FSM
 
@@ -1370,7 +1370,40 @@ Key understanding:
 Day17 milestone:
 
 The matrix multiply was parallelized 44x with 4 MAC units.
-Next: systolic array dataflow for data reuse.
+Next: Day19 systolic NPU integration.
+
+## Day18 - Systolic Array Dataflow
+
+Status
+
+PASS
+
+Completed:
+
+- 2x2 systolic array reusing Day14 pe_unit IP (4 PEs)
+- Skew scheduling: A[i][k] enters row i at cycle k+i, B[k][j] enters col j at cycle k+j
+- Activations flow left->right, weights flow top->down
+- RTL/Day18/systolic_matmul_2x2.v
+- Verified C = [19 22; 43 50] (matches Day16/17)
+- Verified negatives: C = [-2 7; 6 -15]
+
+Latency:
+
+- Day18 systolic: 5 cycles (clear + fill + compute + drain)
+- vs Day16 serial: ~88, Day17 parallel: 2
+
+Key understanding:
+
+- Skew scheduling is the key to systolic GEMM
+- Data reuse: one input in, reused by many PEs
+- Systolic wins at scale: I/O bandwidth O(N) not O(N^2)
+- Tiny matrices: parallel MACs beat systolic on latency
+
+Day18 milestone:
+
+The 2x2 matrix multiply ran through a real systolic dataflow
+with data reuse, matching Day16/17 results.
+Next: Day19 systolic NPU integration.
 
 ---
 
@@ -1393,16 +1426,16 @@ Code execution is not equal to knowledge.
 
 Problem
 
-閳?
+闁?
 Locate layer
 
-閳?
+闁?
 Verify hypothesis
 
-閳?
+闁?
 Fix
 
-閳?
+闁?
 Confirm
 
 
@@ -1443,39 +1476,39 @@ until it is verified.
 
 AI-Chip-Researcher-Bootcamp
 
-閳规壕鏀㈤埞鈧?RTL
+闁宠澹曢弨銏ゅ煘閳?RTL
 
-閳?閳规壕鏀㈤埞鈧?Day02
+闁?闁宠澹曢弨銏ゅ煘閳?Day02
 
-閳?閳规柡鏀㈤埞鈧?Day03
+闁?闁宠鏌￠弨銏ゅ煘閳?Day03
 
-閳规壕鏀㈤埞鈧?Testbench
+闁宠澹曢弨銏ゅ煘閳?Testbench
 
-閳?閳规壕鏀㈤埞鈧?Day02
+闁?闁宠澹曢弨銏ゅ煘閳?Day02
 
-閳?閳规柡鏀㈤埞鈧?Day03
+闁?闁宠鏌￠弨銏ゅ煘閳?Day03
 
-閳规壕鏀㈤埞鈧?Simulation
+闁宠澹曢弨銏ゅ煘閳?Simulation
 
-閳?閳规壕鏀㈤埞鈧?Day02
+闁?闁宠澹曢弨銏ゅ煘閳?Day02
 
-閳?閳规柡鏀㈤埞鈧?Day03
+闁?闁宠鏌￠弨銏ゅ煘閳?Day03
 
-閳规壕鏀㈤埞鈧?Python
+闁宠澹曢弨銏ゅ煘閳?Python
 
-閳规壕鏀㈤埞鈧?Papers
+闁宠澹曢弨銏ゅ煘閳?Papers
 
-閳规壕鏀㈤埞鈧?Docs
+闁宠澹曢弨銏ゅ煘閳?Docs
 
-閳?閳规壕鏀㈤埞鈧?AI_Mentor_DNA.md
+闁?闁宠澹曢弨銏ゅ煘閳?AI_Mentor_DNA.md
 
-閳规壕鏀㈤埞鈧?Bootcamp_Progress.md
+闁宠澹曢弨銏ゅ煘閳?Bootcamp_Progress.md
 
-閳规壕鏀㈤埞鈧?Environment_Log.md
+闁宠澹曢弨銏ゅ煘閳?Environment_Log.md
 
-閳规壕鏀㈤埞鈧?Engineering_Debrief.md
+闁宠澹曢弨銏ゅ煘閳?Engineering_Debrief.md
 
-閳规柡鏀㈤埞鈧?README.md
+闁宠鏌￠弨銏ゅ煘閳?README.md
 
 
 

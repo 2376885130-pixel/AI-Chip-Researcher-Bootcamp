@@ -56,6 +56,7 @@ Completed:
 - NPU Dot Product Framework (Day14)
 - Matrix Multiplication Workload (Day16)
 - Parallel Matrix Multiply (Day17)
+- Systolic Array Dataflow (Day18)
 
 Current Focus:
 
@@ -89,7 +90,7 @@ RTL Design Fundamentals
 Current Day:
 
 
-Day 17 Completed
+Day 18 Completed
 
 
 
@@ -179,7 +180,7 @@ Version:
 Status:
 
 
-闁?Installed
+闂?Installed
 
 
 
@@ -206,7 +207,7 @@ Version:
 Status:
 
 
-闁?Installed
+闂?Installed
 
 
 
@@ -233,7 +234,7 @@ Version:
 Status:
 
 
-闁?Installed
+闂?Installed
 
 
 
@@ -260,7 +261,7 @@ Version:
 Status:
 
 
-闁?Installed
+闂?Installed
 
 
 
@@ -358,7 +359,7 @@ SSH Key Location:
 Status:
 
 
-闁?Verified
+闂?Verified
 
 
 
@@ -408,59 +409,59 @@ Current Structure:
 AI-Chip-Researcher-Bootcamp
 
 
-闁宠澹曢弨銏ゅ煘閳?RTL
+闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?RTL
 
-闁?  闁宠澹曢弨銏ゅ煘閳?Day02
+闂?  闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Day02
 
-闁?  闁宠澹曢弨銏ゅ煘閳?Day03
+闂?  闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Day03
 
-闁?  闁宠澹曢弨銏ゅ煘閳?Day04
+闂?  闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Day04
 
-闁?  闁宠澹曢弨銏ゅ煘閳?Day05
+闂?  闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Day05
 
-闁?  闁宠鏌￠弨銏ゅ煘閳?Day06
-
-
-闁宠澹曢弨銏ゅ煘閳?Testbench
-
-闁?  闁宠澹曢弨銏ゅ煘閳?Day02
-
-闁?  闁宠澹曢弨銏ゅ煘閳?Day03
-
-闁?  闁宠澹曢弨銏ゅ煘閳?Day04
-
-闁?  闁宠澹曢弨銏ゅ煘閳?Day05
-
-闁?  闁宠鏌￠弨銏ゅ煘閳?Day06
+闂?  闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?Day06
 
 
-闁宠澹曢弨銏ゅ煘閳?Simulation
+闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Testbench
 
-闁?  闁宠澹曢弨銏ゅ煘閳?Day02
+闂?  闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Day02
 
-闁?  闁宠澹曢弨銏ゅ煘閳?Day03
+闂?  闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Day03
 
-闁?  闁宠澹曢弨銏ゅ煘閳?Day04
+闂?  闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Day04
 
-闁?  闁宠澹曢弨銏ゅ煘閳?Day05
+闂?  闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Day05
 
-闁?  闁宠鏌￠弨銏ゅ煘閳?Day06
-
-
-闁宠澹曢弨銏ゅ煘閳?Python
-
-闁宠澹曢弨銏ゅ煘閳?Papers
-
-闁宠澹曢弨銏ゅ煘閳?Docs
+闂?  闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?Day06
 
 
-闁宠澹曢弨銏ゅ煘閳?README.md
+闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Simulation
 
-闁宠澹曢弨銏ゅ煘閳?Bootcamp_Progress.md
+闂?  闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Day02
 
-闁宠澹曢弨銏ゅ煘閳?Environment_Log.md
+闂?  闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Day03
 
-闁宠鏌￠弨銏ゅ煘閳?Engineering_Debrief.md
+闂?  闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Day04
+
+闂?  闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Day05
+
+闂?  闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?Day06
+
+
+闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Python
+
+闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Papers
+
+闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Docs
+
+
+闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?README.md
+
+闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Bootcamp_Progress.md
+
+闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Environment_Log.md
+
+闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?Engineering_Debrief.md
 
 
 
@@ -514,16 +515,16 @@ Parameterized Register Bank IP
 Completed:
 
 
-闁?WSL2
+闂?WSL2
 
 
-闁?Ubuntu
+闂?Ubuntu
 
 
-闁?Linux user
+闂?Linux user
 
 
-闁?sudo permission
+闂?sudo permission
 
 
 
@@ -716,7 +717,7 @@ not software execution flow.
 Result:
 
 
-闁?Completed
+闂?Completed
 
 
 
@@ -819,7 +820,7 @@ wire represents hardware connection.
 Result:
 
 
-闁?Completed
+闂?Completed
 
 
 
@@ -860,7 +861,7 @@ Key Concepts:
 Result:
 
 
-闁?Completed
+闂?Completed
 
 
 
@@ -939,12 +940,12 @@ Hardware connection:
 FSM
 
 
-闁?
+闂?
 
 Controller
 
 
-闁?
+闂?
 
 Accelerator Scheduler
 
@@ -953,7 +954,7 @@ Accelerator Scheduler
 Result:
 
 
-闁?Completed
+闂?Completed
 
 
 
@@ -1035,17 +1036,17 @@ Hardware connection:
 Parameterized Module
 
 
-闁?
+闂?
 
 Reusable IP
 
 
-闁?
+闂?
 
 MAC/FIFO/Buffer
 
 
-闁?
+闂?
 
 AI Accelerator
 
@@ -1054,7 +1055,7 @@ AI Accelerator
 Result:
 
 
-闁?Completed
+闂?Completed
 
 
 
@@ -1099,14 +1100,14 @@ Files:
 RTL/Day06/
 
 
-闁宠鏌￠弨銏ゅ煘閳?register_bank.v
+闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?register_bank.v
 
 
 
 Testbench/Day06/
 
 
-闁宠鏌￠弨銏ゅ煘閳?register_bank_tb.v
+闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?register_bank_tb.v
 
 
 
@@ -1159,12 +1160,12 @@ Parameterized RTL:
 Parameter
 
 
-闁?
+闂?
 
 Hardware Configuration
 
 
-闁?
+闂?
 
 Reusable Hardware IP
 
@@ -1176,17 +1177,17 @@ Hardware connection:
 Register Bank
 
 
-闁?
+闂?
 
 Processing Element
 
 
-闁?
+闂?
 
 MAC Unit
 
 
-闁?
+闂?
 
 AI Accelerator
 
@@ -1195,7 +1196,7 @@ AI Accelerator
 Result:
 
 
-闁?Completed
+闂?Completed
 ## Day07 - Arithmetic IP Design
 
 Status: Completed
@@ -1234,7 +1235,7 @@ Next:
 Day08 - Processing Element / Datapath Architecture
 # Day08 - Processing Element (PE)
 
-Status: Completed 闁?
+Status: Completed 闂?
 ## Completed Work
 
 ### RTL Design
@@ -1279,7 +1280,7 @@ PE = MAC + Register
 
 A PE performs:
 
-partial_sum = partial_sum + activation 閼?weight
+partial_sum = partial_sum + activation 闁?weight
 
 
 Multiple PE units can form:
@@ -1305,7 +1306,7 @@ Verified:
 
 Test1:
 
-2 閼?3
+2 闁?3
 
 Result:
 
@@ -1314,7 +1315,7 @@ partial_sum = 6
 
 Test2:
 
-4 閼?5
+4 闁?5
 
 Result:
 
@@ -1323,7 +1324,7 @@ partial_sum = 26
 
 Test3:
 
-10 閼?2
+10 闁?2
 
 Result:
 
@@ -1332,7 +1333,7 @@ partial_sum = 46
 
 Simulation:
 
-PASS 闁?
+PASS 闂?
 
 ## Debug Experience
 
@@ -1352,13 +1353,13 @@ Sequential hardware requires:
 
 Input setup
 
-闁?
+闂?
 Clock edge
 
-闁?
+闂?
 Register update
 
-闁?
+闂?
 Output verification
 
 
@@ -1473,7 +1474,7 @@ Pipeline MAC Design
 
 [x] Designed pipelined MAC RTL
 
-[x] Implemented INT8 閼?INT8 闁?INT16 multiplication
+[x] Implemented INT8 闁?INT8 闂?INT16 multiplication
 
 [x] Implemented INT32 accumulation path
 
@@ -1533,16 +1534,16 @@ Single MAC Unit
 
 Next:
 
-Multiple MAC units 闁?PE Array
+Multiple MAC units 闂?PE Array
 
 
 Future:
 
-PE Array 闁?Systolic Array 闁?NPU Accelerator
+PE Array 闂?Systolic Array 闂?NPU Accelerator
 
 ## Day10: PE Array and Parallel Computation
 
-Status: Completed 闁?
+Status: Completed 闂?
 Completed:
 
 - Reviewed Processing Element IP
@@ -1644,7 +1645,7 @@ Learned:
 Status:
 
 ```
-Completed 闁?```
+Completed 闂?```
 
 ## Completed Modules
 
@@ -1715,13 +1716,13 @@ Completed architecture:
 ```
 Controller
 
-闁?
+闂?
 Loader
 
-闁?
+闂?
 Compute Array
 
-闁?
+闂?
 Result
 ```
 
@@ -1784,103 +1785,103 @@ Accelerator integration verification.
 
 ### Goal
 
-婵烇絽宕崣鍡涙偠閸℃?Day12 Accelerator Integration 闁哄鍩栭悗顖炴晬鐏炶偐鐭?RTL 婵☆垪鈧櫕鍋ラ悹浣瑰礃椤撳憡娼诲☉妯哄汲 AI 闁间警鍨虫晶鏍寲閼姐倗鍩犻柡瀣煐閻庮垶鎮堕崱姣挎帡濡?
-闁哄牜鍓氬Λ鈺呮煂瀹ュ洤浠☉鎾崇У濡插憡鏅堕悙鎻掝潱闁哄倹澹嗗▓?RTL闁挎稑鐭侀埀顒€鏈Σ鎼佸礆閸℃鈧棄顔忛崣澶嬬畳 Accelerator Framework 濞戞搩鍘奸幃鍥熼垾铏仴闁汇劌瀚禍瀵告嫻閿濆啠鍋撴担瑙勬闁硅鍠楃粊锕傚椽鐏炴儳浠橀柛鎺曟硾閸櫻呭寲濮瑰洠鍋?
+濠电儑绲藉畷顒勫矗閸℃稒鍋犻柛鈩冾嚧?Day12 Accelerator Integration 闂佸搫顑堥崺鏍倵椤栫偞鏅悘鐐跺亹閻?RTL 濠碘槅鍨埀顒冩珪閸嬨儵鎮规担鐟扮妞ゆ挸鎲″璇测槈濡搫姹?AI 闂侀棿璀﹂崹铏櫠閺嶎偄瀵查柤濮愬€楅崺鐘绘煛鐎ｎ厼鐓愰柣搴灦閹爼宕卞В鎸庡浮婵?
+闂佸搫鐗滈崜姘涢埡鍛厒鐎广儱娲ゆ禒顖氣槈閹惧磭校婵℃彃鎲￠弲鍫曟倷閹绘帩娼遍梺鍝勫€规竟鍡椻枔?RTL闂佹寧绋戦惌渚€鍩€椤掆偓閺堫剙危閹间礁绀嗛柛鈩冾焽閳ь剝妫勯蹇涘矗婢跺鐣?Accelerator Framework 婵炴垶鎼╅崢濂稿箖閸ヮ灛鐔煎灳閾忣偄浠撮梺姹囧妼鐎氼垱绂嶇€靛憡瀚婚柨婵嗗暊閸嬫挻鎷呯憴鍕啀闂佺顕栭崰妤冪矈閿曞倸妞介悘鐐村劤娴犳﹢鏌涢幒鏇熺【闁告鍛婵懓娲犻崑?
 ---
 
 # Day13 Learning Summary
 
 ## 1. Accelerator Top Architecture
 
-闁告帒妫欓悗浠嬫晬?
+闂佸憡甯掑Λ娆撴倵娴犲鏅?
 ```
 accelerator_top.v
 ```
 
-闁荤偛妫滆閻庣懓鏈弳?Accelerator 闁汇劌瀚惇鏉库枎閿涘嫮娉㈤柡瀣缁?
+闂佽崵鍋涘Λ婊嗩暰闁诲海鎳撻張顒勫汲?Accelerator 闂佹眹鍔岀€氼剟鎯囬弶搴撴瀻闁挎稑瀚▔銏ゆ煛鐎ｎ亜顏电紒?
 ```
 Accelerator
 
-闁宠澹曢弨銏ゅ煘閳?Controller FSM
-闁?闁宠澹曢弨銏ゅ煘閳?Weight Loader
-闁?闁宠澹曢弨銏ゅ煘閳?Activation Loader
-闁?闁宠鏌￠弨銏ゅ煘閳?Systolic Array
+闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Controller FSM
+闂?闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Weight Loader
+闂?闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Activation Loader
+闂?闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?Systolic Array
         |
         |
        PE Array
 ```
 
-闁哄秶顭堢缓楣冨箑濠靛洤鍘掗柨?
-濞戞挴鍋撳☉?AI Accelerator 闁汇垺鍞荤槐?
+闂佸搫绉堕…鍫㈢紦妤ｅ啫绠戞繝闈涙搐閸樻帡鏌?
+婵炴垶鎸撮崑鎾斥槈?AI Accelerator 闂佹眹鍨洪崬鑽ゆ?
 * Control Path
 * Data Path
 * Compute Engine
 
-闁稿繐宕幃鎾剁磼閸曨剙鐏囬柕?
+闂佺绻愬畷顒勫箖閹惧墎纾奸柛鏇ㄥ墮閻忓洭鏌?
 ---
 
 # 2. Controller FSM Analysis
 
-閻庢冻缂氱弧鍕晬?
+闁诲孩鍐荤紓姘卞姬閸曨垱鏅?
 ```
 controller_fsm.v
 ```
 
-闁荤偛妫滆 FSM 闁?Accelerator 濞戞搩鍘惧▓鎴炴媴濠婂懏鏆忛柨?
-闁绘鍩栭埀顑跨筏缁?
+闂佽崵鍋涘Λ婊嗩暰 FSM 闂?Accelerator 婵炴垶鎼╅崢鎯р枔閹寸偞濯存繝濠傛噺閺嗗繘鏌?
+闂佺粯顭堥崺鏍焵椤戣法绛忕紒?
 ```
 IDLE
 
-闁?
+闂?
 LOAD_WEIGHT
 
-闁?
+闂?
 COMPUTE
 
-闁?
+闂?
 OUTPUT
 
-闁?
+闂?
 CLEAR
 ```
 
-FSM 閻犳劗鍠曢惌妤呮晬?
-* 闁绘鍩栭埀顑胯兌椤撴悂鎮?* 闁硅矇鍐ㄧ厬濞ｅ洠鈧啿濞囬柣銏㈠枑閸?* 閻犱緤绱曢悾璇裁规担琛℃煠閻犲鍟€?
-FSM 濞戞挸绉风粈瀣嫻閿濆繒绐?
-* 濞戞梹蓱绾?* 闁告梻濮电涵?* MAC閻犱緤绱曢悾?
-閻庡湱鍋熼獮鍥晬?
-Control Path 濞?Data Path 闁告帒妫涢‖鍥Υ?
+FSM 闁荤姵鍔楅崰鏇㈡儗濡ゅ懏鏅?
+* 闂佺粯顭堥崺鏍焵椤戣儻鍏屾い鎾存倐閹?* 闂佺鐭囬崘銊у幀婵烇絽娲犻埀顒€鍟挎繛鍥煟閵忋垹鏋戦柛?* 闁荤姳绶ょ槐鏇㈡偩鐠囪瑙勬媴鐞涒剝鐓犻柣鐘差儏閸燁偆鈧?
+FSM 婵炴垶鎸哥粔椋庣矆鐎ｎ剚瀚婚柨婵嗙箳缁?
+* 婵炴垶姊硅摫缁?* 闂佸憡姊绘慨鐢垫兜?* MAC闁荤姳绶ょ槐鏇㈡偩?
+闁诲骸婀遍崑鐔肩嵁閸ヮ剚鏅?
+Control Path 婵?Data Path 闂佸憡甯掑Λ娑⑩€栭崶顒€违?
 ---
 
 # 3. Weight Loader Analysis
 
-閻庢冻缂氱弧鍕晬?
+闁诲孩鍐荤紓姘卞姬閸曨垱鏅?
 ```
 weight_loader.v
 ```
 
-闁荤偛妫滆闁?
-Weight Loader 閻忕偟鍋樼花顒勫极閻楀牆绁﹂悹渚灠缁剁偤濡?
-濞达絾绮庨弫銈夋晬?
-闁?Compute Engine 闁圭粯鍔掔欢鐢稿级閸愵喖娅㈤柡浣哄瀹撲線濡?
-鐟滅増鎸告晶鐘绘偋閸喐鎷遍柨?
-闁搞儱鎼悾楣冨级閸愵喖娅㈤弶鍫熸尭閸欏棝鏁?
+闂佽崵鍋涘Λ婊嗩暰闂?
+Weight Loader 闁诲繒鍋熼崑妯艰姳椤掑嫬鏋侀柣妤€鐗嗙粊锕傛偣娓氼垰鐏犵紒鍓佸仱婵?
+婵炶揪绲剧划搴ㄥ极閵堝鏅?
+闂?Compute Engine 闂佸湱绮崝鎺旀閻㈢绾ч柛鎰靛枛濞呫垽鏌℃担鍝勵暭鐎规挷绶氭俊?
+閻熸粎澧楅幐鍛婃櫠閻樼粯鍋嬮柛顐ゅ枑閹烽亶鏌?
+闂佹悶鍎遍幖顐︽偩妤ｅ啫绾ч柛鎰靛枛濞呫垽寮堕崼鐔稿碍闁告瑥妫濋弫?
 ```
 weight = [5,7,0,0]
 ```
 
-閻忕偟鍋樼花顒勫极濞嗗浚鍔呴柣?Buffer/Register 婵☆垪鈧磭鈧兘濡?
-闁哄牜浜濆鐢稿础閸モ晠鐛撻柡鍌滄嚀閹粓鏁?
+闁诲繒鍋熼崑妯艰姳椤掑嫬鏋佹繛鍡楁禋閸斿懘鏌?Buffer/Register 濠碘槅鍨埀顒€纾埀顒傚厴婵?
+闂佸搫鐗滄禍婵嗩焽閻㈢纭€闁搞儮鏅犻悰鎾绘煛閸屾粍鍤€闁诡喗绮撻弫?
 ```
 DRAM
 
-闁?
+闂?
 DMA
 
-闁?
+闂?
 SRAM Weight Buffer
 
-闁?
+闂?
 Compute Engine
 ```
 
@@ -1888,48 +1889,48 @@ Compute Engine
 
 # 4. Activation Loader Analysis
 
-閻庢冻缂氱弧鍕晬?
+闁诲孩鍐荤紓姘卞姬閸曨垱鏅?
 ```
 activation_loader.v
 ```
 
-闁荤偛妫滆 Activation 濞?Weight 闁汇劌瀚亸顖炲礆椤愵剛绐?
+闂佽崵鍋涘Λ婊嗩暰 Activation 婵?Weight 闂佹眹鍔岀€氼剛浜搁鐐茬妞ゆ劦鍓涚粣?
 |      | Weight        | Activation        |
 | ---- | ------------- | ----------------- |
-| 闁哄鍎茬花?  | 婵☆垪鈧磭鈧兘宕ｉ崒娑欐          | 濞戞搩鍙冨Λ璺ㄦ媼閿涘嫮鏆紓浣规尰閻?           |
-| 闁告瑦锚鐎?  | 闁搞儱鎼悾?           | 闁告柣鍔嶉埀?               |
-| 濠㈣泛绉堕弫?  | 濡?            | 濞?                |
-| 閻庢稒锚閸嬪秶绮甸弽顐ｆ | Weight Buffer | Activation Buffer |
+| 闂佸搫顦崕鑼姳?  | 濠碘槅鍨埀顒€纾埀顒傚厴瀹曪綁宕掑☉娆愵啀          | 婵炴垶鎼╅崣鍐ㄎ涚捄銊﹀闁挎稑瀚弳顒傜磽娴ｈ灏伴柣?           |
+| 闂佸憡鐟﹂敋閻?  | 闂佹悶鍎遍幖顐︽偩?           | 闂佸憡鏌ｉ崝宥夊焵?               |
+| 婵犮垼娉涚粔鍫曞极?  | 婵?            | 婵?                |
+| 闁诲孩绋掗敋闁稿绉剁划鐢稿冀椤愶絾顓?| Weight Buffer | Activation Buffer |
 
-闁搞儳濮甸婵嬫儑閻旈鏉?NPU 闂侇偅鑹鹃悥鍫曞礆閸℃纾荤紒鐙呯磿閹﹪濡?
+闂佹悶鍎虫慨鐢割敆濠靛鍎戦柣鏃堫棑閺?NPU 闂備緡鍋呴懝楣冩偉閸洖绀嗛柛鈩冾殘绾捐崵绱掗悪鍛？闁诡喖锕俊?
 ---
 
 # 5. Systolic Array Analysis
 
-閻庢冻缂氱弧鍕晬?
+闁诲孩鍐荤紓姘卞姬閸曨垱鏅?
 ```
 systolic_array_4x4.v
 ```
 
-闁荤偛妫滆闁?
-4閼? Systolic Array闁?
+闂佽崵鍋涘Λ婊嗩暰闂?
+4闁? Systolic Array闂?
 ```
 16 PE
 ```
 
-闁轰胶澧楀畵浣该规笟濠勭獥
+闂佽桨鑳舵晶妤€鐣垫担璇ヨ绗熸繝鍕崶
 
 Activation:
 
 ```
-鐎?闁?闁?```
+閻?闂?闂?```
 
 Weight:
 
 ```
-濞?闁?濞?```
+婵?闂?婵?```
 
-婵絽绻嬮柌?PE 闁告艾鏈鍌炲箥瑜戦、鎴︽晬?
+濠殿噯绲界换瀣煂?PE 闂佸憡鑹鹃張顒€顪冮崒鐐茬鐟滄垿銆侀幋锔芥櫖?
 ```
 MAC
 +
@@ -1940,13 +1941,13 @@ Data Forwarding
 
 # 6. PE Unit Analysis
 
-閻庢冻缂氱弧鍕晬?
+闁诲孩鍐荤紓姘卞姬閸曨垱鏅?
 ```
 pe_unit.v
 ```
 
-闁荤偛妫滆 PE 闁?Accelerator 闁哄牃鍋撻柛鈺冨劋濠€鎵媼閿涘嫮鏆柛妤佹礀閸樻捇濡?
-闁告梻鍠曢崗姗€鏁?
+闂佽崵鍋涘Λ婊嗩暰 PE 闂?Accelerator 闂佸搫鐗冮崑鎾绘煕閳哄啫鍔嬫繝鈧幍顔藉闁挎稑瀚弳顒勬煕濡や焦绀€闁告ɑ鎹囨俊?
+闂佸憡姊婚崰鏇㈠礂濮椻偓閺?
 ```
 Multiply
 
@@ -1959,7 +1960,7 @@ Accumulate
 Forward
 ```
 
-闁哄秶顭堢缓鍓ф媼閿涘嫮鏆柨?
+闂佸搫绉堕…鍫㈢紦閸撗勫闁挎稑瀚弳顒勬煥?
 ```
 accumulator =
 accumulator + activation * weight
@@ -1971,11 +1972,11 @@ accumulator + activation * weight
 
 ## Control Path
 
-閻犳劗鍠曢惌妤呮晬?
+闁荤姵鍔楅崰鏇㈡儗濡ゅ懏鏅?
 ```
-濞寸姭鍋撳☉鏂跨墛濡炲倿宕愬▎鎺濆悁缂?濞寸姭鍋撳☉鏂跨墛濡炲倿宕愬▎蹇擃潱閺?濞寸姭鍋撳☉鏂跨墛濡炲倿宕愬▎鎺旂炕闁?```
+婵炲濮崑鎾斥槈閺傝法澧涙俊鐐插€垮畷鎰枎閹烘繂鎮佺紓?婵炲濮崑鎾斥槈閺傝法澧涙俊鐐插€垮畷鎰枎韫囨搩娼遍柡?婵炲濮崑鎾斥槈閺傝法澧涙俊鐐插€垮畷鎰枎閹烘梻鐐曢梺?```
 
-婵☆垪鈧櫕鍋ラ柨?
+濠碘槅鍨埀顒冩珪閸嬨儵鏌?
 ```
 Controller FSM
 ```
@@ -1984,11 +1985,11 @@ Controller FSM
 
 ## Data Path
 
-閻犳劗鍠曢惌妤呮晬?
+闁荤姵鍔楅崰鏇㈡儗濡ゅ懏鏅?
 ```
-闁轰胶澧楀畵浣逛繆閸屾瑧绉跨紒澶庮嚙婵?闁轰胶澧楀畵浣逛繆閸屾瑧绉块悹渚婄磿閻?```
+闂佽桨鑳舵晶妤€鐣垫担閫涚箚闁稿本鐟х粔璺ㄧ磼婢跺寒鍤欏┑?闂佽桨鑳舵晶妤€鐣垫担閫涚箚闁稿本鐟х粔鍧楁偣娓氬﹦纾块柣?```
 
-婵☆垪鈧櫕鍋ラ柨?
+濠碘槅鍨埀顒冩珪閸嬨儵鏌?
 ```
 Loader
 
@@ -2001,14 +2002,14 @@ PE
 
 # Engineering Improvements Identified
 
-鐟滅増鎸告晶?Day12 Accelerator闁?
+閻熸粎澧楅幐鍛婃櫠?Day12 Accelerator闂?
 * Fixed latency
 * Fixed weight
 * Fixed activation
 * No memory interface
 * No compute done handshake
 
-闁哄牜浜濆鐢稿础閸モ晠鐛撻柡鍌滄嚀閹粓鏁?
+闂佸搫鐗滄禍婵嗩焽閻㈢纭€闁搞儮鏅犻悰鎾绘煛閸屾粍鍤€闁诡喗绮撻弫?
 ```
 Memory Interface
 
@@ -2033,18 +2034,18 @@ Pipeline Control
 
 # Day13 Achievement
 
-閻庣懓鏈崹姘舵晬?
-濞?RTL Module Designer
+闁诲海鎳撻張顒勫垂濮樿埖鏅?
+婵?RTL Module Designer
 
-闁?
+闂?
 AI Accelerator Architecture Designer
 
-闁汇劌瀚幃濠勬喆閿濆懎纾崇紒鐙欎讲鍋?
+闂佹眹鍔岀€氼噣骞冩繝鍕枂闁挎繂鎳庣壕宕囩磼閻欐瑤璁查崑?
 ## Day14
 
 Status
 
-闁?Completed
+闂?Completed
 
 Implemented
 
@@ -2109,10 +2110,10 @@ Waveform hierarchy reflects Verilog module instantiation hierarchy.
 Debugging strategy:
 
 CPU interface
-闁?Controller FSM
-闁?Data Fetch
-闁?Compute Engine
-闁?Output Buffer
+闂?Controller FSM
+闂?Data Fetch
+闂?Compute Engine
+闂?Output Buffer
 
 Current milestone:
 
@@ -2120,7 +2121,7 @@ Able to trace a complete NPU task from start command to result storage.
 
 ## Day16 - Matrix Multiplication Workload
 
-Status: PASS 鉁?Completed:
+Status: PASS 閴?Completed:
 
 - First real AI workload on the NPU: C = A x B
 - Decomposed 2x2 matrix multiply into 4 dot-product tasks
@@ -2172,7 +2173,36 @@ Key engineering understanding:
 
 Next:
 
-Day18 - Systolic Array Dataflow (weight stationary)
+Day19 - Systolic NPU Integration
+
+
+## Day18 - Systolic Array Dataflow
+
+Status: PASS
+
+Completed:
+
+- Built 2x2 systolic array reusing Day14 pe_unit IP (4 PEs)
+- Applied skew scheduling: A[i][k] enters row i at cycle k+i, B[k][j] enters col j at cycle k+j
+- Dataflow: activations flow left->right, weights flow top->down
+- Created RTL/Day18/systolic_matmul_2x2.v
+- Created Testbench/Day18/systolic_matmul_2x2_tb.v
+- Verified C = [19 22; 43 50] (matches Day16/17 results)
+- Verified signed negatives: C = [-2 7; 6 -15]
+- Latency: 5 cycles (clear + fill + compute + drain)
+
+Key engineering understanding:
+
+1. Skew scheduling is the key to systolic GEMM
+2. Data reuse: each input enters the array once and flows through multiple PEs
+3. Latency ~3N-1 for NxN (pipeline fill + compute + drain)
+4. Systolic wins at scale: I/O bandwidth stays O(N), not O(N^2)
+5. Day12 array failed GEMM because boundary data was static (no skew)
+6. For tiny matrices parallel MACs (Day17) beat systolic on latency
+
+Next:
+
+Day19 - Systolic NPU Integration
 
 ================================
 # 11. Engineering Habits Learned
@@ -2191,17 +2221,17 @@ Example:
 RTL
 
 
-闁?
+闂?
 
 Simulation
 
 
-闁?
+闂?
 
 Waveform
 
 
-闁?
+闂?
 
 Confirmation
 
@@ -2220,22 +2250,22 @@ Debug by layers.
 Problem
 
 
-闁?
+闂?
 
 Locate layer
 
 
-闁?
+闂?
 
 Verify hypothesis
 
 
-闁?
+闂?
 
 Fix
 
 
-闁?
+闂?
 
 Confirm
 
@@ -2379,21 +2409,21 @@ Future topics:
 ================================
 
 
-Day18:
+Day19:
 
 
-Systolic Array Dataflow
+Systolic NPU Integration
 
 
 
 Goal:
 
 
-- Connect systolic_array_4x4 into a matrix multiply dataflow
-- Understand weight stationary scheduling
-- Achieve data reuse between PEs
-- Verify systolic result against Day17 parallel result
-- Scale toward 4x4 matrix multiply
+- Replace serial dot_product_engine with systolic compute
+- Connect buffers to the systolic array
+- Run a full 4x4 matrix multiply through the NPU
+- Verify against expected results
+- Measure acceleration vs Day14 NPU
 
 
 
