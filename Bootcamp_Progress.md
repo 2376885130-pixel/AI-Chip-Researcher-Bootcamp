@@ -53,10 +53,12 @@ Completed:
 - PE Array
 - Systolic Array Structure
 - Controller FSM Framework
+- NPU Dot Product Framework (Day14)
+- Matrix Multiplication Workload (Day16)
 
 Current Focus:
 
-Accelerator integration and dataflow scheduling.
+Accelerator integration, dataflow scheduling and workload verification.
 
 
 Target areas:
@@ -86,14 +88,14 @@ RTL Design Fundamentals
 Current Day:
 
 
-Day 06 Completed
+Day 16 Completed
 
 
 
 Current Mission:
 
 
-Develop reusable hardware IP design capability.
+Design, verify and optimize AI accelerator workload execution.
 
 
 
@@ -176,7 +178,7 @@ Version:
 Status:
 
 
-✅ Installed
+閴?Installed
 
 
 
@@ -203,7 +205,7 @@ Version:
 Status:
 
 
-✅ Installed
+閴?Installed
 
 
 
@@ -230,7 +232,7 @@ Version:
 Status:
 
 
-✅ Installed
+閴?Installed
 
 
 
@@ -257,7 +259,7 @@ Version:
 Status:
 
 
-✅ Installed
+閴?Installed
 
 
 
@@ -355,7 +357,7 @@ SSH Key Location:
 Status:
 
 
-✅ Verified
+閴?Verified
 
 
 
@@ -405,59 +407,59 @@ Current Structure:
 AI-Chip-Researcher-Bootcamp
 
 
-├── RTL
+閳规壕鏀㈤埞鈧?RTL
 
-│   ├── Day02
+閳?  閳规壕鏀㈤埞鈧?Day02
 
-│   ├── Day03
+閳?  閳规壕鏀㈤埞鈧?Day03
 
-│   ├── Day04
+閳?  閳规壕鏀㈤埞鈧?Day04
 
-│   ├── Day05
+閳?  閳规壕鏀㈤埞鈧?Day05
 
-│   └── Day06
-
-
-├── Testbench
-
-│   ├── Day02
-
-│   ├── Day03
-
-│   ├── Day04
-
-│   ├── Day05
-
-│   └── Day06
+閳?  閳规柡鏀㈤埞鈧?Day06
 
 
-├── Simulation
+閳规壕鏀㈤埞鈧?Testbench
 
-│   ├── Day02
+閳?  閳规壕鏀㈤埞鈧?Day02
 
-│   ├── Day03
+閳?  閳规壕鏀㈤埞鈧?Day03
 
-│   ├── Day04
+閳?  閳规壕鏀㈤埞鈧?Day04
 
-│   ├── Day05
+閳?  閳规壕鏀㈤埞鈧?Day05
 
-│   └── Day06
-
-
-├── Python
-
-├── Papers
-
-├── Docs
+閳?  閳规柡鏀㈤埞鈧?Day06
 
 
-├── README.md
+閳规壕鏀㈤埞鈧?Simulation
 
-├── Bootcamp_Progress.md
+閳?  閳规壕鏀㈤埞鈧?Day02
 
-├── Environment_Log.md
+閳?  閳规壕鏀㈤埞鈧?Day03
 
-└── Engineering_Debrief.md
+閳?  閳规壕鏀㈤埞鈧?Day04
+
+閳?  閳规壕鏀㈤埞鈧?Day05
+
+閳?  閳规柡鏀㈤埞鈧?Day06
+
+
+閳规壕鏀㈤埞鈧?Python
+
+閳规壕鏀㈤埞鈧?Papers
+
+閳规壕鏀㈤埞鈧?Docs
+
+
+閳规壕鏀㈤埞鈧?README.md
+
+閳规壕鏀㈤埞鈧?Bootcamp_Progress.md
+
+閳规壕鏀㈤埞鈧?Environment_Log.md
+
+閳规柡鏀㈤埞鈧?Engineering_Debrief.md
 
 
 
@@ -511,16 +513,16 @@ Parameterized Register Bank IP
 Completed:
 
 
-✅ WSL2
+閴?WSL2
 
 
-✅ Ubuntu
+閴?Ubuntu
 
 
-✅ Linux user
+閴?Linux user
 
 
-✅ sudo permission
+閴?sudo permission
 
 
 
@@ -713,7 +715,7 @@ not software execution flow.
 Result:
 
 
-✅ Completed
+閴?Completed
 
 
 
@@ -816,7 +818,7 @@ wire represents hardware connection.
 Result:
 
 
-✅ Completed
+閴?Completed
 
 
 
@@ -857,7 +859,7 @@ Key Concepts:
 Result:
 
 
-✅ Completed
+閴?Completed
 
 
 
@@ -936,14 +938,12 @@ Hardware connection:
 FSM
 
 
-↓
-
+閳?
 
 Controller
 
 
-↓
-
+閳?
 
 Accelerator Scheduler
 
@@ -952,7 +952,7 @@ Accelerator Scheduler
 Result:
 
 
-✅ Completed
+閴?Completed
 
 
 
@@ -1034,20 +1034,17 @@ Hardware connection:
 Parameterized Module
 
 
-↓
-
+閳?
 
 Reusable IP
 
 
-↓
-
+閳?
 
 MAC/FIFO/Buffer
 
 
-↓
-
+閳?
 
 AI Accelerator
 
@@ -1056,7 +1053,7 @@ AI Accelerator
 Result:
 
 
-✅ Completed
+閴?Completed
 
 
 
@@ -1101,14 +1098,14 @@ Files:
 RTL/Day06/
 
 
-└── register_bank.v
+閳规柡鏀㈤埞鈧?register_bank.v
 
 
 
 Testbench/Day06/
 
 
-└── register_bank_tb.v
+閳规柡鏀㈤埞鈧?register_bank_tb.v
 
 
 
@@ -1161,14 +1158,12 @@ Parameterized RTL:
 Parameter
 
 
-↓
-
+閳?
 
 Hardware Configuration
 
 
-↓
-
+閳?
 
 Reusable Hardware IP
 
@@ -1180,20 +1175,17 @@ Hardware connection:
 Register Bank
 
 
-↓
-
+閳?
 
 Processing Element
 
 
-↓
-
+閳?
 
 MAC Unit
 
 
-↓
-
+閳?
 
 AI Accelerator
 
@@ -1202,7 +1194,7 @@ AI Accelerator
 Result:
 
 
-✅ Completed
+閴?Completed
 ## Day07 - Arithmetic IP Design
 
 Status: Completed
@@ -1241,8 +1233,7 @@ Next:
 Day08 - Processing Element / Datapath Architecture
 # Day08 - Processing Element (PE)
 
-Status: Completed ✅
-
+Status: Completed 閴?
 ## Completed Work
 
 ### RTL Design
@@ -1287,7 +1278,7 @@ PE = MAC + Register
 
 A PE performs:
 
-partial_sum = partial_sum + activation × weight
+partial_sum = partial_sum + activation 鑴?weight
 
 
 Multiple PE units can form:
@@ -1313,7 +1304,7 @@ Verified:
 
 Test1:
 
-2 × 3
+2 鑴?3
 
 Result:
 
@@ -1322,7 +1313,7 @@ partial_sum = 6
 
 Test2:
 
-4 × 5
+4 鑴?5
 
 Result:
 
@@ -1331,7 +1322,7 @@ partial_sum = 26
 
 Test3:
 
-10 × 2
+10 鑴?2
 
 Result:
 
@@ -1340,8 +1331,7 @@ partial_sum = 46
 
 Simulation:
 
-PASS ✅
-
+PASS 閴?
 
 ## Debug Experience
 
@@ -1361,16 +1351,13 @@ Sequential hardware requires:
 
 Input setup
 
-↓
-
+閳?
 Clock edge
 
-↓
-
+閳?
 Register update
 
-↓
-
+閳?
 Output verification
 
 
@@ -1485,7 +1472,7 @@ Pipeline MAC Design
 
 [x] Designed pipelined MAC RTL
 
-[x] Implemented INT8 × INT8 → INT16 multiplication
+[x] Implemented INT8 鑴?INT8 閳?INT16 multiplication
 
 [x] Implemented INT32 accumulation path
 
@@ -1545,17 +1532,16 @@ Single MAC Unit
 
 Next:
 
-Multiple MAC units → PE Array
+Multiple MAC units 閳?PE Array
 
 
 Future:
 
-PE Array → Systolic Array → NPU Accelerator
+PE Array 閳?Systolic Array 閳?NPU Accelerator
 
 ## Day10: PE Array and Parallel Computation
 
-Status: Completed ✅
-
+Status: Completed 閴?
 Completed:
 
 - Reviewed Processing Element IP
@@ -1657,8 +1643,7 @@ Learned:
 Status:
 
 ```
-Completed ✅
-```
+Completed 閴?```
 
 ## Completed Modules
 
@@ -1729,16 +1714,13 @@ Completed architecture:
 ```
 Controller
 
-↓
-
+閳?
 Loader
 
-↓
-
+閳?
 Compute Array
 
-↓
-
+閳?
 Result
 ```
 
@@ -1801,142 +1783,104 @@ Accelerator integration verification.
 
 ### Goal
 
-深入理解 Day12 Accelerator Integration 架构，从 RTL 模块设计进入 AI 芯片系统架构理解。
-
-本日重点不是增加新的 RTL，而是分析已有 Accelerator Framework 中各模块的职责、数据流和控制关系。
-
+濞ｅ崬鍙嗛悶鍡毿?Day12 Accelerator Integration 閺嬭埖鐎敍灞肩矤 RTL 濡€虫健鐠佹崘顓告潻娑樺弳 AI 閼侯垳澧栫化鑽ょ埠閺嬭埖鐎悶鍡毿掗妴?
+閺堫剚妫╅柌宥囧仯娑撳秵妲告晶鐐插閺傛壆娈?RTL閿涘矁鈧本妲搁崚鍡樼€藉鍙夋箒 Accelerator Framework 娑擃厼鎮囧Ο鈥虫健閻ㄥ嫯浜寸拹锝冣偓浣规殶閹诡喗绁﹂崪灞惧付閸掕泛鍙х化姹団偓?
 ---
 
 # Day13 Learning Summary
 
 ## 1. Accelerator Top Architecture
 
-分析：
-
+閸掑棙鐎介敍?
 ```
 accelerator_top.v
 ```
 
-理解完整 Accelerator 的层次结构：
-
+閻炲棜袙鐎瑰本鏆?Accelerator 閻ㄥ嫬鐪板▎锛勭波閺嬪嫸绱?
 ```
 Accelerator
 
-├── Controller FSM
-│
-├── Weight Loader
-│
-├── Activation Loader
-│
-└── Systolic Array
+閳规壕鏀㈤埞鈧?Controller FSM
+閳?閳规壕鏀㈤埞鈧?Weight Loader
+閳?閳规壕鏀㈤埞鈧?Activation Loader
+閳?閳规柡鏀㈤埞鈧?Systolic Array
         |
         |
        PE Array
 ```
 
-核心思想：
-
-一个 AI Accelerator 由：
-
+閺嶇绺鹃幀婵囧厒閿?
+娑撯偓娑?AI Accelerator 閻㈡唻绱?
 * Control Path
 * Data Path
 * Compute Engine
 
-共同组成。
-
+閸忓崬鎮撶紒鍕灇閵?
 ---
 
 # 2. Controller FSM Analysis
 
-学习：
-
+鐎涳缚绡勯敍?
 ```
 controller_fsm.v
 ```
 
-理解 FSM 在 Accelerator 中的作用：
-
-状态：
-
+閻炲棜袙 FSM 閸?Accelerator 娑擃厾娈戞担婊呮暏閿?
+閻樿埖鈧緤绱?
 ```
 IDLE
 
-↓
-
+閳?
 LOAD_WEIGHT
 
-↓
-
+閳?
 COMPUTE
 
-↓
-
+閳?
 OUTPUT
 
-↓
-
+閳?
 CLEAR
 ```
 
-FSM 负责：
+FSM 鐠愮喕鐭楅敍?
+* 閻樿埖鈧胶顓搁悶?* 閹貉冨煑娣団€冲娇閻㈢喐鍨?* 鐠侊紕鐣诲ù浣衡柤鐠嬪啫瀹?
+FSM 娑撳秷绀嬬拹锝忕窗
 
-* 状态管理
-* 控制信号生成
-* 计算流程调度
-
-FSM 不负责：
-
-* 乘法
-* 加法
-* MAC计算
-
-实现：
-
-Control Path 与 Data Path 分离。
-
+* 娑旀ɑ纭?* 閸旂姵纭?* MAC鐠侊紕鐣?
+鐎圭偟骞囬敍?
+Control Path 娑?Data Path 閸掑棛顬囬妴?
 ---
 
 # 3. Weight Loader Analysis
 
-学习：
-
+鐎涳缚绡勯敍?
 ```
 weight_loader.v
 ```
 
-理解：
-
-Weight Loader 属于数据路径。
-
-作用：
-
-向 Compute Engine 提供权重数据。
-
-当前版本：
-
-固定权重输入：
-
+閻炲棜袙閿?
+Weight Loader 鐏炵偘绨弫鐗堝祦鐠侯垰绶為妴?
+娴ｆ粎鏁ら敍?
+閸?Compute Engine 閹绘劒绶甸弶鍐櫢閺佺増宓侀妴?
+瑜版挸澧犻悧鍫熸拱閿?
+閸ュ搫鐣鹃弶鍐櫢鏉堟挸鍙嗛敍?
 ```
 weight = [5,7,0,0]
 ```
 
-属于教学版 Buffer/Register 模型。
-
-未来升级方向：
-
+鐏炵偘绨弫娆忣劅閻?Buffer/Register 濡€崇€烽妴?
+閺堫亝娼甸崡鍥╅獓閺傜懓鎮滈敍?
 ```
 DRAM
 
-↓
-
+閳?
 DMA
 
-↓
-
+閳?
 SRAM Weight Buffer
 
-↓
-
+閳?
 Compute Engine
 ```
 
@@ -1944,57 +1888,49 @@ Compute Engine
 
 # 4. Activation Loader Analysis
 
-学习：
-
+鐎涳缚绡勯敍?
 ```
 activation_loader.v
 ```
 
-理解 Activation 与 Weight 的区别：
+閻炲棜袙 Activation 娑?Weight 閻ㄥ嫬灏崚顐窗
 
 |      | Weight        | Activation        |
 | ---- | ------------- | ----------------- |
-| 来源   | 模型参数          | 中间计算结果            |
-| 变化   | 固定            | 动态                |
-| 复用   | 高             | 低                 |
-| 存储策略 | Weight Buffer | Activation Buffer |
+| 閺夈儲绨?  | 濡€崇€烽崣鍌涙殶          | 娑擃參妫跨拋锛勭暬缂佹挻鐏?           |
+| 閸欐ê瀵?  | 閸ュ搫鐣?           | 閸斻劍鈧?               |
+| 婢跺秶鏁?  | 妤?            | 娴?                |
+| 鐎涙ê鍋嶇粵鏍殣 | Weight Buffer | Activation Buffer |
 
-因此真实 NPU 通常分开管理。
-
+閸ョ姵顒濋惇鐔风杽 NPU 闁艾鐖堕崚鍡楃磻缁狅紕鎮婇妴?
 ---
 
 # 5. Systolic Array Analysis
 
-学习：
-
+鐎涳缚绡勯敍?
 ```
 systolic_array_4x4.v
 ```
 
-理解：
-
-4×4 Systolic Array：
-
+閻炲棜袙閿?
+4鑴? Systolic Array閿?
 ```
 16 PE
 ```
 
-数据流：
+閺佺増宓佸ù渚婄窗
 
 Activation:
 
 ```
-左 → 右
-```
+瀹?閳?閸?```
 
 Weight:
 
 ```
-上 → 下
-```
+娑?閳?娑?```
 
-每个 PE 同时执行：
-
+濮ｅ繋閲?PE 閸氬本妞傞幍褑顢戦敍?
 ```
 MAC
 +
@@ -2005,16 +1941,13 @@ Data Forwarding
 
 # 6. PE Unit Analysis
 
-学习：
-
+鐎涳缚绡勯敍?
 ```
 pe_unit.v
 ```
 
-理解 PE 是 Accelerator 最基本计算单元。
-
-功能：
-
+閻炲棜袙 PE 閺?Accelerator 閺堚偓閸╃儤婀扮拋锛勭暬閸楁洖鍘撻妴?
+閸旂喕鍏橀敍?
 ```
 Multiply
 
@@ -2027,8 +1960,7 @@ Accumulate
 Forward
 ```
 
-核心计算：
-
+閺嶇绺剧拋锛勭暬閿?
 ```
 accumulator =
 accumulator + activation * weight
@@ -2040,16 +1972,11 @@ accumulator + activation * weight
 
 ## Control Path
 
-负责：
-
+鐠愮喕鐭楅敍?
 ```
-什么时候计算
-什么时候加载
-什么时候输出
-```
+娴犫偓娑斿牊妞傞崐娆掝吀缁?娴犫偓娑斿牊妞傞崐娆忓鏉?娴犫偓娑斿牊妞傞崐娆掔翻閸?```
 
-模块：
-
+濡€虫健閿?
 ```
 Controller FSM
 ```
@@ -2058,15 +1985,11 @@ Controller FSM
 
 ## Data Path
 
-负责：
-
+鐠愮喕鐭楅敍?
 ```
-数据如何移动
-数据如何计算
-```
+閺佺増宓佹俊鍌欑秿缁夎濮?閺佺増宓佹俊鍌欑秿鐠侊紕鐣?```
 
-模块：
-
+濡€虫健閿?
 ```
 Loader
 
@@ -2079,16 +2002,14 @@ PE
 
 # Engineering Improvements Identified
 
-当前 Day12 Accelerator：
-
+瑜版挸澧?Day12 Accelerator閿?
 * Fixed latency
 * Fixed weight
 * Fixed activation
 * No memory interface
 * No compute done handshake
 
-未来升级方向：
-
+閺堫亝娼甸崡鍥╅獓閺傜懓鎮滈敍?
 ```
 Memory Interface
 
@@ -2113,21 +2034,18 @@ Pipeline Control
 
 # Day13 Achievement
 
-完成：
+鐎瑰本鍨氶敍?
+娴?RTL Module Designer
 
-从 RTL Module Designer
-
-向
-
+閸?
 AI Accelerator Architecture Designer
 
-的理解升级。
-
+閻ㄥ嫮鎮婄憴锝呭磳缁狙佲偓?
 ## Day14
 
 Status
 
-✅ Completed
+閴?Completed
 
 Implemented
 
@@ -2192,18 +2110,44 @@ Waveform hierarchy reflects Verilog module instantiation hierarchy.
 Debugging strategy:
 
 CPU interface
-↓
-Controller FSM
-↓
-Data Fetch
-↓
-Compute Engine
-↓
-Output Buffer
+閳?Controller FSM
+閳?Data Fetch
+閳?Compute Engine
+閳?Output Buffer
 
 Current milestone:
 
 Able to trace a complete NPU task from start command to result storage.
+
+## Day16 - Matrix Multiplication Workload
+
+Status: PASS ✅
+Completed:
+
+- First real AI workload on the NPU: C = A x B
+- Decomposed 2x2 matrix multiply into 4 dot-product tasks
+- Designed data mapping: activation <- row of A, weight <- column of B
+- Created Testbench/Day16/npu_matmuls_tb.v
+- Verified C = [19 22; 43 50] end-to-end
+- Reused Day14 NPU RTL without any modification
+- Analyzed dataflow and task timing
+
+Verification:
+
+- C[0][0] = 19 PASS
+- C[0][1] = 22 PASS
+- C[1][0] = 43 PASS
+- C[1][1] = 50 PASS
+
+Key engineering understanding:
+
+1. Matrix multiplication = a set of dot products
+2. One NPU task = one dot product = one output element
+3. Data reuse: A row reused across columns, B column reused across rows
+4. Serial MAC latency: one element per cycle, VECTOR_LEN=4 -> 4 cycles
+5. One task latency ~22 cycles (fetch ~12 + compute 4 + control ~6)
+6. signed types enable correct negative-number arithmetic
+7. Serial execution is slow -> motivates systolic array parallelism
 
 ================================
 # 11. Engineering Habits Learned
@@ -2222,20 +2166,17 @@ Example:
 RTL
 
 
-↓
-
+閳?
 
 Simulation
 
 
-↓
-
+閳?
 
 Waveform
 
 
-↓
-
+閳?
 
 Confirmation
 
@@ -2254,26 +2195,22 @@ Debug by layers.
 Problem
 
 
-↓
-
+閳?
 
 Locate layer
 
 
-↓
-
+閳?
 
 Verify hypothesis
 
 
-↓
-
+閳?
 
 Fix
 
 
-↓
-
+閳?
 
 Confirm
 
@@ -2397,18 +2334,18 @@ None
 ================================
 
 
-Continue RTL architecture development.
+Continue AI accelerator architecture development.
 
 
 
 Future topics:
 
 
-- Arithmetic IP
-- MAC Unit
-- Processing Element
-- Pipeline design
-- Memory architecture
+- Systolic array integration
+- Parallel matrix multiply
+- Pipeline optimization
+- Memory hierarchy
+- Full NPU architecture
 
 
 
@@ -2417,30 +2354,21 @@ Future topics:
 ================================
 
 
-Day07:
+Day17:
 
 
-Arithmetic IP Design
+Parallel Matrix Multiplication
 
 
 
 Goal:
 
 
-Understand:
-
-
-- Adder architecture
-- Multiplier architecture
-- MAC operation
-- Datapath design
-
-
-
-Expected Project:
-
-
-Design and verify first arithmetic hardware IP.
+- Integrate systolic array into NPU compute path
+- Parallelize the 4 dot products of a 2x2 matrix multiply
+- Understand dataflow scheduling (weight stationary)
+- Compare serial vs parallel latency
+- Verify parallel result against Day16 serial result
 
 
 

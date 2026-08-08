@@ -90,7 +90,7 @@ Future focus:
 
 Status:
 
-✅ Completed
+鉁?Completed
 
 
 Completed:
@@ -114,7 +114,7 @@ Completed:
 
 Status:
 
-🚧 In Progress
+馃毀 In Progress
 
 
 Completed:
@@ -210,38 +210,32 @@ Architecture path:
 Logic Gate
 
 
-↓
-
+鈫?
 
 RTL Module
 
 
-↓
-
+鈫?
 
 MAC Unit
 
 
-↓
-
+鈫?
 
 Processing Element
 
 
-↓
-
+鈫?
 
 Systolic Array
 
 
-↓
-
+鈫?
 
 Matrix Multiplication Accelerator
 
 
-↓
-
+鈫?
 
 NPU Architecture
 
@@ -268,13 +262,13 @@ Files:
 
 Day01/
 
-├── and_gate.v
+鈹溾攢鈹€ and_gate.v
 
-├── and_gate_tb.v
+鈹溾攢鈹€ and_gate_tb.v
 
-├── and_gate_sim
+鈹溾攢鈹€ and_gate_sim
 
-└── and_gate.vcd
+鈹斺攢鈹€ and_gate.vcd
 
 
 
@@ -283,16 +277,13 @@ Workflow:
 
 RTL
 
-↓
-
+鈫?
 Compilation
 
-↓
-
+鈫?
 Simulation
 
-↓
-
+鈫?
 Waveform Verification
 
 
@@ -308,7 +299,7 @@ Key Concepts:
 Result:
 
 
-✅ Completed
+鉁?Completed
 
 
 
@@ -330,7 +321,7 @@ File:
 
 RTL/Day02/
 
-└── mux2.v
+鈹斺攢鈹€ mux2.v
 
 
 
@@ -353,7 +344,7 @@ File:
 
 RTL/Day02/
 
-└── mux8.v
+鈹斺攢鈹€ mux8.v
 
 
 
@@ -371,9 +362,9 @@ Verification:
 
 Testbench/Day02/
 
-├── mux2_tb.v
+鈹溾攢鈹€ mux2_tb.v
 
-└── mux8_tb.v
+鈹斺攢鈹€ mux8_tb.v
 
 
 
@@ -381,9 +372,9 @@ Simulation:
 
 Simulation/Day02/
 
-├── mux2
+鈹溾攢鈹€ mux2
 
-└── mux8
+鈹斺攢鈹€ mux8
 
 
 
@@ -397,7 +388,7 @@ not software execution.
 Result:
 
 
-✅ Completed
+鉁?Completed
 
 
 
@@ -499,13 +490,13 @@ Verification:
 
 Testbench/Day03/
 
-├── dff_tb.v
+鈹溾攢鈹€ dff_tb.v
 
-├── dff_reset_tb.v
+鈹溾攢鈹€ dff_reset_tb.v
 
-├── register8_tb.v
+鈹溾攢鈹€ register8_tb.v
 
-└── counter8_tb.v
+鈹斺攢鈹€ counter8_tb.v
 
 
 
@@ -513,13 +504,13 @@ Simulation:
 
 Simulation/Day03/
 
-├── dff
+鈹溾攢鈹€ dff
 
-├── dff_reset
+鈹溾攢鈹€ dff_reset
 
-├── register8
+鈹溾攢鈹€ register8
 
-└── counter8
+鈹斺攢鈹€ counter8
 
 
 
@@ -539,7 +530,7 @@ Sequential logic introduces:
 Result:
 
 
-✅ Completed
+鉁?Completed
 # Day04
 
 ## Finite State Machine Controller
@@ -568,12 +559,12 @@ Files:
 
 RTL/Day04/
 
-└── traffic_light_fsm.v
+鈹斺攢鈹€ traffic_light_fsm.v
 
 
 Testbench/Day04/
 
-└── traffic_light_tb.v
+鈹斺攢鈹€ traffic_light_tb.v
 
 
 Simulation:
@@ -591,7 +582,7 @@ into synchronous hardware control logic.
 
 Result:
 
-✅ Completed
+鉁?Completed
 
 # Day05
 
@@ -620,12 +611,12 @@ Files:
 
 RTL/Day05/
 
-└── counter_param.v
+鈹斺攢鈹€ counter_param.v
 
 
 Testbench/Day05/
 
-└── counter_param_tb.v
+鈹斺攢鈹€ counter_param_tb.v
 
 
 Simulation:
@@ -642,7 +633,7 @@ Parameterized RTL creates reusable hardware IP.
 
 Result:
 
-✅ Completed
+鉁?Completed
 ---
 # Day06
 
@@ -672,12 +663,12 @@ Files:
 
 RTL/Day06/
 
-└── register_bank.v
+鈹斺攢鈹€ register_bank.v
 
 
 Testbench/Day06/
 
-└── register_bank_tb.v
+鈹斺攢鈹€ register_bank_tb.v
 
 
 Simulation:
@@ -709,10 +700,9 @@ Result:
 
 
 
-✅ Completed
+鉁?Completed
 
-## Day07 - Arithmetic IP Design ✅
-
+## Day07 - Arithmetic IP Design 鉁?
 Completed:
 
 - Parameterized Adder IP
@@ -743,8 +733,7 @@ Git Milestone:
 - Adder IP completed
 - Multiplier IP completed
 - MAC Unit completed
-## Day08 - Processing Element (PE) ✅
-
+## Day08 - Processing Element (PE) 鉁?
 
 Implemented the first AI Accelerator compute unit.
 
@@ -768,7 +757,7 @@ PE = Multiplier + Adder + Register
 The PE performs:
 
 
-partial_sum = partial_sum + activation × weight
+partial_sum = partial_sum + activation 脳 weight
 
 
 
@@ -777,12 +766,10 @@ This module is the basic building block for:
 
 PE Array
 
-↓
-
+鈫?
 Systolic Array
 
-↓
-
+鈫?
 AI Accelerator
 
 
@@ -876,10 +863,10 @@ Features:
 Verification:
 
 - NUM_PE = 4
-- PE0: 2×3 = 6
-- PE1: 4×5 = 20
-- PE2: 6×7 = 42
-- PE3: 8×9 = 72
+- PE0: 2脳3 = 6
+- PE1: 4脳5 = 20
+- PE2: 6脳7 = 42
+- PE3: 8脳9 = 72
 
 All tests passed.
 
@@ -970,34 +957,28 @@ Roadmap:
 
 RTL Design
 
-↓
-
+鈫?
 MAC
 
-↓
-
+鈫?
 PE
 
-↓
-
+鈫?
 Systolic Array
 
-↓
-
+鈫?
 Tile Matrix Engine
 
-↓
-
+鈫?
 NPU Architecture
 
-## Day12 - AI Accelerator Framework Integration ✅
-
+## Day12 - AI Accelerator Framework Integration 鉁?
 Day12 completed the first complete accelerator framework integration.
 
 Implemented:
 
 * Processing Element (PE)
-* 4×4 Systolic Array Framework
+* 4脳4 Systolic Array Framework
 * Controller FSM
 * Weight Loader
 * Activation Loader
@@ -1076,13 +1057,10 @@ The accelerator consists of:
 ```
 Accelerator
 
-├── Controller FSM
-│
-├── Weight Loader
-│
-├── Activation Loader
-│
-└── Systolic Array
+鈹溾攢鈹€ Controller FSM
+鈹?鈹溾攢鈹€ Weight Loader
+鈹?鈹溾攢鈹€ Activation Loader
+鈹?鈹斺攢鈹€ Systolic Array
         |
         |
        PE Units
@@ -1157,7 +1135,7 @@ The FSM decides when computation happens, while PE units execute MAC operations.
 
 ## 3. Systolic Array
 
-A 4×4 Systolic Array contains:
+A 4脳4 Systolic Array contains:
 
 ```
 16 Processing Elements
@@ -1196,24 +1174,19 @@ Future improvements:
 ```
 CPU Interface
 
-↓
-
+鈫?
 Memory Controller
 
-↓
-
+鈫?
 SRAM Buffer
 
-↓
-
+鈫?
 Scheduler
 
-↓
-
+鈫?
 Systolic Array
 
-↓
-
+鈫?
 Result
 ```
 
@@ -1228,23 +1201,23 @@ Important future topics:
 
 Day14
 
-✔ NPU Controller
+鉁?NPU Controller
 
-✔ Data Fetch Controller
+鉁?Data Fetch Controller
 
-✔ Weight Buffer
+鉁?Weight Buffer
 
-✔ Activation Buffer
+鉁?Activation Buffer
 
-✔ Output Buffer
+鉁?Output Buffer
 
-✔ Dot Product Engine
+鉁?Dot Product Engine
 
-✔ NPU Top
+鉁?NPU Top
 
-✔ Complete Verification
+鉁?Complete Verification
 
-✔ GTKWave Verification
+鉁?GTKWave Verification
 
 Status
 
@@ -1270,17 +1243,17 @@ The hierarchy becomes:
 
 npu_tb
 
-└── dut
+鈹斺攢鈹€ dut
 
-    ├── Controller
+    鈹溾攢鈹€ Controller
 
-    ├── Fetch Controller
+    鈹溾攢鈹€ Fetch Controller
 
-    ├── Compute Engine
+    鈹溾攢鈹€ Compute Engine
 
-    ├── Memory Blocks
+    鈹溾攢鈹€ Memory Blocks
 
-    └── Output Buffer
+    鈹斺攢鈹€ Output Buffer
 
 GTKWave displays this hierarchy because the testbench exports the simulation hierarchy using:
 
@@ -1289,7 +1262,7 @@ Debug Workflow
 
 Verify system handshake
 
-start → processing → done
+start 鈫?processing 鈫?done
 
 Verify controller FSM
 
@@ -1329,6 +1302,39 @@ Records:
 
 - Project analysis
 - Code understanding
+## Day16 - Matrix Multiplication Workload
+
+Status
+
+PASS
+
+Completed:
+
+- First real AI workload on the NPU: C = A x B
+- Decomposed 2x2 matrix multiply into 4 dot-product tasks
+- Designed data mapping: activation <- row of A, weight <- column of B
+- Created Testbench/Day16/npu_matmuls_tb.v
+- Reused Day14 NPU RTL without modification
+- GTKWave dataflow analysis
+
+Verification:
+
+- C[0][0] = 19 PASS
+- C[0][1] = 22 PASS
+- C[1][0] = 43 PASS
+- C[1][1] = 50 PASS
+
+Key understanding:
+
+- Matrix multiplication = a set of dot products
+- One NPU task = one dot product = one output element
+- Data reuse motivates buffer hierarchy design
+- Serial MAC latency motivates systolic array parallelism
+
+Day16 milestone:
+
+The NPU executed its first real matrix multiplication workload end-to-end.
+
 - Design decisions
 - Debugging lessons
 - Hardware thinking
@@ -1356,20 +1362,16 @@ Code execution is not equal to knowledge.
 
 Problem
 
-↓
-
+鈫?
 Locate layer
 
-↓
-
+鈫?
 Verify hypothesis
 
-↓
-
+鈫?
 Fix
 
-↓
-
+鈫?
 Confirm
 
 
@@ -1410,40 +1412,39 @@ until it is verified.
 
 AI-Chip-Researcher-Bootcamp
 
-├── RTL
+鈹溾攢鈹€ RTL
 
-│ ├── Day02
+鈹?鈹溾攢鈹€ Day02
 
-│ └── Day03
+鈹?鈹斺攢鈹€ Day03
 
-├── Testbench
+鈹溾攢鈹€ Testbench
 
-│ ├── Day02
+鈹?鈹溾攢鈹€ Day02
 
-│ └── Day03
+鈹?鈹斺攢鈹€ Day03
 
-├── Simulation
+鈹溾攢鈹€ Simulation
 
-│ ├── Day02
+鈹?鈹溾攢鈹€ Day02
 
-│ └── Day03
+鈹?鈹斺攢鈹€ Day03
 
-├── Python
+鈹溾攢鈹€ Python
 
-├── Papers
+鈹溾攢鈹€ Papers
 
-├── Docs
+鈹溾攢鈹€ Docs
 
-│
-├── AI_Mentor_DNA.md
+鈹?鈹溾攢鈹€ AI_Mentor_DNA.md
 
-├── Bootcamp_Progress.md
+鈹溾攢鈹€ Bootcamp_Progress.md
 
-├── Environment_Log.md
+鈹溾攢鈹€ Environment_Log.md
 
-├── Engineering_Debrief.md
+鈹溾攢鈹€ Engineering_Debrief.md
 
-└── README.md
+鈹斺攢鈹€ README.md
 
 
 
