@@ -90,7 +90,7 @@ Future focus:
 
 Status:
 
-鉁?Completed
+閴?Completed
 
 
 Completed:
@@ -114,7 +114,7 @@ Completed:
 
 Status:
 
-馃毀 In Progress
+棣冩瘈 In Progress
 
 
 Completed:
@@ -210,32 +210,32 @@ Architecture path:
 Logic Gate
 
 
-鈫?
+閳?
 
 RTL Module
 
 
-鈫?
+閳?
 
 MAC Unit
 
 
-鈫?
+閳?
 
 Processing Element
 
 
-鈫?
+閳?
 
 Systolic Array
 
 
-鈫?
+閳?
 
 Matrix Multiplication Accelerator
 
 
-鈫?
+閳?
 
 NPU Architecture
 
@@ -262,13 +262,13 @@ Files:
 
 Day01/
 
-鈹溾攢鈹€ and_gate.v
+閳规壕鏀㈤埞鈧?and_gate.v
 
-鈹溾攢鈹€ and_gate_tb.v
+閳规壕鏀㈤埞鈧?and_gate_tb.v
 
-鈹溾攢鈹€ and_gate_sim
+閳规壕鏀㈤埞鈧?and_gate_sim
 
-鈹斺攢鈹€ and_gate.vcd
+閳规柡鏀㈤埞鈧?and_gate.vcd
 
 
 
@@ -277,13 +277,13 @@ Workflow:
 
 RTL
 
-鈫?
+閳?
 Compilation
 
-鈫?
+閳?
 Simulation
 
-鈫?
+閳?
 Waveform Verification
 
 
@@ -299,7 +299,7 @@ Key Concepts:
 Result:
 
 
-鉁?Completed
+閴?Completed
 
 
 
@@ -321,7 +321,7 @@ File:
 
 RTL/Day02/
 
-鈹斺攢鈹€ mux2.v
+閳规柡鏀㈤埞鈧?mux2.v
 
 
 
@@ -344,7 +344,7 @@ File:
 
 RTL/Day02/
 
-鈹斺攢鈹€ mux8.v
+閳规柡鏀㈤埞鈧?mux8.v
 
 
 
@@ -362,9 +362,9 @@ Verification:
 
 Testbench/Day02/
 
-鈹溾攢鈹€ mux2_tb.v
+閳规壕鏀㈤埞鈧?mux2_tb.v
 
-鈹斺攢鈹€ mux8_tb.v
+閳规柡鏀㈤埞鈧?mux8_tb.v
 
 
 
@@ -372,9 +372,9 @@ Simulation:
 
 Simulation/Day02/
 
-鈹溾攢鈹€ mux2
+閳规壕鏀㈤埞鈧?mux2
 
-鈹斺攢鈹€ mux8
+閳规柡鏀㈤埞鈧?mux8
 
 
 
@@ -388,7 +388,7 @@ not software execution.
 Result:
 
 
-鉁?Completed
+閴?Completed
 
 
 
@@ -490,13 +490,13 @@ Verification:
 
 Testbench/Day03/
 
-鈹溾攢鈹€ dff_tb.v
+閳规壕鏀㈤埞鈧?dff_tb.v
 
-鈹溾攢鈹€ dff_reset_tb.v
+閳规壕鏀㈤埞鈧?dff_reset_tb.v
 
-鈹溾攢鈹€ register8_tb.v
+閳规壕鏀㈤埞鈧?register8_tb.v
 
-鈹斺攢鈹€ counter8_tb.v
+閳规柡鏀㈤埞鈧?counter8_tb.v
 
 
 
@@ -504,13 +504,13 @@ Simulation:
 
 Simulation/Day03/
 
-鈹溾攢鈹€ dff
+閳规壕鏀㈤埞鈧?dff
 
-鈹溾攢鈹€ dff_reset
+閳规壕鏀㈤埞鈧?dff_reset
 
-鈹溾攢鈹€ register8
+閳规壕鏀㈤埞鈧?register8
 
-鈹斺攢鈹€ counter8
+閳规柡鏀㈤埞鈧?counter8
 
 
 
@@ -530,7 +530,7 @@ Sequential logic introduces:
 Result:
 
 
-鉁?Completed
+閴?Completed
 # Day04
 
 ## Finite State Machine Controller
@@ -559,12 +559,12 @@ Files:
 
 RTL/Day04/
 
-鈹斺攢鈹€ traffic_light_fsm.v
+閳规柡鏀㈤埞鈧?traffic_light_fsm.v
 
 
 Testbench/Day04/
 
-鈹斺攢鈹€ traffic_light_tb.v
+閳规柡鏀㈤埞鈧?traffic_light_tb.v
 
 
 Simulation:
@@ -582,7 +582,7 @@ into synchronous hardware control logic.
 
 Result:
 
-鉁?Completed
+閴?Completed
 
 # Day05
 
@@ -611,12 +611,12 @@ Files:
 
 RTL/Day05/
 
-鈹斺攢鈹€ counter_param.v
+閳规柡鏀㈤埞鈧?counter_param.v
 
 
 Testbench/Day05/
 
-鈹斺攢鈹€ counter_param_tb.v
+閳规柡鏀㈤埞鈧?counter_param_tb.v
 
 
 Simulation:
@@ -633,7 +633,7 @@ Parameterized RTL creates reusable hardware IP.
 
 Result:
 
-鉁?Completed
+閴?Completed
 ---
 # Day06
 
@@ -663,12 +663,12 @@ Files:
 
 RTL/Day06/
 
-鈹斺攢鈹€ register_bank.v
+閳规柡鏀㈤埞鈧?register_bank.v
 
 
 Testbench/Day06/
 
-鈹斺攢鈹€ register_bank_tb.v
+閳规柡鏀㈤埞鈧?register_bank_tb.v
 
 
 Simulation:
@@ -700,9 +700,9 @@ Result:
 
 
 
-鉁?Completed
+閴?Completed
 
-## Day07 - Arithmetic IP Design 鉁?
+## Day07 - Arithmetic IP Design 閴?
 Completed:
 
 - Parameterized Adder IP
@@ -733,7 +733,7 @@ Git Milestone:
 - Adder IP completed
 - Multiplier IP completed
 - MAC Unit completed
-## Day08 - Processing Element (PE) 鉁?
+## Day08 - Processing Element (PE) 閴?
 
 Implemented the first AI Accelerator compute unit.
 
@@ -757,7 +757,7 @@ PE = Multiplier + Adder + Register
 The PE performs:
 
 
-partial_sum = partial_sum + activation 脳 weight
+partial_sum = partial_sum + activation 鑴?weight
 
 
 
@@ -766,10 +766,10 @@ This module is the basic building block for:
 
 PE Array
 
-鈫?
+閳?
 Systolic Array
 
-鈫?
+閳?
 AI Accelerator
 
 
@@ -863,10 +863,10 @@ Features:
 Verification:
 
 - NUM_PE = 4
-- PE0: 2脳3 = 6
-- PE1: 4脳5 = 20
-- PE2: 6脳7 = 42
-- PE3: 8脳9 = 72
+- PE0: 2鑴? = 6
+- PE1: 4鑴? = 20
+- PE2: 6鑴? = 42
+- PE3: 8鑴? = 72
 
 All tests passed.
 
@@ -957,28 +957,28 @@ Roadmap:
 
 RTL Design
 
-鈫?
+閳?
 MAC
 
-鈫?
+閳?
 PE
 
-鈫?
+閳?
 Systolic Array
 
-鈫?
+閳?
 Tile Matrix Engine
 
-鈫?
+閳?
 NPU Architecture
 
-## Day12 - AI Accelerator Framework Integration 鉁?
+## Day12 - AI Accelerator Framework Integration 閴?
 Day12 completed the first complete accelerator framework integration.
 
 Implemented:
 
 * Processing Element (PE)
-* 4脳4 Systolic Array Framework
+* 4鑴? Systolic Array Framework
 * Controller FSM
 * Weight Loader
 * Activation Loader
@@ -1057,10 +1057,10 @@ The accelerator consists of:
 ```
 Accelerator
 
-鈹溾攢鈹€ Controller FSM
-鈹?鈹溾攢鈹€ Weight Loader
-鈹?鈹溾攢鈹€ Activation Loader
-鈹?鈹斺攢鈹€ Systolic Array
+閳规壕鏀㈤埞鈧?Controller FSM
+閳?閳规壕鏀㈤埞鈧?Weight Loader
+閳?閳规壕鏀㈤埞鈧?Activation Loader
+閳?閳规柡鏀㈤埞鈧?Systolic Array
         |
         |
        PE Units
@@ -1135,7 +1135,7 @@ The FSM decides when computation happens, while PE units execute MAC operations.
 
 ## 3. Systolic Array
 
-A 4脳4 Systolic Array contains:
+A 4鑴? Systolic Array contains:
 
 ```
 16 Processing Elements
@@ -1174,19 +1174,19 @@ Future improvements:
 ```
 CPU Interface
 
-鈫?
+閳?
 Memory Controller
 
-鈫?
+閳?
 SRAM Buffer
 
-鈫?
+閳?
 Scheduler
 
-鈫?
+閳?
 Systolic Array
 
-鈫?
+閳?
 Result
 ```
 
@@ -1201,23 +1201,23 @@ Important future topics:
 
 Day14
 
-鉁?NPU Controller
+閴?NPU Controller
 
-鉁?Data Fetch Controller
+閴?Data Fetch Controller
 
-鉁?Weight Buffer
+閴?Weight Buffer
 
-鉁?Activation Buffer
+閴?Activation Buffer
 
-鉁?Output Buffer
+閴?Output Buffer
 
-鉁?Dot Product Engine
+閴?Dot Product Engine
 
-鉁?NPU Top
+閴?NPU Top
 
-鉁?Complete Verification
+閴?Complete Verification
 
-鉁?GTKWave Verification
+閴?GTKWave Verification
 
 Status
 
@@ -1243,17 +1243,17 @@ The hierarchy becomes:
 
 npu_tb
 
-鈹斺攢鈹€ dut
+閳规柡鏀㈤埞鈧?dut
 
-    鈹溾攢鈹€ Controller
+    閳规壕鏀㈤埞鈧?Controller
 
-    鈹溾攢鈹€ Fetch Controller
+    閳规壕鏀㈤埞鈧?Fetch Controller
 
-    鈹溾攢鈹€ Compute Engine
+    閳规壕鏀㈤埞鈧?Compute Engine
 
-    鈹溾攢鈹€ Memory Blocks
+    閳规壕鏀㈤埞鈧?Memory Blocks
 
-    鈹斺攢鈹€ Output Buffer
+    閳规柡鏀㈤埞鈧?Output Buffer
 
 GTKWave displays this hierarchy because the testbench exports the simulation hierarchy using:
 
@@ -1262,7 +1262,7 @@ Debug Workflow
 
 Verify system handshake
 
-start 鈫?processing 鈫?done
+start 閳?processing 閳?done
 
 Verify controller FSM
 
@@ -1341,6 +1341,37 @@ The NPU executed its first real matrix multiplication workload end-to-end.
 
 
 
+## Day17 - Parallel Matrix Multiply
+
+Status
+
+PASS
+
+Completed:
+
+- Parallel 2x2 matrix multiply with 4 independent MAC units
+- Spatial parallelism: one MAC per output element
+- RTL/Day17/matmul_2x2.v
+- Testbench/Day17/matmul_2x2_tb.v
+- Verified C = [19 22; 43 50] (matches Day16 serial result)
+- Verified signed negatives: C = [-2 7; 6 -15]
+
+Latency:
+
+- Day16 serial: ~88 cycles
+- Day17 parallel: 2 cycles (~44x speedup)
+
+Key understanding:
+
+- Latency = accumulation depth per output, not output count
+- Area-speed trade-off: 4x hardware for 44x speedup
+- Independent PEs (no data sharing) vs systolic array dataflow
+
+Day17 milestone:
+
+The matrix multiply was parallelized 44x with 4 MAC units.
+Next: systolic array dataflow for data reuse.
+
 ---
 
 # Engineering Principles
@@ -1362,16 +1393,16 @@ Code execution is not equal to knowledge.
 
 Problem
 
-鈫?
+閳?
 Locate layer
 
-鈫?
+閳?
 Verify hypothesis
 
-鈫?
+閳?
 Fix
 
-鈫?
+閳?
 Confirm
 
 
@@ -1412,39 +1443,39 @@ until it is verified.
 
 AI-Chip-Researcher-Bootcamp
 
-鈹溾攢鈹€ RTL
+閳规壕鏀㈤埞鈧?RTL
 
-鈹?鈹溾攢鈹€ Day02
+閳?閳规壕鏀㈤埞鈧?Day02
 
-鈹?鈹斺攢鈹€ Day03
+閳?閳规柡鏀㈤埞鈧?Day03
 
-鈹溾攢鈹€ Testbench
+閳规壕鏀㈤埞鈧?Testbench
 
-鈹?鈹溾攢鈹€ Day02
+閳?閳规壕鏀㈤埞鈧?Day02
 
-鈹?鈹斺攢鈹€ Day03
+閳?閳规柡鏀㈤埞鈧?Day03
 
-鈹溾攢鈹€ Simulation
+閳规壕鏀㈤埞鈧?Simulation
 
-鈹?鈹溾攢鈹€ Day02
+閳?閳规壕鏀㈤埞鈧?Day02
 
-鈹?鈹斺攢鈹€ Day03
+閳?閳规柡鏀㈤埞鈧?Day03
 
-鈹溾攢鈹€ Python
+閳规壕鏀㈤埞鈧?Python
 
-鈹溾攢鈹€ Papers
+閳规壕鏀㈤埞鈧?Papers
 
-鈹溾攢鈹€ Docs
+閳规壕鏀㈤埞鈧?Docs
 
-鈹?鈹溾攢鈹€ AI_Mentor_DNA.md
+閳?閳规壕鏀㈤埞鈧?AI_Mentor_DNA.md
 
-鈹溾攢鈹€ Bootcamp_Progress.md
+閳规壕鏀㈤埞鈧?Bootcamp_Progress.md
 
-鈹溾攢鈹€ Environment_Log.md
+閳规壕鏀㈤埞鈧?Environment_Log.md
 
-鈹溾攢鈹€ Engineering_Debrief.md
+閳规壕鏀㈤埞鈧?Engineering_Debrief.md
 
-鈹斺攢鈹€ README.md
+閳规柡鏀㈤埞鈧?README.md
 
 
 
