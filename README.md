@@ -114,7 +114,7 @@ Completed:
 
 Status:
 
-濡絽鍟惁?In Progress
+婵☆偓绲介崯顖炴儊?In Progress
 
 
 Completed:
@@ -262,13 +262,13 @@ Files:
 
 Day01/
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?and_gate.v
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?and_gate.v
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?and_gate_tb.v
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?and_gate_tb.v
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?and_gate_sim
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?and_gate_sim
 
-闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?and_gate.vcd
+闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?and_gate.vcd
 
 
 
@@ -321,7 +321,7 @@ File:
 
 RTL/Day02/
 
-闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?mux2.v
+闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?mux2.v
 
 
 
@@ -344,7 +344,7 @@ File:
 
 RTL/Day02/
 
-闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?mux8.v
+闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?mux8.v
 
 
 
@@ -362,9 +362,9 @@ Verification:
 
 Testbench/Day02/
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?mux2_tb.v
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?mux2_tb.v
 
-闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?mux8_tb.v
+闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?mux8_tb.v
 
 
 
@@ -372,9 +372,9 @@ Simulation:
 
 Simulation/Day02/
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?mux2
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?mux2
 
-闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?mux8
+闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?mux8
 
 
 
@@ -490,13 +490,13 @@ Verification:
 
 Testbench/Day03/
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?dff_tb.v
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?dff_tb.v
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?dff_reset_tb.v
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?dff_reset_tb.v
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?register8_tb.v
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?register8_tb.v
 
-闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?counter8_tb.v
+闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?counter8_tb.v
 
 
 
@@ -504,13 +504,13 @@ Simulation:
 
 Simulation/Day03/
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?dff
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?dff
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?dff_reset
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?dff_reset
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?register8
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?register8
 
-闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?counter8
+闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?counter8
 
 
 
@@ -559,12 +559,12 @@ Files:
 
 RTL/Day04/
 
-闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?traffic_light_fsm.v
+闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?traffic_light_fsm.v
 
 
 Testbench/Day04/
 
-闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?traffic_light_tb.v
+闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?traffic_light_tb.v
 
 
 Simulation:
@@ -611,12 +611,12 @@ Files:
 
 RTL/Day05/
 
-闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?counter_param.v
+闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?counter_param.v
 
 
 Testbench/Day05/
 
-闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?counter_param_tb.v
+闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?counter_param_tb.v
 
 
 Simulation:
@@ -663,12 +663,12 @@ Files:
 
 RTL/Day06/
 
-闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?register_bank.v
+闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?register_bank.v
 
 
 Testbench/Day06/
 
-闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?register_bank_tb.v
+闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?register_bank_tb.v
 
 
 Simulation:
@@ -757,7 +757,7 @@ PE = Multiplier + Adder + Register
 The PE performs:
 
 
-partial_sum = partial_sum + activation 闁?weight
+partial_sum = partial_sum + activation 闂?weight
 
 
 
@@ -863,10 +863,10 @@ Features:
 Verification:
 
 - NUM_PE = 4
-- PE0: 2闁? = 6
-- PE1: 4闁? = 20
-- PE2: 6闁? = 42
-- PE3: 8闁? = 72
+- PE0: 2闂? = 6
+- PE1: 4闂? = 20
+- PE2: 6闂? = 42
+- PE3: 8闂? = 72
 
 All tests passed.
 
@@ -978,7 +978,7 @@ Day12 completed the first complete accelerator framework integration.
 Implemented:
 
 * Processing Element (PE)
-* 4闁? Systolic Array Framework
+* 4闂? Systolic Array Framework
 * Controller FSM
 * Weight Loader
 * Activation Loader
@@ -1057,10 +1057,10 @@ The accelerator consists of:
 ```
 Accelerator
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Controller FSM
-闂?闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Weight Loader
-闂?闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Activation Loader
-闂?闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?Systolic Array
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Controller FSM
+闂?闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Weight Loader
+闂?闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Activation Loader
+闂?闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?Systolic Array
         |
         |
        PE Units
@@ -1135,7 +1135,7 @@ The FSM decides when computation happens, while PE units execute MAC operations.
 
 ## 3. Systolic Array
 
-A 4闁? Systolic Array contains:
+A 4闂? Systolic Array contains:
 
 ```
 16 Processing Elements
@@ -1243,17 +1243,17 @@ The hierarchy becomes:
 
 npu_tb
 
-闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?dut
+闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?dut
 
-    闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Controller
+    闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Controller
 
-    闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Fetch Controller
+    闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Fetch Controller
 
-    闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Compute Engine
+    闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Compute Engine
 
-    闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Memory Blocks
+    闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Memory Blocks
 
-    闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?Output Buffer
+    闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?Output Buffer
 
 GTKWave displays this hierarchy because the testbench exports the simulation hierarchy using:
 
@@ -1433,7 +1433,31 @@ Key understanding:
 Day19 milestone:
 
 The NPU now computes a full 4x4 matrix multiply with a systolic
-compute core. Next: Day20 double buffering.
+compute core. Next: Day21 wider fetch.
+
+## Day20 - Double Buffering
+
+Status
+
+PASS
+
+Completed:
+
+- npu_pipelined_top.v: 4 consecutive 4x4 matrix multiplies
+- Ping-pong banks + overlapped fetch/compute/store
+- Verified 4 tasks (all PASS)
+- Serial 312 -> double buffered 243 cycles (~1.28x)
+
+Key understanding:
+
+- Steady-state interval = max(fetch, compute+store) = max(48,27) = 48
+- Double buffering hides the shorter stage behind the longer one
+- Fetch is still the bottleneck -> wider fetch next
+
+Day20 milestone:
+
+Fetch of task N+1 overlapped with compute/store of task N.
+Next: Day21 wider fetch (4-wide) to break the 48-cycle bound.
 
 ---
 
@@ -1506,39 +1530,39 @@ until it is verified.
 
 AI-Chip-Researcher-Bootcamp
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?RTL
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?RTL
 
-闂?闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Day02
+闂?闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Day02
 
-闂?闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?Day03
+闂?闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?Day03
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Testbench
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Testbench
 
-闂?闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Day02
+闂?闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Day02
 
-闂?闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?Day03
+闂?闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?Day03
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Simulation
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Simulation
 
-闂?闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Day02
+闂?闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Day02
 
-闂?闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?Day03
+闂?闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?Day03
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Python
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Python
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Papers
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Papers
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Docs
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Docs
 
-闂?闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?AI_Mentor_DNA.md
+闂?闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?AI_Mentor_DNA.md
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Bootcamp_Progress.md
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Bootcamp_Progress.md
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Environment_Log.md
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Environment_Log.md
 
-闂佸疇顫夋竟鏇㈠绩閵忋倕鐓橀柍?Engineering_Debrief.md
+闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Engineering_Debrief.md
 
-闂佸疇顫夐弻锟犲绩閵忋倕鐓橀柍?README.md
+闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?README.md
 
 
 
