@@ -90,7 +90,7 @@ Future focus:
 
 Status:
 
-闂?Completed
+✅ Completed
 
 
 Completed:
@@ -114,7 +114,7 @@ Completed:
 
 Status:
 
-婵☆偓绲介崯顖炴儊?In Progress
+🚧 In Progress
 
 
 Completed:
@@ -210,32 +210,38 @@ Architecture path:
 Logic Gate
 
 
-闂?
+↓
+
 
 RTL Module
 
 
-闂?
+↓
+
 
 MAC Unit
 
 
-闂?
+↓
+
 
 Processing Element
 
 
-闂?
+↓
+
 
 Systolic Array
 
 
-闂?
+↓
+
 
 Matrix Multiplication Accelerator
 
 
-闂?
+↓
+
 
 NPU Architecture
 
@@ -262,13 +268,13 @@ Files:
 
 Day01/
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?and_gate.v
+├── and_gate.v
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?and_gate_tb.v
+├── and_gate_tb.v
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?and_gate_sim
+├── and_gate_sim
 
-闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?and_gate.vcd
+└── and_gate.vcd
 
 
 
@@ -277,13 +283,16 @@ Workflow:
 
 RTL
 
-闂?
+↓
+
 Compilation
 
-闂?
+↓
+
 Simulation
 
-闂?
+↓
+
 Waveform Verification
 
 
@@ -299,7 +308,7 @@ Key Concepts:
 Result:
 
 
-闂?Completed
+✅ Completed
 
 
 
@@ -321,7 +330,7 @@ File:
 
 RTL/Day02/
 
-闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?mux2.v
+└── mux2.v
 
 
 
@@ -344,7 +353,7 @@ File:
 
 RTL/Day02/
 
-闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?mux8.v
+└── mux8.v
 
 
 
@@ -362,9 +371,9 @@ Verification:
 
 Testbench/Day02/
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?mux2_tb.v
+├── mux2_tb.v
 
-闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?mux8_tb.v
+└── mux8_tb.v
 
 
 
@@ -372,9 +381,9 @@ Simulation:
 
 Simulation/Day02/
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?mux2
+├── mux2
 
-闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?mux8
+└── mux8
 
 
 
@@ -388,7 +397,7 @@ not software execution.
 Result:
 
 
-闂?Completed
+✅ Completed
 
 
 
@@ -490,13 +499,13 @@ Verification:
 
 Testbench/Day03/
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?dff_tb.v
+├── dff_tb.v
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?dff_reset_tb.v
+├── dff_reset_tb.v
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?register8_tb.v
+├── register8_tb.v
 
-闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?counter8_tb.v
+└── counter8_tb.v
 
 
 
@@ -504,13 +513,13 @@ Simulation:
 
 Simulation/Day03/
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?dff
+├── dff
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?dff_reset
+├── dff_reset
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?register8
+├── register8
 
-闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?counter8
+└── counter8
 
 
 
@@ -530,7 +539,7 @@ Sequential logic introduces:
 Result:
 
 
-闂?Completed
+✅ Completed
 # Day04
 
 ## Finite State Machine Controller
@@ -559,12 +568,12 @@ Files:
 
 RTL/Day04/
 
-闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?traffic_light_fsm.v
+└── traffic_light_fsm.v
 
 
 Testbench/Day04/
 
-闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?traffic_light_tb.v
+└── traffic_light_tb.v
 
 
 Simulation:
@@ -582,7 +591,7 @@ into synchronous hardware control logic.
 
 Result:
 
-闂?Completed
+✅ Completed
 
 # Day05
 
@@ -611,12 +620,12 @@ Files:
 
 RTL/Day05/
 
-闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?counter_param.v
+└── counter_param.v
 
 
 Testbench/Day05/
 
-闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?counter_param_tb.v
+└── counter_param_tb.v
 
 
 Simulation:
@@ -633,7 +642,7 @@ Parameterized RTL creates reusable hardware IP.
 
 Result:
 
-闂?Completed
+✅ Completed
 ---
 # Day06
 
@@ -663,12 +672,12 @@ Files:
 
 RTL/Day06/
 
-闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?register_bank.v
+└── register_bank.v
 
 
 Testbench/Day06/
 
-闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?register_bank_tb.v
+└── register_bank_tb.v
 
 
 Simulation:
@@ -700,9 +709,10 @@ Result:
 
 
 
-闂?Completed
+✅ Completed
 
-## Day07 - Arithmetic IP Design 闂?
+## Day07 - Arithmetic IP Design ✅
+
 Completed:
 
 - Parameterized Adder IP
@@ -733,7 +743,8 @@ Git Milestone:
 - Adder IP completed
 - Multiplier IP completed
 - MAC Unit completed
-## Day08 - Processing Element (PE) 闂?
+## Day08 - Processing Element (PE) ✅
+
 
 Implemented the first AI Accelerator compute unit.
 
@@ -757,7 +768,7 @@ PE = Multiplier + Adder + Register
 The PE performs:
 
 
-partial_sum = partial_sum + activation 闂?weight
+partial_sum = partial_sum + activation × weight
 
 
 
@@ -766,10 +777,12 @@ This module is the basic building block for:
 
 PE Array
 
-闂?
+↓
+
 Systolic Array
 
-闂?
+↓
+
 AI Accelerator
 
 
@@ -863,10 +876,10 @@ Features:
 Verification:
 
 - NUM_PE = 4
-- PE0: 2闂? = 6
-- PE1: 4闂? = 20
-- PE2: 6闂? = 42
-- PE3: 8闂? = 72
+- PE0: 2×3 = 6
+- PE1: 4×5 = 20
+- PE2: 6×7 = 42
+- PE3: 8×9 = 72
 
 All tests passed.
 
@@ -957,28 +970,34 @@ Roadmap:
 
 RTL Design
 
-闂?
+↓
+
 MAC
 
-闂?
+↓
+
 PE
 
-闂?
+↓
+
 Systolic Array
 
-闂?
+↓
+
 Tile Matrix Engine
 
-闂?
+↓
+
 NPU Architecture
 
-## Day12 - AI Accelerator Framework Integration 闂?
+## Day12 - AI Accelerator Framework Integration ✅
+
 Day12 completed the first complete accelerator framework integration.
 
 Implemented:
 
 * Processing Element (PE)
-* 4闂? Systolic Array Framework
+* 4×4 Systolic Array Framework
 * Controller FSM
 * Weight Loader
 * Activation Loader
@@ -1057,10 +1076,13 @@ The accelerator consists of:
 ```
 Accelerator
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Controller FSM
-闂?闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Weight Loader
-闂?闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Activation Loader
-闂?闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?Systolic Array
+├── Controller FSM
+│
+├── Weight Loader
+│
+├── Activation Loader
+│
+└── Systolic Array
         |
         |
        PE Units
@@ -1135,7 +1157,7 @@ The FSM decides when computation happens, while PE units execute MAC operations.
 
 ## 3. Systolic Array
 
-A 4闂? Systolic Array contains:
+A 4×4 Systolic Array contains:
 
 ```
 16 Processing Elements
@@ -1174,19 +1196,24 @@ Future improvements:
 ```
 CPU Interface
 
-闂?
+↓
+
 Memory Controller
 
-闂?
+↓
+
 SRAM Buffer
 
-闂?
+↓
+
 Scheduler
 
-闂?
+↓
+
 Systolic Array
 
-闂?
+↓
+
 Result
 ```
 
@@ -1201,23 +1228,23 @@ Important future topics:
 
 Day14
 
-闂?NPU Controller
+✔ NPU Controller
 
-闂?Data Fetch Controller
+✔ Data Fetch Controller
 
-闂?Weight Buffer
+✔ Weight Buffer
 
-闂?Activation Buffer
+✔ Activation Buffer
 
-闂?Output Buffer
+✔ Output Buffer
 
-闂?Dot Product Engine
+✔ Dot Product Engine
 
-闂?NPU Top
+✔ NPU Top
 
-闂?Complete Verification
+✔ Complete Verification
 
-闂?GTKWave Verification
+✔ GTKWave Verification
 
 Status
 
@@ -1243,17 +1270,17 @@ The hierarchy becomes:
 
 npu_tb
 
-闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?dut
+└── dut
 
-    闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Controller
+    ├── Controller
 
-    闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Fetch Controller
+    ├── Fetch Controller
 
-    闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Compute Engine
+    ├── Compute Engine
 
-    闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Memory Blocks
+    ├── Memory Blocks
 
-    闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?Output Buffer
+    └── Output Buffer
 
 GTKWave displays this hierarchy because the testbench exports the simulation hierarchy using:
 
@@ -1262,7 +1289,7 @@ Debug Workflow
 
 Verify system handshake
 
-start 闂?processing 闂?done
+start → processing → done
 
 Verify controller FSM
 
@@ -1275,6 +1302,147 @@ Verify output storage
 Day15 milestone:
 
 Understanding how RTL modules become a complete simulated hardware system.
+
+## Day16 - Matrix Multiplication Workload
+
+Status: PASS ✅
+
+Completed:
+
+- First real AI workload on the NPU: C = A x B
+- Decomposed 2x2 matrix multiply into 4 dot-product tasks
+- Designed data mapping: activation <- row of A, weight <- column of B
+- Created Testbench/Day16/npu_matmuls_tb.v
+- Verified C = [19 22; 43 50] end-to-end
+- Reused Day14 NPU RTL without any modification
+- Analyzed dataflow and task timing
+
+Verification:
+
+- C[0][0] = 19 PASS
+- C[0][1] = 22 PASS
+- C[1][0] = 43 PASS
+- C[1][1] = 50 PASS
+
+Key engineering understanding:
+
+1. Matrix multiplication = a set of dot products
+2. One NPU task = one dot product = one output element
+3. Data reuse: A row reused across columns, B column reused across rows
+4. Serial MAC latency: one element per cycle, VECTOR_LEN=4 -> 4 cycles
+5. One task latency ~22 cycles (fetch ~12 + compute 4 + control ~6)
+6. signed types enable correct negative-number arithmetic
+7. Serial execution is slow -> motivates systolic array parallelism
+
+Next:
+
+Day17 - Parallel Matrix Multiply
+
+## Day17 - Parallel Matrix Multiply
+
+Status: PASS ✅
+
+Completed:
+
+- Designed parallel 2x2 matrix multiply with 4 independent MACs
+- Spatial parallelism: one MAC per output element
+- Created RTL/Day17/matmul_2x2.v
+- Created Testbench/Day17/matmul_2x2_tb.v
+- Verified C = [19 22; 43 50] (matches Day16 serial result)
+- Verified signed negatives: C = [-2 7; 6 -15]
+- Measured latency: 2 cycles vs Day16 ~88 cycles (~44x speedup)
+
+Key engineering understanding:
+
+1. Latency = accumulation depth per output (K=2), not output count (4)
+2. Area-speed trade-off: 4x hardware for 44x speedup
+3. 4x4 full parallel needs 16 MACs
+4. Day17 PEs are independent (no data sharing)
+5. Next step: systolic array dataflow for data reuse
+
+Next:
+
+Day18 - Systolic Array Dataflow
+
+## Day18 - Systolic Array Dataflow
+
+Status: PASS ✅
+
+Completed:
+
+- Built 2x2 systolic array reusing Day14 pe_unit IP (4 PEs)
+- Applied skew scheduling: A[i][k] enters row i at cycle k+i, B[k][j] enters col j at cycle k+j
+- Dataflow: activations flow left->right, weights flow top->down
+- Created RTL/Day18/systolic_matmul_2x2.v
+- Created Testbench/Day18/systolic_matmul_2x2_tb.v
+- Verified C = [19 22; 43 50] (matches Day16/17 results)
+- Verified signed negatives: C = [-2 7; 6 -15]
+- Latency: 5 cycles (clear + fill + compute + drain)
+
+Key engineering understanding:
+
+1. Skew scheduling is the key to systolic GEMM
+2. Data reuse: each input enters the array once and flows through multiple PEs
+3. Latency ~3N-1 for NxN (pipeline fill + compute + drain)
+4. Systolic wins at scale: I/O bandwidth stays O(N), not O(N^2)
+5. Day12 array failed GEMM because boundary data was static (no skew)
+6. For tiny matrices parallel MACs (Day17) beat systolic on latency
+
+Next:
+
+Day19 - Systolic NPU Integration
+
+## Day19 - Systolic NPU Integration
+
+Status: PASS ✅
+
+Completed:
+
+- Generalized systolic array to parameterized NxN (generate loops)
+- Built RTL/Day19/systolic_matmul.v (N=4, 16 PEs)
+- Built RTL/Day19/fetch16.v (16-element fetch)
+- Built RTL/Day19/npu_systolic_top.v (buffers + fetch + systolic + output)
+- Verified full 4x4 matrix multiply through the NPU
+- Test1 (A=identity): C = B PASS (16/16)
+- Test2 (A=B=1..16): matches reference PASS (16/16)
+- Latency ~78 cycles (fetch 48 + systolic 11 + store 16)
+
+Key engineering understanding:
+
+1. Compute dropped from ~352 to 11 cycles; memory now dominates (memory wall)
+2. Fetch (48) + store (16) = 64 cycles is the new bottleneck
+3. Debug: results must persist after done (clear only at new task start)
+4. Interface timing: producer valid window must cover consumer read duration
+5. Real NPUs use DMA, double buffering, wide buses to hide memory latency
+
+Next:
+
+Day20 - Double Buffering
+
+## Day20 - Double Buffering
+
+Status: PASS ✅
+
+Completed:
+
+- Built npu_pipelined_top.v: 4 consecutive 4x4 matrix multiplies
+- Ping-pong banks: compute uses bank[task%2], fetch fills the other
+- Built fetch16b.v (fetch with per-task base address)
+- Overlapped fetch of task N+1 with compute/store of task N
+- Verified 4 tasks against reference model (16/16 each, all PASS)
+- Serial: ~312 cycles, double buffered: 243 cycles (~1.28x)
+
+Key engineering understanding:
+
+1. Double buffering hides the shorter stage behind the longer one
+2. Steady-state interval = max(fetch, compute+store) = max(48, 27) = 48
+3. Fetch is still the bottleneck -> need a wider fetch next
+4. First task fetch is pipeline fill (cannot be hidden)
+5. Cost: 2x input register banks + pipelined controller
+
+Next:
+
+Day21 - Wider Data Path (4-wide fetch)
 
 ---
 
@@ -1302,162 +1470,11 @@ Records:
 
 - Project analysis
 - Code understanding
-## Day16 - Matrix Multiplication Workload
-
-Status
-
-PASS
-
-Completed:
-
-- First real AI workload on the NPU: C = A x B
-- Decomposed 2x2 matrix multiply into 4 dot-product tasks
-- Designed data mapping: activation <- row of A, weight <- column of B
-- Created Testbench/Day16/npu_matmuls_tb.v
-- Reused Day14 NPU RTL without modification
-- GTKWave dataflow analysis
-
-Verification:
-
-- C[0][0] = 19 PASS
-- C[0][1] = 22 PASS
-- C[1][0] = 43 PASS
-- C[1][1] = 50 PASS
-
-Key understanding:
-
-- Matrix multiplication = a set of dot products
-- One NPU task = one dot product = one output element
-- Data reuse motivates buffer hierarchy design
-- Serial MAC latency motivates systolic array parallelism
-
-Day16 milestone:
-
-The NPU executed its first real matrix multiplication workload end-to-end.
-
 - Design decisions
 - Debugging lessons
 - Hardware thinking
 
 
-
-## Day17 - Parallel Matrix Multiply
-
-Status
-
-PASS
-
-Completed:
-
-- Parallel 2x2 matrix multiply with 4 independent MAC units
-- Spatial parallelism: one MAC per output element
-- RTL/Day17/matmul_2x2.v
-- Testbench/Day17/matmul_2x2_tb.v
-- Verified C = [19 22; 43 50] (matches Day16 serial result)
-- Verified signed negatives: C = [-2 7; 6 -15]
-
-Latency:
-
-- Day16 serial: ~88 cycles
-- Day17 parallel: 2 cycles (~44x speedup)
-
-Key understanding:
-
-- Latency = accumulation depth per output, not output count
-- Area-speed trade-off: 4x hardware for 44x speedup
-- Independent PEs (no data sharing) vs systolic array dataflow
-
-Day17 milestone:
-
-The matrix multiply was parallelized 44x with 4 MAC units.
-Next: Day19 systolic NPU integration.
-
-## Day18 - Systolic Array Dataflow
-
-Status
-
-PASS
-
-Completed:
-
-- 2x2 systolic array reusing Day14 pe_unit IP (4 PEs)
-- Skew scheduling: A[i][k] enters row i at cycle k+i, B[k][j] enters col j at cycle k+j
-- Activations flow left->right, weights flow top->down
-- RTL/Day18/systolic_matmul_2x2.v
-- Verified C = [19 22; 43 50] (matches Day16/17)
-- Verified negatives: C = [-2 7; 6 -15]
-
-Latency:
-
-- Day18 systolic: 5 cycles (clear + fill + compute + drain)
-- vs Day16 serial: ~88, Day17 parallel: 2
-
-Key understanding:
-
-- Skew scheduling is the key to systolic GEMM
-- Data reuse: one input in, reused by many PEs
-- Systolic wins at scale: I/O bandwidth O(N) not O(N^2)
-- Tiny matrices: parallel MACs beat systolic on latency
-
-Day18 milestone:
-
-The 2x2 matrix multiply ran through a real systolic dataflow
-with data reuse, matching Day16/17 results.
-Next: Day20 double buffering.
-
-## Day19 - Systolic NPU Integration
-
-Status
-
-PASS
-
-Completed:
-
-- Parameterized NxN systolic array (generate loops)
-- RTL/Day19/systolic_matmul.v, fetch16.v, npu_systolic_top.v
-- Full 4x4 matrix multiply through the NPU
-- Verified C = A x B against a software reference (16/16, two tests)
-
-Latency:
-
-- Full NPU task ~78 cycles (fetch 48 + systolic 11 + store 16)
-- vs Day14 serial 16 dot products ~352 cycles
-
-Key understanding:
-
-- Memory wall: compute is fast, data movement dominates
-- Fetch (48) + store (16) = 64 cycles is now the bottleneck
-- Producer/consumer timing: results must persist until consumed
-- Real NPUs hide memory with DMA + double buffering
-
-Day19 milestone:
-
-The NPU now computes a full 4x4 matrix multiply with a systolic
-compute core. Next: Day21 wider fetch.
-
-## Day20 - Double Buffering
-
-Status
-
-PASS
-
-Completed:
-
-- npu_pipelined_top.v: 4 consecutive 4x4 matrix multiplies
-- Ping-pong banks + overlapped fetch/compute/store
-- Verified 4 tasks (all PASS)
-- Serial 312 -> double buffered 243 cycles (~1.28x)
-
-Key understanding:
-
-- Steady-state interval = max(fetch, compute+store) = max(48,27) = 48
-- Double buffering hides the shorter stage behind the longer one
-- Fetch is still the bottleneck -> wider fetch next
-
-Day20 milestone:
-
-Fetch of task N+1 overlapped with compute/store of task N.
-Next: Day21 wider fetch (4-wide) to break the 48-cycle bound.
 
 ---
 
@@ -1480,16 +1497,20 @@ Code execution is not equal to knowledge.
 
 Problem
 
-闂?
+↓
+
 Locate layer
 
-闂?
+↓
+
 Verify hypothesis
 
-闂?
+↓
+
 Fix
 
-闂?
+↓
+
 Confirm
 
 
@@ -1530,39 +1551,40 @@ until it is verified.
 
 AI-Chip-Researcher-Bootcamp
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?RTL
+├── RTL
 
-闂?闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Day02
+│ ├── Day02
 
-闂?闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?Day03
+│ └── Day03
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Testbench
+├── Testbench
 
-闂?闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Day02
+│ ├── Day02
 
-闂?闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?Day03
+│ └── Day03
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Simulation
+├── Simulation
 
-闂?闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Day02
+│ ├── Day02
 
-闂?闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?Day03
+│ └── Day03
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Python
+├── Python
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Papers
+├── Papers
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Docs
+├── Docs
 
-闂?闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?AI_Mentor_DNA.md
+│
+├── AI_Mentor_DNA.md
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Bootcamp_Progress.md
+├── Bootcamp_Progress.md
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Environment_Log.md
+├── Environment_Log.md
 
-闂備礁鐤囬～澶嬬珶閺囥垹缁╅柕蹇嬪€曢悡姗€鏌?Engineering_Debrief.md
+├── Engineering_Debrief.md
 
-闂備礁鐤囬～澶愬蓟閿熺姴缁╅柕蹇嬪€曢悡姗€鏌?README.md
+└── README.md
 
 
 

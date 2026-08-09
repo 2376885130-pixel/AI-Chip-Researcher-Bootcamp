@@ -62,7 +62,7 @@ Completed:
 
 Current Focus:
 
-Accelerator integration, dataflow scheduling and workload verification.
+Accelerator integration, dataflow scheduling, workload verification and pipeline optimization.
 
 
 Target areas:
@@ -182,7 +182,7 @@ Version:
 Status:
 
 
-闂?Installed
+✅ Installed
 
 
 
@@ -209,7 +209,7 @@ Version:
 Status:
 
 
-闂?Installed
+✅ Installed
 
 
 
@@ -236,7 +236,7 @@ Version:
 Status:
 
 
-闂?Installed
+✅ Installed
 
 
 
@@ -263,7 +263,7 @@ Version:
 Status:
 
 
-闂?Installed
+✅ Installed
 
 
 
@@ -361,7 +361,7 @@ SSH Key Location:
 Status:
 
 
-闂?Verified
+✅ Verified
 
 
 
@@ -411,59 +411,59 @@ Current Structure:
 AI-Chip-Researcher-Bootcamp
 
 
-闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?RTL
+├── RTL
 
-闂?  闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Day02
+│   ├── Day02
 
-闂?  闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Day03
+│   ├── Day03
 
-闂?  闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Day04
+│   ├── Day04
 
-闂?  闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Day05
+│   ├── Day05
 
-闂?  闂傚倷绀侀悿鍥綖婢舵劕钃熼柨鐔哄Т缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Day06
-
-
-闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Testbench
-
-闂?  闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Day02
-
-闂?  闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Day03
-
-闂?  闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Day04
-
-闂?  闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Day05
-
-闂?  闂傚倷绀侀悿鍥綖婢舵劕钃熼柨鐔哄Т缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Day06
+│   └── Day06
 
 
-闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Simulation
+├── Testbench
 
-闂?  闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Day02
+│   ├── Day02
 
-闂?  闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Day03
+│   ├── Day03
 
-闂?  闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Day04
+│   ├── Day04
 
-闂?  闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Day05
+│   ├── Day05
 
-闂?  闂傚倷绀侀悿鍥綖婢舵劕钃熼柨鐔哄Т缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Day06
-
-
-闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Python
-
-闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Papers
-
-闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Docs
+│   └── Day06
 
 
-闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?README.md
+├── Simulation
 
-闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Bootcamp_Progress.md
+│   ├── Day02
 
-闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Environment_Log.md
+│   ├── Day03
 
-闂傚倷绀侀悿鍥綖婢舵劕钃熼柨鐔哄Т缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Engineering_Debrief.md
+│   ├── Day04
+
+│   ├── Day05
+
+│   └── Day06
+
+
+├── Python
+
+├── Papers
+
+├── Docs
+
+
+├── README.md
+
+├── Bootcamp_Progress.md
+
+├── Environment_Log.md
+
+└── Engineering_Debrief.md
 
 
 
@@ -517,16 +517,16 @@ Parameterized Register Bank IP
 Completed:
 
 
-闂?WSL2
+✅ WSL2
 
 
-闂?Ubuntu
+✅ Ubuntu
 
 
-闂?Linux user
+✅ Linux user
 
 
-闂?sudo permission
+✅ sudo permission
 
 
 
@@ -719,7 +719,7 @@ not software execution flow.
 Result:
 
 
-闂?Completed
+✅ Completed
 
 
 
@@ -822,7 +822,7 @@ wire represents hardware connection.
 Result:
 
 
-闂?Completed
+✅ Completed
 
 
 
@@ -863,7 +863,7 @@ Key Concepts:
 Result:
 
 
-闂?Completed
+✅ Completed
 
 
 
@@ -942,12 +942,14 @@ Hardware connection:
 FSM
 
 
-闂?
+↓
+
 
 Controller
 
 
-闂?
+↓
+
 
 Accelerator Scheduler
 
@@ -956,7 +958,7 @@ Accelerator Scheduler
 Result:
 
 
-闂?Completed
+✅ Completed
 
 
 
@@ -1038,17 +1040,20 @@ Hardware connection:
 Parameterized Module
 
 
-闂?
+↓
+
 
 Reusable IP
 
 
-闂?
+↓
+
 
 MAC/FIFO/Buffer
 
 
-闂?
+↓
+
 
 AI Accelerator
 
@@ -1057,7 +1062,7 @@ AI Accelerator
 Result:
 
 
-闂?Completed
+✅ Completed
 
 
 
@@ -1102,14 +1107,14 @@ Files:
 RTL/Day06/
 
 
-闂傚倷绀侀悿鍥綖婢舵劕钃熼柨鐔哄Т缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?register_bank.v
+└── register_bank.v
 
 
 
 Testbench/Day06/
 
 
-闂傚倷绀侀悿鍥綖婢舵劕钃熼柨鐔哄Т缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?register_bank_tb.v
+└── register_bank_tb.v
 
 
 
@@ -1162,12 +1167,14 @@ Parameterized RTL:
 Parameter
 
 
-闂?
+↓
+
 
 Hardware Configuration
 
 
-闂?
+↓
+
 
 Reusable Hardware IP
 
@@ -1179,17 +1186,20 @@ Hardware connection:
 Register Bank
 
 
-闂?
+↓
+
 
 Processing Element
 
 
-闂?
+↓
+
 
 MAC Unit
 
 
-闂?
+↓
+
 
 AI Accelerator
 
@@ -1198,7 +1208,7 @@ AI Accelerator
 Result:
 
 
-闂?Completed
+✅ Completed
 ## Day07 - Arithmetic IP Design
 
 Status: Completed
@@ -1237,7 +1247,8 @@ Next:
 Day08 - Processing Element / Datapath Architecture
 # Day08 - Processing Element (PE)
 
-Status: Completed 闂?
+Status: Completed ✅
+
 ## Completed Work
 
 ### RTL Design
@@ -1282,7 +1293,7 @@ PE = MAC + Register
 
 A PE performs:
 
-partial_sum = partial_sum + activation 闂?weight
+partial_sum = partial_sum + activation × weight
 
 
 Multiple PE units can form:
@@ -1308,7 +1319,7 @@ Verified:
 
 Test1:
 
-2 闂?3
+2 × 3
 
 Result:
 
@@ -1317,7 +1328,7 @@ partial_sum = 6
 
 Test2:
 
-4 闂?5
+4 × 5
 
 Result:
 
@@ -1326,7 +1337,7 @@ partial_sum = 26
 
 Test3:
 
-10 闂?2
+10 × 2
 
 Result:
 
@@ -1335,7 +1346,8 @@ partial_sum = 46
 
 Simulation:
 
-PASS 闂?
+PASS ✅
+
 
 ## Debug Experience
 
@@ -1355,13 +1367,16 @@ Sequential hardware requires:
 
 Input setup
 
-闂?
+↓
+
 Clock edge
 
-闂?
+↓
+
 Register update
 
-闂?
+↓
+
 Output verification
 
 
@@ -1476,7 +1491,7 @@ Pipeline MAC Design
 
 [x] Designed pipelined MAC RTL
 
-[x] Implemented INT8 闂?INT8 闂?INT16 multiplication
+[x] Implemented INT8 × INT8 → INT16 multiplication
 
 [x] Implemented INT32 accumulation path
 
@@ -1536,16 +1551,17 @@ Single MAC Unit
 
 Next:
 
-Multiple MAC units 闂?PE Array
+Multiple MAC units → PE Array
 
 
 Future:
 
-PE Array 闂?Systolic Array 闂?NPU Accelerator
+PE Array → Systolic Array → NPU Accelerator
 
 ## Day10: PE Array and Parallel Computation
 
-Status: Completed 闂?
+Status: Completed ✅
+
 Completed:
 
 - Reviewed Processing Element IP
@@ -1647,7 +1663,8 @@ Learned:
 Status:
 
 ```
-Completed 闂?```
+Completed ✅
+```
 
 ## Completed Modules
 
@@ -1718,13 +1735,16 @@ Completed architecture:
 ```
 Controller
 
-闂?
+↓
+
 Loader
 
-闂?
+↓
+
 Compute Array
 
-闂?
+↓
+
 Result
 ```
 
@@ -1787,103 +1807,142 @@ Accelerator integration verification.
 
 ### Goal
 
-濠电姷鏁搁崕鎴犲緤閽樺鏆︽い鎺戝閻鏌涢埄鍐姇闁稿濞€閺屾盯鍩勯崘鎯ф瘈?Day12 Accelerator Integration 闂傚倷绀侀幖顐︻敄閸儱鏄ラ柡宥庡幗閸婂灚銇勯弽顐沪闁哄拋鍓熼幃姗€鎮欑捄杞版睏闂?RTL 濠电姷顣藉Σ鍛村垂椤忓牆鐒垫い鎺戝暞閻濐亪鏌涚€ｃ劌鍔﹂柟顔款潐閹峰懘鎮烽幍顕呮О婵＄偑鍊栭幐鎼佸箟閳ユ剚鐒介悹鍥ㄧゴ濡插牊淇婇姘儓婵?AI 闂傚倷绶氬Λ璺ㄦ媰閿曞倸鍨傞柧蹇ｅ亝濞呯娀鏌″搴′簻閻庡灚鐓￠弻銈嗘叏閹邦兘鍋撳Δ鍛槬闁绘绮悡娑㈡倵閿濆骸骞栭柣鎾村姍閺岋絾鎯旈鑲╀桓闂佽鍠栭悥鐓庣暦閸楃倫鎺楀箰鎼粹剝璇炴繝?
-闂傚倷绀侀幖顐︽偋濠婂牆绀堟慨姗嗗劦濞戙垹鐓涢柛娑卞枤閸樻帡鎮楅獮鍨姎婵炲眰鍊栫粋鎺楊敍濮橈絾顫嶉梺瑙勫劤绾绢厽鐗庢繝纰樺墲瑜板啴骞夐敓鐘茬柧闁割偅娲橀崐鐑芥煙缂佹ê淇繛濂镐憾濮婃椽宕崟顐熷亾鐟欏嫮鐝堕柛鈩冦仜閺?RTL闂傚倷鐒︾€笛呯矙閹达附鍎楀〒姘ｅ亾闁糕斁鍋撳銈嗗坊閸嬫捇鏌￠崼顐㈠閸楅亶鏌熼梻瀵割槮缂佲偓閸℃稒鐓曢柍鈺佸枤閻掍粙鏌嶈閸撴繂螞閸曨垼鏁婇煫鍥ㄧ☉閻顭跨捄渚剳闁?Accelerator Framework 婵犵數鍋為崹鍫曞箹閳哄懎鍌ㄥ┑鍌滎焾缁犳牠鏌涢妷顔句粶闁绘梻鍘ч悘鎶芥煣韫囷絽浜滃ù鐘虫尦濮婂搫效閸パ冾瀳闁诲孩鍑归崹杈╃矉瀹ュ洠鍋撻棃娑欏暈閻庢艾顭烽弻銊モ攽閸℃娈滈梺绋款儐閹稿骞忛崨顖涘枂闁告洦鍓﹂崯鈧梻鍌欒兌椤㈠﹪顢氶弽顓炵獥婵°倕鍟伴惌鍫ユ煥閺囩偛鈧顪冩禒瀣€堕柣鎰綑閸斻倕霉閻樼鑰块柡灞剧洴楠炴帡寮撮悢鎭掆偓鎰版⒑閸涘浼曢柛娑卞幖椤曆冣攽椤旂偓鍤€婵炶尙濞€瀹?
+深入理解 Day12 Accelerator Integration 架构，从 RTL 模块设计进入 AI 芯片系统架构理解。
+
+本日重点不是增加新的 RTL，而是分析已有 Accelerator Framework 中各模块的职责、数据流和控制关系。
+
 ---
 
 # Day13 Learning Summary
 
 ## 1. Accelerator Top Architecture
 
-闂傚倷绀侀幉锛勬暜閹烘嚦娑樷枎閹炬潙鈧潧霉閻樺樊鍎愰柡?
+分析：
+
 ```
 accelerator_top.v
 ```
 
-闂傚倷娴囧畷鐢稿磻濞戞娑橆煥閸♀晜姣庨梻浣筋嚙濞寸兘骞婇幘璇插珘妞ゆ帒瀚Ч?Accelerator 闂傚倷鐒﹂惇褰掑礉瀹€鈧埀顒佸嚬閸撶喖骞嗛崶顒€绾ч幖瀛樻尰閻庡姊洪幐搴ｂ槈閻庢凹鍠栭埢鏃堝閵堝棛鍘搁柣搴秵娴滄粓顢旈悽鐢电＜?
+理解完整 Accelerator 的层次结构：
+
 ```
 Accelerator
 
-闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Controller FSM
-闂?闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Weight Loader
-闂?闂傚倷绀侀悿鍥綖婢跺鐝堕柡鍥ュ灩缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Activation Loader
-闂?闂傚倷绀侀悿鍥綖婢舵劕钃熼柨鐔哄Т缂佲晠鏌曡箛瀣偓鏇㈡偂濮椻偓閺?Systolic Array
+├── Controller FSM
+│
+├── Weight Loader
+│
+├── Activation Loader
+│
+└── Systolic Array
         |
         |
        PE Array
 ```
 
-闂傚倷绀侀幖顐ょ矓閸洍鈧箓宕奸姀銏㈠婵°倧绲介崯顐ょ不閹寸偟绡€闂傚牊绋掗幖鎰版煕濡娴柡?
-婵犵數鍋為崹鍫曞箰閹绢喖纾婚柟鐐灱濡?AI Accelerator 闂傚倷鐒﹂惇褰掑垂濞差亜鑸归柤濮愬€栭～?
+核心思想：
+
+一个 AI Accelerator 由：
+
 * Control Path
 * Data Path
 * Compute Engine
 
-闂傚倷鑳堕…鍫㈡崲閹邦剛鏆︽い鎺戝缁犳牠鏌熼幆褍顣崇痪鎯с偢閺屾盯寮撮妸銉ヮ潻闂佽绻愬ú顓㈠蓟?
+共同组成。
+
 ---
 
 # 2. Controller FSM Analysis
 
-闂備浇顕х€涒晠宕橀懡銈囩＝婵ê宕慨顒勬煕閺囥劌鐏￠柡?
+学习：
+
 ```
 controller_fsm.v
 ```
 
-闂傚倷娴囧畷鐢稿磻濞戞娑橆煥閸♀晜姣?FSM 闂?Accelerator 婵犵數鍋為崹鍫曞箹閳哄懎鍌ㄩ柟顖嗏偓閺嬫棃鏌熺€电浠﹀┑顖氱摠缁绘繃绻濋崒娑樻闂佸搫妫楃换姗€寮?
-闂傚倷鑳剁划顖炩€﹂崼銉ユ槬闁哄稁鍘奸悞鍨亜閹达絾纭剁紒娑樼箳缁?
+理解 FSM 在 Accelerator 中的作用：
+
+状态：
+
 ```
 IDLE
 
-闂?
+↓
+
 LOAD_WEIGHT
 
-闂?
+↓
+
 COMPUTE
 
-闂?
+↓
+
 OUTPUT
 
-闂?
+↓
+
 CLEAR
 ```
 
-FSM 闂備浇宕垫慨鐢稿礉濡ゅ懎绐楅柡鍥ュ灪閸庢淇婇妶鍛櫤闁?
-* 闂傚倷鑳剁划顖炩€﹂崼銉ユ槬闁哄稁鍘奸悞鍨亜閹达絽鍔甸柛蹇撴湰閵囧嫰骞樼€涙ê鈧劙鏌?* 闂傚倷鑳堕、濠囨儗閸ヮ剙绀冮柕濞у啫绠戞繝鐢靛剳缁茶棄煤閻樿鐒垫い鎺嗗亾闁哥喐瀵х换娑㈠炊椤掍胶鍘介梺闈涚箞閸ㄥ綊寮搁幋锔界厱?* 闂備浇宕垫慨宕囨閵堝洦顫曢柡鍥ュ灪閸嬧晠鎮归崶顏嶆⒖閻熸瑥瀚刊鎾偠濞戞帒澧查柣鎾跺█閺岋綁鎮╁顔煎壈闂佸摜鍣ラ崑鍡涘焵?
-FSM 婵犵數鍋為崹鍫曞箰閸濄儳鐭撳瀣捣閻棝鎮楅敐搴″閻庢艾顭烽弻銊モ攽閸℃瑧顔婄紓?
-* 婵犵數鍋為崹璺侯潖绾懏鎳岀紓?* 闂傚倷绀侀幉鈥愁潖缂佹ɑ鍙忛柣銏犵仛閸?* MAC闂備浇宕垫慨宕囨閵堝洦顫曢柡鍥ュ灪閸?
-闂備浇顕ф绋匡耿闁秴纾婚柣鏃囧亹瀹撲線鏌涢妷顔煎闁?
-Control Path 婵?Data Path 闂傚倷绀侀幉锛勬暜閹烘嚦娑樷槈閳垛斁鍋撻弽顓炵倞妞ゆ巻鍋撴潻?
+FSM 负责：
+
+* 状态管理
+* 控制信号生成
+* 计算流程调度
+
+FSM 不负责：
+
+* 乘法
+* 加法
+* MAC计算
+
+实现：
+
+Control Path 与 Data Path 分离。
+
 ---
 
 # 3. Weight Loader Analysis
 
-闂備浇顕х€涒晠宕橀懡銈囩＝婵ê宕慨顒勬煕閺囥劌鐏￠柡?
+学习：
+
 ```
 weight_loader.v
 ```
 
-闂傚倷娴囧畷鐢稿磻濞戞娑橆煥閸♀晜姣庨梻?
-Weight Loader 闂備浇顕х换鎺楀磻閻旂厧纾绘俊顖濆婵櫕銇勯幒鎴濐仼闁哄绶氶弻锝呂旈埀顒勬偋閸℃瑧鐭堥柨鏇炲€归崑锝呫€掑鐓庣仩闁诲繒濮风槐鎺楀礈娴ｉ晲妲愭繝?
-婵犵數鍋犻幓顏嗗緤閸撗冨灊閹兼番鍔岄弸渚€鏌曢崼婵愭Ч闁?
-闂?Compute Engine 闂傚倷绀佸﹢杈╁垝椤栫偛绀夐柟鐑樻⒐椤愪粙鏌ｉ姀銏╃劸缂佺嫏鍥ㄧ厱闁逛即娼ч弸娑欑箾閸涱偄鐏查柡灞稿墲閹峰懘宕崟鍨瘔闁诲氦顫夐幐椋庢濮橆厺绻?
-闂佽崵鍠愮划搴㈡櫠濡ゅ懎绠伴柛娑橈攻濞呯娀鏌ｅΟ鑲╁笡闁稿顑夐弻娑㈩敃閵堝懏鐎鹃梺鍦厴娴滃爼寮?
-闂傚倷鐒﹂幃鍫曞磿闁秴绠规い鎰堕檮閸嬧晛螖閿濆懎鏆欑紒鐙欏洦鐓曢柟浼存涧閺嬫稒绻涢崨顐㈢伈鐎殿喖鐖煎畷濂告偄缁嬭法顣查梻浣告啞閻熴儱螞濠靛鏋?
+理解：
+
+Weight Loader 属于数据路径。
+
+作用：
+
+向 Compute Engine 提供权重数据。
+
+当前版本：
+
+固定权重输入：
+
 ```
 weight = [5,7,0,0]
 ```
 
-闂備浇顕х换鎺楀磻閻旂厧纾绘俊顖濆婵櫕銇勯幒鎴濐仼闁哄鐒︾换娑㈠幢濡や胶顩伴梺鍛婃煥閹虫﹢寮?Buffer/Register 濠电姷顣藉Σ鍛村垂椤忓牆鐒垫い鎺嗗亾缁剧虎鍙冮崺鈧い鎺戝€搁崢鏉戔攽?
-闂傚倷绀侀幖顐︽偋濠婂嫮顩叉繝闈涙－閻掍粙鏌ｉ姀銏╃劸缁绢厸鍋撻梻浣规偠閸庮噣寮查悩缁樺仒闁瑰墽绮悡娑㈡煕鐏炲墽鐭嬮柛銈傚亾闂備浇顕栭崰妤冨垝閹捐鏋?
+属于教学版 Buffer/Register 模型。
+
+未来升级方向：
+
 ```
 DRAM
 
-闂?
+↓
+
 DMA
 
-闂?
+↓
+
 SRAM Weight Buffer
 
-闂?
+↓
+
 Compute Engine
 ```
 
@@ -1891,48 +1950,57 @@ Compute Engine
 
 # 4. Activation Loader Analysis
 
-闂備浇顕х€涒晠宕橀懡銈囩＝婵ê宕慨顒勬煕閺囥劌鐏￠柡?
+学习：
+
 ```
 activation_loader.v
 ```
 
-闂傚倷娴囧畷鐢稿磻濞戞娑橆煥閸♀晜姣?Activation 婵?Weight 闂傚倷鐒﹂惇褰掑礉瀹€鈧埀顒佸嚬閸撴稒绂嶉幖渚囨晬闁绘劘灏欓ˇ顐㈩渻閵堝棗濮﹂柛鎾寸〒缁?
+理解 Activation 与 Weight 的区别：
+
 |      | Weight        | Activation        |
 | ---- | ------------- | ----------------- |
-| 闂傚倷绀侀幖顐λ囬銏犵？闁肩⒈鍓濇慨?  | 濠电姷顣藉Σ鍛村垂椤忓牆鐒垫い鎺嗗亾缁剧虎鍙冮崺鈧い鎺戝€搁崢瀵糕偓瑙勬穿缂嶄礁鐣烽幒鎴旀婵炲棙鍔﹂崯鈧?         | 婵犵數鍋為崹鍫曞箹閳哄懎鐭楅柛鎰╁壆濞戞碍宕夐柕濠忕畱椤庢盯姊洪幐搴ｂ槈閻庢凹鍣ｅ鎶筋敆閸屾粎锛濇繛杈剧秬椤浜告导瀛樼厽?           |
-| 闂傚倷绀侀幉锟犳偡閿曞倹鏅梺?  | 闂傚倷鐒﹂幃鍫曞磿闁秴绠规い鎰堕檮閸?           | 闂傚倷绀侀幉锟犲蓟閿濆绀夌€广儱顦悞?               |
-| 婵犵數濮伴崹鐓庘枖濞戞氨鐭撻柛顐ｆ礀閺?  | 婵?            | 婵?                |
-| 闂備浇顕х€涒晝绮欓幒妤佹櫔闂備胶顭堥鍛矓閸撲礁鍨濋柣銏㈩焾閸愨偓濡炪倖鍔х徊楣冾敇?| Weight Buffer | Activation Buffer |
+| 来源   | 模型参数          | 中间计算结果            |
+| 变化   | 固定            | 动态                |
+| 复用   | 高             | 低                 |
+| 存储策略 | Weight Buffer | Activation Buffer |
 
-闂傚倷鐒﹂幃鍫曞磿閾忣偅鍙忛柣銏犲閺佸棙绻濋棃娑卞剱闁稿孩鍨块弻锝夊籍閸偅顥栭梺?NPU 闂傚倸鍊风欢锟犲磻閸涘瓨鍤屽Δ锝呭暞閸嬪鏌涢锝嗙缂佲偓閸℃稒鐓曢柍鈺佸枤濞堟鐥幑鎰惞缂佽鲸甯￠幃顏堝川椤栨粣绱甸梻浣筋嚃閸犳牠鏁冮鍛箚?
+因此真实 NPU 通常分开管理。
+
 ---
 
 # 5. Systolic Array Analysis
 
-闂備浇顕х€涒晠宕橀懡銈囩＝婵ê宕慨顒勬煕閺囥劌鐏￠柡?
+学习：
+
 ```
 systolic_array_4x4.v
 ```
 
-闂傚倷娴囧畷鐢稿磻濞戞娑橆煥閸♀晜姣庨梻?
-4闂? Systolic Array闂?
+理解：
+
+4×4 Systolic Array：
+
 ```
 16 PE
 ```
 
-闂傚倷娴囧銊╂嚄閼稿灚娅犳俊銈傚亾闁伙絽鐏氶幏鍛嫚閵夘煈娼愮紒妤冨枑缁绘繈宕熼鐘茬倞
+数据流：
 
 Activation:
 
 ```
-闂?闂?闂?```
+左 → 右
+```
 
 Weight:
 
 ```
-婵?闂?婵?```
+上 → 下
+```
 
-濠电姵顔栭崳顖滃緤閻ｅ本宕查悗锝庡枟閻?PE 闂傚倷绀侀幉锟犳嚌妤ｅ啫瀚夋い鎺嗗亾妞ゎ亜鍟村畷鎺楁倷閼碱剦鍚嬮柣鐔哥矋閸ㄥ潡濡存笟鈧獮瀣晜閼恒儲鐝?
+每个 PE 同时执行：
+
 ```
 MAC
 +
@@ -1943,13 +2011,16 @@ Data Forwarding
 
 # 6. PE Unit Analysis
 
-闂備浇顕х€涒晠宕橀懡銈囩＝婵ê宕慨顒勬煕閺囥劌鐏￠柡?
+学习：
+
 ```
 pe_unit.v
 ```
 
-闂傚倷娴囧畷鐢稿磻濞戞娑橆煥閸♀晜姣?PE 闂?Accelerator 闂傚倷绀侀幖顐︽偋閸愵喖纾婚柟鍓х帛閻撴洟鏌嶉崫鍕殭闁告柨顑嗙换婵嬪焵椤掑嫬绠ユい鏃囨椤庢盯姊洪幐搴ｂ槈閻庢凹鍣ｅ鎶筋敆閸曨剛鍘卞┑掳鍊撻悞锔剧矆閳ь剟姊洪崨濞氭垿骞戦崶銊ょ箚?
-闂傚倷绀侀幉鈥愁潖婵犳艾绐楅柡鍥ュ灩缁€鍌涙叏濡炶浜鹃梺?
+理解 PE 是 Accelerator 最基本计算单元。
+
+功能：
+
 ```
 Multiply
 
@@ -1962,7 +2033,8 @@ Accumulate
 Forward
 ```
 
-闂傚倷绀侀幖顐ょ矓閸洍鈧箓宕奸姀銏㈠闂佸憡鎸嗛崟顐偓娑㈡⒑閹稿海鈽夐悗姘煎櫍瀵娊顢楅崟顒傚弳?
+核心计算：
+
 ```
 accumulator =
 accumulator + activation * weight
@@ -1974,11 +2046,16 @@ accumulator + activation * weight
 
 ## Control Path
 
-闂備浇宕垫慨鐢稿礉濡ゅ懎绐楅柡鍥ュ灪閸庢淇婇妶鍛櫤闁?
-```
-婵犵數鍋涢顓熸叏椤撱垹纾婚柟鐐灱濡插牓鏌￠崒婵囩《濠⒀勭⊕娣囧﹪鎮欓幓鎺嗗亾閸喚鏆﹂柟閭﹀厴閺嬪酣鏌熼悜妯肩畵闁诡喕鑳剁槐?婵犵數鍋涢顓熸叏椤撱垹纾婚柟鐐灱濡插牓鏌￠崒婵囩《濠⒀勭⊕娣囧﹪鎮欓幓鎺嗗亾閸喚鏆﹂柟閭﹀厴閺嬪酣鐓崶銊︽儎婵炲ジ浜堕弻?婵犵數鍋涢顓熸叏椤撱垹纾婚柟鐐灱濡插牓鏌￠崒婵囩《濠⒀勭⊕娣囧﹪鎮欓幓鎺嗗亾閸喚鏆﹂柟閭﹀厴閺嬪酣鏌熼悜妯烩拻闁绘劖娲熷?```
+负责：
 
-濠电姷顣藉Σ鍛村垂椤忓牆鐒垫い鎺戝暞閻濐亪鏌涚€ｃ劌鍔﹂柡?
+```
+什么时候计算
+什么时候加载
+什么时候输出
+```
+
+模块：
+
 ```
 Controller FSM
 ```
@@ -1987,11 +2064,15 @@ Controller FSM
 
 ## Data Path
 
-闂備浇宕垫慨鐢稿礉濡ゅ懎绐楅柡鍥ュ灪閸庢淇婇妶鍛櫤闁?
-```
-闂傚倷娴囧銊╂嚄閼稿灚娅犳俊銈傚亾闁伙絽鐏氶幏鍛存焻濞戞氨鐣鹃梻浣侯焾閺堫剟鎮疯缁梻鎹勯妸褏锛滄繝銏ｆ硾鐎垫帡宕靛▎蹇婃斀?闂傚倷娴囧銊╂嚄閼稿灚娅犳俊銈傚亾闁伙絽鐏氶幏鍛存焻濞戞氨鐣鹃梻浣侯焾閺堫剟鎮疯缁棃宕稿Δ浣镐化婵炴挻鑹鹃敃锔惧閸ф鐓?```
+负责：
 
-濠电姷顣藉Σ鍛村垂椤忓牆鐒垫い鎺戝暞閻濐亪鏌涚€ｃ劌鍔﹂柡?
+```
+数据如何移动
+数据如何计算
+```
+
+模块：
+
 ```
 Loader
 
@@ -2004,14 +2085,16 @@ PE
 
 # Engineering Improvements Identified
 
-闂佽崵鍠愮划搴㈡櫠濡ゅ懎绠伴柛娑橈攻濞?Day12 Accelerator闂?
+当前 Day12 Accelerator：
+
 * Fixed latency
 * Fixed weight
 * Fixed activation
 * No memory interface
 * No compute done handshake
 
-闂傚倷绀侀幖顐︽偋濠婂嫮顩叉繝闈涙－閻掍粙鏌ｉ姀銏╃劸缁绢厸鍋撻梻浣规偠閸庮噣寮查悩缁樺仒闁瑰墽绮悡娑㈡煕鐏炲墽鐭嬮柛銈傚亾闂備浇顕栭崰妤冨垝閹捐鏋?
+未来升级方向：
+
 ```
 Memory Interface
 
@@ -2036,18 +2119,21 @@ Pipeline Control
 
 # Day13 Achievement
 
-闂備浇顕уù鐑藉箠閹捐瀚夋い鎺戝閸ㄥ倹鎱ㄥΟ鍨厫闁?
-婵?RTL Module Designer
+完成：
 
-闂?
+从 RTL Module Designer
+
+向
+
 AI Accelerator Architecture Designer
 
-闂傚倷鐒﹂惇褰掑礉瀹€鈧埀顒佸嚬閸ｏ綁鐛崘鈺冪瘈闁告洦鍓欓弸鍌炴⒑閹稿海绠撻柟鍐叉捣婢规洖鐣烽崶鈺冿紲闂佺粯鐟﹂悷銈囨媼閺屻儱纾?
+的理解升级。
+
 ## Day14
 
 Status
 
-闂?Completed
+✅ Completed
 
 Implemented
 
@@ -2112,10 +2198,14 @@ Waveform hierarchy reflects Verilog module instantiation hierarchy.
 Debugging strategy:
 
 CPU interface
-闂?Controller FSM
-闂?Data Fetch
-闂?Compute Engine
-闂?Output Buffer
+↓
+Controller FSM
+↓
+Data Fetch
+↓
+Compute Engine
+↓
+Output Buffer
 
 Current milestone:
 
@@ -2123,7 +2213,9 @@ Able to trace a complete NPU task from start command to result storage.
 
 ## Day16 - Matrix Multiplication Workload
 
-Status: PASS 闂?Completed:
+Status: PASS ✅
+
+Completed:
 
 - First real AI workload on the NPU: C = A x B
 - Decomposed 2x2 matrix multiply into 4 dot-product tasks
@@ -2150,10 +2242,13 @@ Key engineering understanding:
 6. signed types enable correct negative-number arithmetic
 7. Serial execution is slow -> motivates systolic array parallelism
 
+Next:
+
+Day17 - Parallel Matrix Multiply
 
 ## Day17 - Parallel Matrix Multiply
 
-Status: PASS
+Status: PASS ✅
 
 Completed:
 
@@ -2175,12 +2270,11 @@ Key engineering understanding:
 
 Next:
 
-Day19 - Systolic NPU Integration
-
+Day18 - Systolic Array Dataflow
 
 ## Day18 - Systolic Array Dataflow
 
-Status: PASS
+Status: PASS ✅
 
 Completed:
 
@@ -2204,12 +2298,11 @@ Key engineering understanding:
 
 Next:
 
-Day20 - Double Buffering
-
+Day19 - Systolic NPU Integration
 
 ## Day19 - Systolic NPU Integration
 
-Status: PASS
+Status: PASS ✅
 
 Completed:
 
@@ -2232,12 +2325,11 @@ Key engineering understanding:
 
 Next:
 
-Day21 - Wider fetch (4-wide)
-
+Day20 - Double Buffering
 
 ## Day20 - Double Buffering
 
-Status: PASS
+Status: PASS ✅
 
 Completed:
 
@@ -2258,7 +2350,7 @@ Key engineering understanding:
 
 Next:
 
-Day21 - Wider fetch (4-wide) to break the 48-cycle bound
+Day21 - Wider Data Path (4-wide fetch)
 
 ================================
 # 11. Engineering Habits Learned
@@ -2277,17 +2369,20 @@ Example:
 RTL
 
 
-闂?
+↓
+
 
 Simulation
 
 
-闂?
+↓
+
 
 Waveform
 
 
-闂?
+↓
+
 
 Confirmation
 
@@ -2306,22 +2401,26 @@ Debug by layers.
 Problem
 
 
-闂?
+↓
+
 
 Locate layer
 
 
-闂?
+↓
+
 
 Verify hypothesis
 
 
-闂?
+↓
+
 
 Fix
 
 
-闂?
+↓
+
 
 Confirm
 
@@ -2445,17 +2544,17 @@ None
 ================================
 
 
-Continue AI accelerator architecture development.
+Continue RTL architecture development.
 
 
 
 Future topics:
 
 
-- Systolic array dataflow (Day18)
+- Systolic array dataflow
 - Weight stationary scheduling
-- 4x4 matrix multiply scaling
-- Memory hierarchy / output buffer widening
+- Pipeline optimization (double buffering)
+- Memory hierarchy / DMA
 - Full NPU architecture
 
 
