@@ -1467,7 +1467,33 @@ Key understanding:
 Day21 milestone:
 
 Fetch dropped 48->12 cycles; total 312->243->147.
-Next: Day22 pipelined store.
+Next: Day23 wider store.
+
+## Day22 - Pipelined Store (Output Double Buffer)
+
+Status
+
+PASS
+
+Completed:
+
+- Decoupled store from the compute pipeline
+- 1-cycle result latch + concurrent store sub-FSM
+- store_req pending flag (1-entry FIFO handshake)
+- 4 tasks all PASS
+- 100 cycles (Day21: 147, Day20: 243)
+
+Key understanding:
+
+- Store(16) > compute(11) was the serial bottleneck
+- store_req = producer/consumer handshake
+- New bound: store queue 16/task
+- Next: wider store
+
+Day22 milestone:
+
+Store now runs in parallel with compute; 312->100 cycles.
+Next: Day23 wider store.
 
 ---
 

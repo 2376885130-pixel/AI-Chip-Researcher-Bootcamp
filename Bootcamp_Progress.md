@@ -60,6 +60,7 @@ Completed:
 - Systolic NPU Integration (Day19)
 - Double Buffering (Day20)
 - Wider Data Path (Day21)
+- Pipelined Store (Day22)
 
 Current Focus:
 
@@ -93,7 +94,7 @@ RTL Design Fundamentals
 Current Day:
 
 
-Day 21 Completed
+Day 22 Completed
 
 
 
@@ -2351,7 +2352,7 @@ Key engineering understanding:
 
 Next:
 
-Day22 - Pipelined Store (Output Double Buffer)
+Day23 - Wider Store (2-wide result write)
 
 ## Day21 - Wider Data Path (4-wide fetch)
 
@@ -2376,7 +2377,34 @@ Key engineering understanding:
 
 Next:
 
-Day22 - Pipelined Store (Output Double Buffer)
+Day23 - Wider Store (2-wide result write)
+
+## Day22 - Pipelined Store (Output Double Buffer)
+
+Status: PASS ✅
+
+Completed:
+
+- Decoupled the store from the compute pipeline
+- Result latch: 1 cycle to capture 16 results into output banks
+- Concurrent store sub-FSM (runs while the next task computes)
+- store_req pending flag to avoid losing store requests
+- Two output banks (result ping-pong)
+- 4 tasks all PASS
+- Latency: 100 cycles (Day21: 147, Day20: 243)
+- Speedup: 3.12x vs Day19, 1.47x vs Day21
+
+Key engineering understanding:
+
+1. Store(16) > compute(11) made the store the serial bottleneck
+2. Latch results in 1 cycle -> systolic immediately free
+3. store_req = 1-entry FIFO (producer/consumer handshake)
+4. New bound: store queue 16/task (single result-mem port)
+5. Theoretical ~88, measured 100 (~12 FSM overhead)
+
+Next:
+
+Day23 - Wider Store (2-wide result write)
 
 ================================
 # 11. Engineering Habits Learned
@@ -2590,20 +2618,20 @@ Future topics:
 ================================
 
 
-Day22:
+Day23:
 
 
-Pipelined Store (Output Double Buffer)
+Wider Store (2-wide result write)
 
 
 
 Goal:
 
 
-- Overlap store of task N with compute of task N+1
-- Add a second output buffer (ping-pong on results)
-- Reduce steady-state interval toward max(compute, store)
-- Measure throughput vs Day21
+- Write 2 results per cycle to the output buffer
+- Cut store from 16 to 8 cycles per task
+- Push steady-state toward ~12 cycles/task
+- Measure throughput vs Day22
 
 
 
