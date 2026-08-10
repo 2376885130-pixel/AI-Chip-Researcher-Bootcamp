@@ -59,6 +59,7 @@ Completed:
 - Systolic Array Dataflow (Day18)
 - Systolic NPU Integration (Day19)
 - Double Buffering (Day20)
+- Wider Data Path (Day21)
 
 Current Focus:
 
@@ -92,7 +93,7 @@ RTL Design Fundamentals
 Current Day:
 
 
-Day 20 Completed
+Day 21 Completed
 
 
 
@@ -2350,7 +2351,32 @@ Key engineering understanding:
 
 Next:
 
-Day21 - Wider Data Path (4-wide fetch)
+Day22 - Pipelined Store (Output Double Buffer)
+
+## Day21 - Wider Data Path (4-wide fetch)
+
+Status: PASS ✅
+
+Completed:
+
+- Widened SRAM word to 32 bits (4 packed 8-bit elements)
+- Built RTL/Day21/fetch16w.v (4 reads x 3 cycles = 12)
+- Built RTL/Day21/npu_wide_top.v (wide buffers + pipelined controller)
+- Same 4 tasks as Day20, all PASS
+- Latency: 147 cycles (Day19: 312, Day20: 243)
+- Speedup: 2.12x vs Day19, 1.65x vs Day20
+
+Key engineering understanding:
+
+1. Wider memory word = more data per access = fewer cycles
+2. Fetch dropped from 48 to 12 cycles
+3. New bottleneck: compute+store (27) + FSM overhead (~9)
+4. Store (16) is serial with next compute (systolic busy)
+5. Next: output double buffering to overlap store with compute
+
+Next:
+
+Day22 - Pipelined Store (Output Double Buffer)
 
 ================================
 # 11. Engineering Habits Learned
@@ -2564,21 +2590,20 @@ Future topics:
 ================================
 
 
-Day21:
+Day22:
 
 
-Wider Data Path (4-wide fetch)
+Pipelined Store (Output Double Buffer)
 
 
 
 Goal:
 
 
-- Read 4 elements per cycle instead of 1
-- Cut fetch from 48 to 12 cycles
-- Combine with double buffering
-- Break the 48-cycle steady-state bound
-- Measure combined throughput vs Day20
+- Overlap store of task N with compute of task N+1
+- Add a second output buffer (ping-pong on results)
+- Reduce steady-state interval toward max(compute, store)
+- Measure throughput vs Day21
 
 
 

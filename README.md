@@ -1442,7 +1442,32 @@ Key engineering understanding:
 
 Next:
 
-Day21 - Wider Data Path (4-wide fetch)
+Day22 - Pipelined Store (Output Double Buffer)
+
+## Day21 - Wider Data Path (4-wide fetch)
+
+Status
+
+PASS
+
+Completed:
+
+- 32-bit wide SRAM words (4 packed 8-bit elements)
+- fetch16w: 4 reads x 3 cycles = 12 (was 48)
+- npu_wide_top: wide fetch + double buffer pipeline
+- 4 tasks all PASS (same as Day20)
+- 147 cycles (Day19: 312, Day20: 243)
+
+Key understanding:
+
+- Wider memory word = more data per access
+- New bottleneck: store (16) + FSM overhead
+- Next: output double buffering
+
+Day21 milestone:
+
+Fetch dropped 48->12 cycles; total 312->243->147.
+Next: Day22 pipelined store.
 
 ---
 
