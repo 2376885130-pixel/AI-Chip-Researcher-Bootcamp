@@ -1467,7 +1467,7 @@ Key understanding:
 Day21 milestone:
 
 Fetch dropped 48->12 cycles; total 312->243->147.
-Next: Day23 wider store.
+Next: Day24 DMA + SRAM interface.
 
 ## Day22 - Pipelined Store (Output Double Buffer)
 
@@ -1493,7 +1493,32 @@ Key understanding:
 Day22 milestone:
 
 Store now runs in parallel with compute; 312->100 cycles.
-Next: Day23 wider store.
+Next: Day24 DMA + SRAM interface.
+
+## Day23 - Wider Store (2-wide result write)
+
+Status
+
+PASS
+
+Completed:
+
+- 2 results packed per 64-bit output word
+- Store 16 -> 8 cycles per task
+- 4 tasks all PASS
+- 92 cycles (Day22: 100)
+
+Key understanding:
+
+- Store no longer on the critical path (hidden behind compute)
+- Diminishing returns of memory widening
+- Bottleneck: compute + FSM overhead (~21/task)
+- Next: DMA + SRAM interface
+
+Day23 milestone:
+
+On-chip data path optimized 312->92 (3.39x).
+Next: Day24 DMA controller + SRAM interface.
 
 ---
 

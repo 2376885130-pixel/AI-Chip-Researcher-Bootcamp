@@ -61,6 +61,7 @@ Completed:
 - Double Buffering (Day20)
 - Wider Data Path (Day21)
 - Pipelined Store (Day22)
+- Wider Store (Day23)
 
 Current Focus:
 
@@ -94,7 +95,7 @@ RTL Design Fundamentals
 Current Day:
 
 
-Day 22 Completed
+Day 23 Completed
 
 
 
@@ -2352,7 +2353,7 @@ Key engineering understanding:
 
 Next:
 
-Day23 - Wider Store (2-wide result write)
+Day24 - DMA Controller + SRAM Interface
 
 ## Day21 - Wider Data Path (4-wide fetch)
 
@@ -2377,7 +2378,7 @@ Key engineering understanding:
 
 Next:
 
-Day23 - Wider Store (2-wide result write)
+Day24 - DMA Controller + SRAM Interface
 
 ## Day22 - Pipelined Store (Output Double Buffer)
 
@@ -2404,7 +2405,32 @@ Key engineering understanding:
 
 Next:
 
-Day23 - Wider Store (2-wide result write)
+Day24 - DMA Controller + SRAM Interface
+
+## Day23 - Wider Store (2-wide result write)
+
+Status: PASS ✅
+
+Completed:
+
+- Packed 2 results into one 64-bit output-buffer word
+- Store dropped from 16 to 8 cycles per task
+- Fixed port width bug (result_read_data 32->64 bits)
+- 4 tasks all PASS
+- Latency: 92 cycles (Day22: 100)
+- Cumulative speedup: 3.39x vs Day19
+
+Key engineering understanding:
+
+1. Store(8) is no longer on the critical path (hidden behind compute)
+2. Diminishing returns: store 16->8 saved only 8 cycles
+3. New bottleneck: compute(11)+latch(1)+FSM overhead (~21/task)
+4. Memory widening has diminishing returns; control now dominates
+5. Next: move to DMA + SRAM interface (external memory)
+
+Next:
+
+Day24 - DMA Controller + SRAM Interface
 
 ================================
 # 11. Engineering Habits Learned
@@ -2618,20 +2644,21 @@ Future topics:
 ================================
 
 
-Day23:
+Day24:
 
 
-Wider Store (2-wide result write)
+DMA Controller + SRAM Interface
 
 
 
 Goal:
 
 
-- Write 2 results per cycle to the output buffer
-- Cut store from 16 to 8 cycles per task
-- Push steady-state toward ~12 cycles/task
-- Measure throughput vs Day22
+- Build a DMA controller for bulk transfers (memory <-> buffer)
+- Define the SRAM read/write interface (address, enable, data)
+- Load a matrix from external memory into the on-chip buffer
+- Understand burst transfer concepts
+- Integrate DMA with the systolic NPU
 
 
 
