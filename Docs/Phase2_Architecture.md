@@ -9,16 +9,19 @@ ai_accelerator_top
 ├── Interface
 │   └── host_interface
 ├── Control
-│   └── ai_accelerator_system scheduler boundary
+│   └── ai_task_controller
 ├── Memory
-│   ├── activation_buffer
-│   ├── weight_buffer
-│   └── output_buffer
+│   ├── ai_memory_controller
+│   ├── ai_activation_buffer
+│   ├── ai_weight_buffer
+│   └── ai_output_buffer
 └── Compute
     └── systolic_matmul / PE array
 ```
 
 The control path owns start, task sequencing, timeout, busy, done and error. The data path owns activation/weight storage, systolic computation and output streaming. The buffer modules define valid/ready address interfaces that can later be adapted to DMA, AXI or BRAM.
+
+The formal top routes host memory transactions through `ai_memory_controller` and start/completion through `ai_task_controller` before reaching the verified MVP compute implementation. The typed buffers are replacement-ready IP boundaries; the MVP core still owns its historical internal storage until a later controlled memory cutover.
 
 ## Parameter contract
 

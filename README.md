@@ -1619,6 +1619,8 @@ Supporting boundaries:
 
 Historical Day implementations remain available for traceability. The formal top adds parameter consistency checks and keeps the host, memory, control, and compute boundaries explicit.
 
+The formal top now instantiates the task and memory controllers. The typed buffer modules are prepared as the next memory ownership boundary; the verified MVP core remains the current compute implementation for regression stability.
+
 ---
 
 

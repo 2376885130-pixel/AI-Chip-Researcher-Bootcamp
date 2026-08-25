@@ -4,6 +4,8 @@
 
 Established `ai_accelerator_top` as the formal release boundary, added independent buffer modules and a host interface adapter, and added compile-time parameter consistency checks.
 
+The follow-up refinement connected `ai_memory_controller` and `ai_task_controller` into the formal top. The MVP compute core remains behind this boundary intentionally so Phase 1 behavior is preserved while memory ownership is migrated in a later controlled change.
+
 ## Why was it built?
 
 The repository had multiple historical tops. A research portfolio needs one documented entry point while preserving historical experiments for traceability.
