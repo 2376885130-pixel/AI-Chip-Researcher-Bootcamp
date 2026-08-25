@@ -1574,6 +1574,20 @@ Verification:
 
 `REGRESSION PASS`
 
+## Day27 - KV260 Vivado Project Skeleton
+
+Status
+
+READY FOR VIVADO
+
+Completed:
+
+- Added `FPGA/KV260/kv260_accelerator_top.v`
+- Added `FPGA/KV260/create_kv260_project.tcl`
+- Added `FPGA/KV260/kv260_accelerator.xdc`
+- Selected KV260 part `xck26-sfvc784-2LV-c`
+- Reserved board-specific pin mapping for the final carrier configuration
+
 ---
 
 

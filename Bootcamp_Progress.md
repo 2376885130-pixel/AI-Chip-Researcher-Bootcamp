@@ -95,7 +95,7 @@ RTL Design Fundamentals
 Current Day:
 
 
-Day 26 Completed
+Day 27 Completed
 
 
 
@@ -2682,6 +2682,18 @@ Day26 completed:
 Next mission:
 
 - Day27: Vivado project skeleton, KV260 part selection, clock/reset wrapper, and XDC preparation
+
+Day27 completed:
+
+- Added KV260 top-level wrapper around the accelerator MVP
+- Added Vivado project generator Tcl
+- Added timing-preparation XDC
+- Selected KV260 FPGA part and board part
+- Kept physical pin mapping explicit and unguessed
+
+Next mission:
+
+- Day28: run Vivado synthesis, inspect resource usage, and resolve timing/constraint issues
 
 
 
