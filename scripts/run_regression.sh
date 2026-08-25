@@ -24,4 +24,12 @@ iverilog -g2012 -o Simulation/Day24/ai_accelerator_mvp_sim \
   "${COMMON[@]}" Testbench/Day24/ai_accelerator_mvp_tb.v
 vvp Simulation/Day24/ai_accelerator_mvp_sim
 
+"$ROOT/scripts/run_mvp_regression.sh"
+"$ROOT/scripts/run_python_reference.sh"
+mkdir -p Simulation/Phase2 Simulation/Phase3
+iverilog -g2012 -s ai_accelerator_top_tb -o Simulation/Phase3/ai_accelerator_top_sim \
+  RTL/Top/ai_accelerator_top.v RTL/Control/task_controller.v RTL/Memory/memory_controller.v \
+  RTL/Compute/systolic_engine.v RTL/MVP/ai_accelerator_system.v \
+  RTL/Day19/systolic_matmul.v RTL/Day14/Compute/pe_unit.v Testbench/Top/ai_accelerator_top_tb.v
+vvp Simulation/Phase3/ai_accelerator_top_sim
 echo "REGRESSION PASS"
