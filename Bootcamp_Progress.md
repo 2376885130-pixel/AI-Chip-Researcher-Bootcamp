@@ -95,7 +95,7 @@ RTL Design Fundamentals
 Current Day:
 
 
-Day 23 Completed
+Day 24 Completed
 
 
 
@@ -2659,6 +2659,19 @@ Goal:
 - Load a matrix from external memory into the on-chip buffer
 - Understand burst transfer concepts
 - Integrate DMA with the systolic NPU
+
+Day24 completed:
+
+- Added synthesizable `ai_accelerator_mvp` integration boundary
+- Added explicit `busy` and one-shot `done` control contract
+- Blocked input writes while the accelerator is running
+- Added self-checking MVP workload testbench
+- Verified with Icarus Verilog: `DAY24 AI ACCELERATOR MVP PASS`
+
+Next mission:
+
+- Day25: refactor the Day23 store controller to remove multiple procedural drivers
+- Day26: regression verification and FPGA-ready interface review
 
 
 

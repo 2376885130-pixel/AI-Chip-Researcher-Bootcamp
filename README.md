@@ -1520,6 +1520,26 @@ Day23 milestone:
 On-chip data path optimized 312->92 (3.39x).
 Next: Day24 DMA controller + SRAM interface.
 
+## Day24 - Accelerator MVP Interface
+
+Status
+
+PASS
+
+Completed:
+
+- Added `RTL/Day24/ai_accelerator_mvp.v`
+- Defined synchronous `start`, `busy`, and `done` control signals
+- Prevented host buffer writes while the accelerator is busy
+- Added `Testbench/Day24/ai_accelerator_mvp_tb.v`
+- Generated `Simulation/Day24/ai_accelerator_mvp.vcd`
+
+Verification:
+
+`DAY24 AI ACCELERATOR MVP PASS`
+
+The MVP interface is intentionally protocol-neutral. A future AXI-Lite or AXI-Stream wrapper can connect to this boundary without changing the systolic compute core.
+
 ---
 
 
