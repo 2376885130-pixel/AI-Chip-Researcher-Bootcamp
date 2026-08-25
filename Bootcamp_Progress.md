@@ -4,12 +4,20 @@
 
 Version:
 
-3.0
+4.0 - Research Release Snapshot
 
 
 Last Update:
 
-2026-07-28
+2026-08-25
+
+Release:
+
+v1.0
+
+Authoritative status:
+
+This file is the current project snapshot. Day01-Day35 entries are historical evidence and do not define the current phase or next task.
 
 
 
@@ -44,7 +52,7 @@ Long-term Goal:
 
 Current Mission:
 
-Develop AI accelerator compute core architecture.
+Maintain and strengthen the AI accelerator research prototype before FPGA deployment.
 
 Completed:
 
@@ -65,7 +73,7 @@ Completed:
 
 Current Focus:
 
-Accelerator integration, dataflow scheduling, workload verification and pipeline optimization.
+Randomized verification, parameter sweeps, synthesis evidence and research documentation.
 
 
 Target areas:
@@ -86,30 +94,28 @@ Target areas:
 Current Phase:
 
 
-Phase 2
-
-RTL Design Fundamentals
+Phase 4 - Verification and Research Evidence Enhancement
 
 
 
 Current Day:
 
 
-Day 35 Completed
+Day 35 completed; Phase 3 Research Release tagged v1.0
 
 
 
 Current Mission:
 
 
-Design, verify and optimize AI accelerator workload execution.
+Increase verification coverage and produce Vivado synthesis evidence before KV260 deployment.
 
 
 
 Overall Status:
 
 
-In Progress.
+Research prototype released; FPGA deployment not yet verified.
 
 
 
@@ -2620,22 +2626,14 @@ None
 
 
 ================================
-# 14. Pending Task
+# 14. Current Gaps
 ================================
 
 
-Continue RTL architecture development.
-
-
-
-Future topics:
-
-
-- Systolic array dataflow
-- Weight stationary scheduling
-- Pipeline optimization (double buffering)
-- Memory hierarchy / DMA
-- Full NPU architecture
+- Randomized verification and parameter sweeps are not yet complete.
+- Vivado synthesis, resource and timing evidence is not yet available.
+- KV260 bitstream generation and board validation are not yet complete.
+- AXI-Lite and DMA implementation remain future work.
 
 
 
@@ -2644,10 +2642,16 @@ Future topics:
 ================================
 
 
-Day26:
+Phase 4: Verification and Research Evidence Enhancement
 
+1. Randomized Python-driven RTL verification
+2. MATRIX_SIZE and NUM_TASKS parameter sweeps
+3. Protocol assertions and coverage
+4. Vivado synthesis and timing/resource reports
+5. KV260 deployment after synthesis evidence
 
-Full regression verification + FPGA-ready interface review
+Historical milestone log:
+The following entries record completed work and are not current pending tasks.
 
 Day24 completed:
 
@@ -2657,11 +2661,6 @@ Day24 completed:
 - Added self-checking MVP workload testbench
 - Verified with Icarus Verilog: `DAY24 AI ACCELERATOR MVP PASS`
 
-Next mission:
-
-- Day25: refactor the Day23 store controller to remove multiple procedural drivers
-- Day26: regression verification and FPGA-ready interface review
-
 Day25 completed:
 
 - Refactored `store_req` to a single sequential owner in the store FSM
@@ -2669,19 +2668,11 @@ Day25 completed:
 - Added Day25 engineering debrief
 - Reran Day23 and Day24 workload verification
 
-Next mission:
-
-- Day26: full regression verification and FPGA-ready interface review
-
 Day26 completed:
 
 - Added repeatable Day23/Day24 regression script
 - Completed FPGA-ready interface review
 - Documented remaining Vivado/KV260 integration steps
-
-Next mission:
-
-- Day27: Vivado project skeleton, KV260 part selection, clock/reset wrapper, and XDC preparation
 
 Day27 completed:
 
@@ -2690,10 +2681,6 @@ Day27 completed:
 - Added timing-preparation XDC
 - Selected KV260 FPGA part and board part
 - Kept physical pin mapping explicit and unguessed
-
-Next mission:
-
-- Day28: run Vivado synthesis, inspect resource usage, and resolve timing/constraint issues
 
 Day28-Day35 completed:
 
@@ -2709,9 +2696,10 @@ Final release:
 
 - Day35_AI_Accelerator_MVP_Release
 
-Next mission:
+Release evidence:
 
-- Vivado/KV260 mapping and AXI integration after the Ubuntu MVP is accepted
+- Git tag: v1.0
+- Release commit: 088e556
 
 
 
