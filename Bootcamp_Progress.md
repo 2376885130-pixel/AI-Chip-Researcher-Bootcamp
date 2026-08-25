@@ -95,7 +95,7 @@ RTL Design Fundamentals
 Current Day:
 
 
-Day 25 Completed
+Day 26 Completed
 
 
 
@@ -2672,6 +2672,16 @@ Day25 completed:
 Next mission:
 
 - Day26: full regression verification and FPGA-ready interface review
+
+Day26 completed:
+
+- Added repeatable Day23/Day24 regression script
+- Completed FPGA-ready interface review
+- Documented remaining Vivado/KV260 integration steps
+
+Next mission:
+
+- Day27: Vivado project skeleton, KV260 part selection, clock/reset wrapper, and XDC preparation
 
 
 

@@ -1557,6 +1557,23 @@ Verification:
 
 Day23 wide-store PASS and Day24 MVP PASS.
 
+## Day26 - Regression and FPGA-Ready Interface Review
+
+Status
+
+PASS
+
+Completed:
+
+- Added `scripts/run_regression.sh` for repeatable Day23/Day24 verification
+- Documented clock, reset, control, memory, and numeric contracts
+- Reviewed production RTL for common non-synthesizable constructs
+- Documented remaining KV260 integration work
+
+Verification:
+
+`REGRESSION PASS`
+
 ---
 
 
