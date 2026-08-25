@@ -22,6 +22,7 @@ module ai_accelerator_system #(
     output reg [ADDR_WIDTH-1:0] result_addr
 );
     localparam ELEMENTS = MATRIX_SIZE*MATRIX_SIZE;
+    localparam MEMORY_DEPTH = NUM_TASKS*ELEMENTS;
     localparam TASK_W = (NUM_TASKS <= 1) ? 1 : $clog2(NUM_TASKS);
     localparam COUNT_W = (ELEMENTS <= 1) ? 1 : $clog2(ELEMENTS);
     localparam TIME_W = (TIMEOUT_CYCLES <= 1) ? 1 : $clog2(TIMEOUT_CYCLES+1);
@@ -42,6 +43,7 @@ module ai_accelerator_system #(
 
     localparam S_IDLE=3'd0, S_COMPUTE=3'd1, S_STORE=3'd2,
                S_STREAM=3'd3, S_ERROR=3'd4;
+    wire mem_addr_valid = (mem_addr < MEMORY_DEPTH);
 
     assign busy = (state != S_IDLE);
     assign start_ready = (state == S_IDLE) && !error;
@@ -67,8 +69,11 @@ module ai_accelerator_system #(
             end
         end else begin
             done <= 0; compute_start <= 0;
-            if (state == S_IDLE && mem_valid && mem_ready && mem_write) begin
-                if (mem_region) weight_mem[mem_addr] <= mem_wdata;
+            if (state == S_IDLE && mem_valid && mem_ready) begin
+                if (!mem_write || !mem_addr_valid) begin
+                    error <= 1'b1;
+                    state <= S_ERROR;
+                end else if (mem_region) weight_mem[mem_addr] <= mem_wdata;
                 else activation_mem[mem_addr] <= mem_wdata;
             end
             case (state)
@@ -95,12 +100,16 @@ module ai_accelerator_system #(
                     end else result_count <= result_count + 1'b1;
                 end
                 S_STREAM: begin
-                    result_valid <= 1;
-                    result_data <= output_mem[result_addr];
-                    if (result_valid && result_ready) begin
+                    if (!result_valid) begin
+                        result_valid <= 1;
+                        result_data <= output_mem[result_addr];
+                    end else if (result_ready) begin
                         if (result_addr == NUM_TASKS*ELEMENTS-1) begin
                             result_valid <= 0; done <= 1; state <= S_IDLE;
-                        end else result_addr <= result_addr + 1'b1;
+                        end else begin
+                            result_addr <= result_addr + 1'b1;
+                            result_data <= output_mem[result_addr + 1'b1];
+                        end
                     end
                 end
                 S_ERROR: begin

@@ -1601,6 +1601,10 @@ Run the core regression:
 
 Expected output includes `MVP SYSTEM PASS`, `MVP REGRESSION PASS`, and `PYTHON REFERENCE PASS`.
 
+## Phase 1 Verification Improvement
+
+The MVP verification now performs per-element signed result comparison, Python-to-RTL CSV comparison, illegal-address and invalid-command checks, forced-timeout verification, and ready/valid back-pressure stability checks. See `Docs/Phase1_Verification_Report.md`.
+
 ---
 
 
