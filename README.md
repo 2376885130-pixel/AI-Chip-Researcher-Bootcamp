@@ -1540,6 +1540,23 @@ Verification:
 
 The MVP interface is intentionally protocol-neutral. A future AXI-Lite or AXI-Stream wrapper can connect to this boundary without changing the systolic compute core.
 
+## Day25 - Synthesizable Store Controller Cleanup
+
+Status
+
+PASS
+
+Completed:
+
+- Removed the multiple procedural driver for `store_req` in the Day23 controller
+- Made the store FSM the single sequential owner of request state
+- Preserved the Day23 packed-store timing behavior
+- Reran Day23 and Day24 workload regressions
+
+Verification:
+
+Day23 wide-store PASS and Day24 MVP PASS.
+
 ---
 
 

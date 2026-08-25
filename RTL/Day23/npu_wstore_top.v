@@ -297,7 +297,6 @@ module npu_wstore_top #(
             end
 
             store_task <= {3{1'b0}};
-            store_req   <= 1'b0;
 
         end
         else if (state == S_LATCH) begin
@@ -306,7 +305,6 @@ module npu_wstore_top #(
                 out_bank[task_comp[0]][bk] <= c[bk];
 
             store_task <= task_comp;
-            store_req   <= 1'b1;
 
         end
 
@@ -325,9 +323,15 @@ module npu_wstore_top #(
 
             store_state <= ST_IDLE;
             store_cnt   <= 4'd0;
+            store_req   <= 1'b0;
 
         end
         else begin
+
+            // The store FSM is the single sequential owner of store_req.
+            // A result latch creates one request; ST_IDLE consumes it.
+            if (state == S_LATCH)
+                store_req <= 1'b1;
 
             case (store_state)
 
@@ -500,4 +504,3 @@ module npu_wstore_top #(
     end
 
 endmodule
-

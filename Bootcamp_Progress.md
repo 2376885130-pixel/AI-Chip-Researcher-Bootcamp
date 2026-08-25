@@ -95,7 +95,7 @@ RTL Design Fundamentals
 Current Day:
 
 
-Day 24 Completed
+Day 25 Completed
 
 
 
@@ -2672,6 +2672,17 @@ Next mission:
 
 - Day25: refactor the Day23 store controller to remove multiple procedural drivers
 - Day26: regression verification and FPGA-ready interface review
+
+Day25 completed:
+
+- Refactored `store_req` to a single sequential owner in the store FSM
+- Preserved packed output-store behavior
+- Added Day25 engineering debrief
+- Reran Day23 and Day24 workload verification
+
+Next mission:
+
+- Day26: full regression verification and FPGA-ready interface review
 
 
 
