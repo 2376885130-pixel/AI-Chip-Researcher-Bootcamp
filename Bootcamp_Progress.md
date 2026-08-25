@@ -2644,21 +2644,10 @@ Future topics:
 ================================
 
 
-Day24:
+Day26:
 
 
-DMA Controller + SRAM Interface
-
-
-
-Goal:
-
-
-- Build a DMA controller for bulk transfers (memory <-> buffer)
-- Define the SRAM read/write interface (address, enable, data)
-- Load a matrix from external memory into the on-chip buffer
-- Understand burst transfer concepts
-- Integrate DMA with the systolic NPU
+Full regression verification + FPGA-ready interface review
 
 Day24 completed:
 
