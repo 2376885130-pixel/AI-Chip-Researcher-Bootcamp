@@ -55,8 +55,8 @@ module ai_accelerator_system #(
         assign b[g] = weight_mem[task_id*ELEMENTS+g];
     end endgenerate
 
-    systolic_matmul #(.DATA_WIDTH(DATA_WIDTH),.ACC_WIDTH(ACC_WIDTH),.N(MATRIX_SIZE)) compute (
-        .clk(clk), .reset(reset), .start(compute_start), .a(a), .b(b), .c(c), .done(compute_done)
+    ai_systolic_engine #(.DATA_WIDTH(DATA_WIDTH),.ACC_WIDTH(ACC_WIDTH),.MATRIX_SIZE(MATRIX_SIZE)) compute (
+        .clk(clk), .reset(reset), .start(compute_start), .activation(a), .weight(b), .result(c), .done(compute_done)
     );
 
     always @(posedge clk) begin
