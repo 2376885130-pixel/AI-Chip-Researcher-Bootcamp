@@ -1605,6 +1605,20 @@ Expected output includes `MVP SYSTEM PASS`, `MVP REGRESSION PASS`, and `PYTHON R
 
 The MVP verification now performs per-element signed result comparison, Python-to-RTL CSV comparison, illegal-address and invalid-command checks, forced-timeout verification, and ready/valid back-pressure stability checks. See `Docs/Phase1_Verification_Report.md`.
 
+## Phase 2 Architecture Refinement
+
+Formal release top: `RTL/Top/ai_accelerator_top.v`
+
+Supporting boundaries:
+
+- `RTL/Interface/host_interface.v`
+- `RTL/Memory/activation_buffer.v`
+- `RTL/Memory/weight_buffer.v`
+- `RTL/Memory/output_buffer.v`
+- `Docs/Phase2_Architecture.md`
+
+Historical Day implementations remain available for traceability. The formal top adds parameter consistency checks and keeps the host, memory, control, and compute boundaries explicit.
+
 ---
 
 
