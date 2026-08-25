@@ -1588,6 +1588,19 @@ Completed:
 - Selected KV260 part `xck26-sfvc784-2LV-c`
 - Reserved board-specific pin mapping for the final carrier configuration
 
+## Day28-Day35 - AI Accelerator MVP Release
+
+The Ubuntu project now includes `RTL/MVP/ai_accelerator_system.v`, a parameterized accelerator core with task buffers, a scheduler FSM, memory ready/valid writes, result ready/valid back-pressure, timeout/error handling, and a Python signed reference model.
+
+Run the core regression:
+
+```bash
+./scripts/run_mvp_regression.sh
+./scripts/run_python_reference.sh
+```
+
+Expected output includes `MVP SYSTEM PASS`, `MVP REGRESSION PASS`, and `PYTHON REFERENCE PASS`.
+
 ---
 
 

@@ -95,7 +95,7 @@ RTL Design Fundamentals
 Current Day:
 
 
-Day 27 Completed
+Day 35 Completed
 
 
 
@@ -2694,6 +2694,24 @@ Day27 completed:
 Next mission:
 
 - Day28: run Vivado synthesis, inspect resource usage, and resolve timing/constraint issues
+
+Day28-Day35 completed:
+
+- Added unified parameterized MVP top-level
+- Added activation/weight memory abstraction and result stream
+- Added continuous task scheduler
+- Added signed Python golden model
+- Added busy/done/error/timeout and back-pressure signals
+- Added MVP regression and one-click reference scripts
+- Added final architecture and verification documentation
+
+Final release:
+
+- Day35_AI_Accelerator_MVP_Release
+
+Next mission:
+
+- Vivado/KV260 mapping and AXI integration after the Ubuntu MVP is accepted
 
 
 
