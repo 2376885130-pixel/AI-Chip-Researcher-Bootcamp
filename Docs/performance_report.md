@@ -64,3 +64,68 @@ The direct systolic latency checks measured:
 
 The difference is the launch-edge convention: the run-state formula includes
 the launch/clear state, while start-to-done counts subsequent clock intervals.
+
+## Phase 5: Cycle-Level Characterization
+
+The Day23 testbench now emits `Simulation/Day23/day23_cycle_trace.csv` with one
+record per sampled cycle. Fields include controller state, task id, result
+handshake fields, internal memory-read activity, output-read activity,
+store-active state, the systolic clock-active proxy, and compute/store overlap.
+
+Measured Day23 trace summary:
+
+| Metric | Measured value |
+|---|---:|
+| External execution latency | 92 cycles |
+| Instrumentation sample window | 93 cycles |
+| Compute-state cycles | 48 |
+| Load/copy state cycles | 18 |
+| Store-active cycles | 32 |
+| Stall/overhead events | 13 |
+| Activation/weight internal load transactions | 48 combined in the observed run |
+| Output transactions | 32 |
+| Load/compute overlap | 12 cycles |
+| Compute/store overlap | 15 cycles |
+
+The trace categories overlap by design. They are observations of concurrent
+activities, not a partition, so their sum must not be compared with total
+latency.
+
+### PE Activity
+
+The current PE interface has no per-PE valid/activity signal. The trace therefore
+uses `systolic_matmul.compute_inst.cnt != 0` as a clock-active proxy: during
+those cycles all 16 PE instances receive `compute_enable`. This is not a claim
+that every PE performs a useful nonzero MAC on every cycle.
+
+Measured proxy values:
+
+- clock-active PE cycles: 40
+- active PE-cycle proxy: 640
+- maximum active PE proxy: 16
+- minimum active PE proxy: 0
+- average active PE proxy over the 92-cycle execution: `640 / 92 = 6.96`
+- proxy occupancy: `640 / (16 * 92) = 43.48%`
+
+The useful-MAC PE utilization remains not measured because the design does not
+expose valid activity per PE. The earlier `256/(16*92)` ratio is retained only
+as MAC throughput normalized to the PE array, not named PE utilization.
+
+### Timeline Interpretation
+
+The trace shows that load and compute overlap for 12 cycles, while compute and
+store overlap for 15 cycles. This is evidence that the double-buffered and
+pipelined structure hides part of the movement cost. The 13 stall/overhead
+events are controller or non-active intervals observed by the passive state
+classifier; they are not additional cycles outside the 92-cycle latency.
+
+### Limitations
+
+- Day19 has a historical 312-cycle total but no saved cycle-level trace, so
+  baseline phase counters and baseline overlap are not measured.
+- The current Day23 memory transaction counter combines observed preload and
+  internal read events; the trace identifies internal read activity but does
+  not claim a unique DRAM/BRAM transaction model.
+- No output back-pressure exists in the historical Day23 interface; result
+  valid/ready fields in the trace are fixed placeholders for that interface.
+- No RTL or benchmark behavior was changed for this characterization.

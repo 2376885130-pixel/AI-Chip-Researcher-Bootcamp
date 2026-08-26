@@ -56,6 +56,11 @@ module npu_wstore_tb;
     reg measuring;
     reg [31:0] measure_total, compute_cycles, load_cycles, store_cycles, stall_cycles;
     reg [31:0] mac_count, output_transactions, memory_transactions;
+    integer trace_fd;
+    reg trace_active;
+    reg [31:0] active_pe_cycles, active_pe_sum, max_active_pes, min_active_pes;
+    reg [31:0] load_transactions, activation_load_transactions, weight_load_transactions, output_trace_transactions;
+    reg [31:0] load_compute_overlap, compute_store_overlap;
 
     //--------------------------------------------------
     // DUT
@@ -104,7 +109,40 @@ module npu_wstore_tb;
             measure_total <= 0; compute_cycles <= 0; load_cycles <= 0;
             store_cycles <= 0; stall_cycles <= 0; mac_count <= 0;
             output_transactions <= 0; memory_transactions <= 0;
+            active_pe_cycles <= 0; active_pe_sum <= 0; max_active_pes <= 0;
+            min_active_pes <= 32'hffffffff; load_transactions <= 0;
+            activation_load_transactions <= 0; weight_load_transactions <= 0;
+            output_trace_transactions <= 0; load_compute_overlap <= 0;
+            compute_store_overlap <= 0;
         end else begin
+            if (trace_active) begin
+                if (dut.compute_inst.cnt != 0) begin
+                    active_pe_cycles <= active_pe_cycles + 1'b1;
+                    active_pe_sum <= active_pe_sum + (N*N);
+                    if (max_active_pes < N*N) max_active_pes <= N*N;
+                    if (min_active_pes > N*N) min_active_pes <= N*N;
+                end else if (min_active_pes > 0) begin
+                    min_active_pes <= 0;
+                end
+                if (dut.weight_read_enable || dut.activation_read_enable)
+                    load_transactions <= load_transactions + 1'b1;
+                if (dut.activation_read_enable)
+                    activation_load_transactions <= activation_load_transactions + 1'b1;
+                if (dut.weight_read_enable)
+                    weight_load_transactions <= weight_load_transactions + 1'b1;
+                if (result_read_enable)
+                    output_trace_transactions <= output_trace_transactions + 1'b1;
+                if ((dut.weight_read_enable || dut.activation_read_enable) && dut.state == 4'd5)
+                    load_compute_overlap <= load_compute_overlap + 1'b1;
+                if (dut.storing && dut.state == 4'd5)
+                    compute_store_overlap <= compute_store_overlap + 1'b1;
+                $fwrite(trace_fd, "%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d\n",
+                    cycle, dut.state, dut.task_comp, 1'b0, 1'b1,
+                    (dut.weight_read_enable || dut.activation_read_enable),
+                    result_read_enable, dut.storing,
+                    (dut.compute_inst.cnt != 0),
+                    (dut.storing && dut.state == 4'd5));
+            end
             if (measuring) begin
                 measure_total <= measure_total + 1'b1;
                 if (dut.state == 4'd5) compute_cycles <= compute_cycles + 1'b1;
@@ -118,6 +156,7 @@ module npu_wstore_tb;
                     memory_transactions <= memory_transactions + 1'b1;
             end
             if (done) measuring <= 1'b0;
+            if (done) trace_active <= 1'b0;
         end
     end
     //--------------------------------------------------
@@ -240,6 +279,9 @@ module npu_wstore_tb;
         measuring = 1'b0;
         output_transactions = 0;
         mac_count = NUM_TASKS * BLOCK * N;
+        trace_active = 1'b0;
+        trace_fd = $fopen("Simulation/Day23/day23_cycle_trace.csv", "w");
+        $fwrite(trace_fd, "cycle,state,task_id,result_valid,result_ready,memory_tx,output_tx,store_active,pe_clock_active,compute_store_overlap\n");
         total_fail = 0;
 
         for (t = 0; t < NUM_TASKS; t = t + 1)
@@ -305,12 +347,14 @@ module npu_wstore_tb;
         @(posedge clk);       // start sampled
         start_cycle = cycle;
         measuring = 1'b1;
+        trace_active = 1'b1;
 
         @(posedge done);      // all tasks done
         done_cycle = cycle;
 
         total_cycles = done_cycle - start_cycle;
         output_transactions = NUM_TASKS * (BLOCK/2);
+        $fclose(trace_fd);
 
         read_all();
 
@@ -372,7 +416,15 @@ module npu_wstore_tb;
         $display("  Stall/overhead cycles  : %0d", stall_cycles);
         $display("  MAC operations         : %0d", mac_count);
         $display("  Memory transactions    : %0d", memory_transactions);
+        $display("  Activation load tx     : %0d", activation_load_transactions);
+        $display("  Weight load tx         : %0d", weight_load_transactions);
         $display("  Output transactions    : %0d", output_transactions);
+        $display("  PE clock-active cycles : %0d", active_pe_cycles);
+        $display("  Active PE cycles       : %0d", active_pe_sum);
+        $display("  Average active PEs     : %0f", active_pe_sum * 1.0 / total_cycles);
+        $display("  Max/min active PEs     : %0d/%0d", max_active_pes, min_active_pes);
+        $display("  Load/compute overlap   : %0d cycles", load_compute_overlap);
+        $display("  Compute/store overlap  : %0d cycles", compute_store_overlap);
 
         $display("");
         if (total_fail == 0) begin
