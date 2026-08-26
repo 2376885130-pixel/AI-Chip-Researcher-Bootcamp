@@ -86,6 +86,7 @@ module systolic_matmul #(
 
     integer p;
     integer kk;
+    integer cnt_int;
 
     always @(*) begin
 
@@ -96,7 +97,11 @@ module systolic_matmul #(
 
         for (p = 0; p < N; p = p + 1) begin
 
-            kk = cnt - 1 - p;
+            // Convert the unsigned counter to a signed integer explicitly
+            // before subtracting. This avoids width/sign-dependent behavior
+            // when cnt is zero or when N is changed by elaboration.
+            cnt_int = cnt;
+            kk = cnt_int - 1 - p;
 
             if (kk >= 0 && kk < N) begin
                 act_b[p] = a[p*N + kk];
@@ -199,4 +204,3 @@ module systolic_matmul #(
     end
 
 endmodule
-

@@ -6,10 +6,45 @@ cd "$ROOT"
 
 mkdir -p Simulation/Day23 Simulation/Day24
 mkdir -p Simulation/Control
+mkdir -p Simulation/Memory Simulation/Compute Simulation/Parameter
 
 iverilog -g2012 -o Simulation/Control/task_controller_start_sim \
   RTL/Control/task_controller.v Testbench/Control/task_controller_start_tb.v
 vvp Simulation/Control/task_controller_start_sim
+
+iverilog -g2012 -o Simulation/Memory/memory_controller_protocol_sim \
+  RTL/Memory/memory_controller.v Testbench/Memory/memory_controller_protocol_tb.v
+vvp Simulation/Memory/memory_controller_protocol_sim
+
+for latency_define in LATENCY_N4; do
+  iverilog -g2012 -s systolic_latency_case -D"$latency_define" \
+    -o "Simulation/Compute/systolic_latency_${latency_define}_sim" \
+    RTL/Day19/systolic_matmul.v RTL/Day14/Compute/pe_unit.v \
+    Testbench/Compute/systolic_latency_tb.v
+  vvp "Simulation/Compute/systolic_latency_${latency_define}_sim"
+done
+iverilog -g2012 -s systolic_latency_case \
+  -o Simulation/Compute/systolic_latency_LATENCY_N2_sim \
+  RTL/Day19/systolic_matmul.v RTL/Day14/Compute/pe_unit.v \
+  Testbench/Compute/systolic_latency_tb.v
+vvp Simulation/Compute/systolic_latency_LATENCY_N2_sim
+
+iverilog -g2012 -s systolic_matmul -P systolic_matmul.N=1 \
+  -o Simulation/Parameter/systolic_n1_elab_sim \
+  RTL/Day19/systolic_matmul.v RTL/Day14/Compute/pe_unit.v
+echo "PARAMETER ELABORATION PASS MATRIX_SIZE=1"
+
+for matrix_size in 2 4; do
+  pe_num=$((matrix_size * matrix_size))
+  iverilog -g2012 -s ai_accelerator_top \
+    -P "ai_accelerator_top.MATRIX_SIZE=${matrix_size}" \
+    -P "ai_accelerator_top.PE_NUM=${pe_num}" \
+    -o "Simulation/Parameter/top_n${matrix_size}_sim" \
+    RTL/Top/ai_accelerator_top.v RTL/Control/task_controller.v \
+    RTL/Memory/memory_controller.v RTL/Compute/systolic_engine.v \
+    RTL/MVP/ai_accelerator_system.v RTL/Day19/systolic_matmul.v \
+    RTL/Day14/Compute/pe_unit.v
+done
 
 COMMON=(
   RTL/Day19/systolic_matmul.v
