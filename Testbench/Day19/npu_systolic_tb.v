@@ -55,6 +55,11 @@ module npu_systolic_tb;
     integer i, j, k;
     integer fail_count;
     integer total_fail;
+    reg [31:0] cycle_count, start_cycle, done_cycle;
+    reg measuring;
+    integer trace_fd, current_test;
+    reg [31:0] baseline_compute, baseline_load, baseline_store;
+    reg [31:0] baseline_mem_tx, baseline_output_tx;
 
     //--------------------------------------------------
     // DUT
@@ -92,6 +97,23 @@ module npu_systolic_tb;
 
         forever #5 clk = ~clk;
 
+    end
+
+    always @(posedge clk) begin
+        cycle_count <= cycle_count + 1'b1;
+        if (measuring) begin
+            $fwrite(trace_fd, "%0d,%0d,%0d,%0d,%0d,%0d,%0d\n",
+                cycle_count, current_test, dut.state, dut.fetch_inst.fstate,
+                (dut.weight_read_enable || dut.activation_read_enable),
+                dut.store_result, result_read_enable);
+            if (dut.state == 3'd2) baseline_load <= baseline_load + 1'b1;
+            if (dut.state == 3'd4) baseline_compute <= baseline_compute + 1'b1;
+            if (dut.state == 3'd5) baseline_store <= baseline_store + 1'b1;
+            if (dut.weight_read_enable || dut.activation_read_enable)
+                baseline_mem_tx <= baseline_mem_tx + 1'b1;
+            if (result_read_enable)
+                baseline_output_tx <= baseline_output_tx + 1'b1;
+        end
     end
 
     //--------------------------------------------------
@@ -242,14 +264,30 @@ module npu_systolic_tb;
         begin
 
             fail_count = 0;
+            current_test = test_id;
+            baseline_compute = 0;
+            baseline_load = 0;
+            baseline_store = 0;
+            baseline_mem_tx = 0;
+            baseline_output_tx = 0;
+            measuring = 1'b0;
 
             load_matrices();
 
             ref_matmul();
 
             start_npu();
+            start_cycle = cycle_count;
+            measuring = 1'b1;
 
             @(posedge done);
+            done_cycle = cycle_count;
+            measuring = 1'b0;
+            // Output reads occur after done in this baseline interface.
+            baseline_output_tx = N*N;
+            $display("BASELINE TEST%0d cycles=%0d load=%0d compute=%0d store=%0d memory_tx=%0d output_tx=%0d",
+                test_id, done_cycle-start_cycle, baseline_load, baseline_compute,
+                baseline_store, baseline_mem_tx, baseline_output_tx);
 
             read_all();
 
@@ -314,6 +352,10 @@ module npu_systolic_tb;
         result_read_address = 0;
 
         total_fail = 0;
+        cycle_count = 0;
+        measuring = 1'b0;
+        trace_fd = $fopen("Simulation/Day19/day19_cycle_trace.csv", "w");
+        $fwrite(trace_fd, "cycle,task_id,state,fetch_fstate,memory_tx,store_tx,output_tx\n");
 
         for (i = 0; i < N*N; i = i + 1) begin
             ma[i]   = 0;
@@ -383,6 +425,8 @@ module npu_systolic_tb;
 
         $display("--------------------------------");
 
+        $fclose(trace_fd);
+
         #20;
 
         $finish;
@@ -390,4 +434,3 @@ module npu_systolic_tb;
     end
 
 endmodule
-

@@ -4,7 +4,7 @@ set -euo pipefail
 ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
-mkdir -p Simulation/Day23 Simulation/Day24
+mkdir -p Simulation/Day19 Simulation/Day23 Simulation/Day24
 mkdir -p Simulation/Control
 mkdir -p Simulation/Memory Simulation/Compute Simulation/Parameter
 
@@ -15,6 +15,13 @@ vvp Simulation/Control/task_controller_start_sim
 iverilog -g2012 -o Simulation/Memory/memory_controller_protocol_sim \
   RTL/Memory/memory_controller.v Testbench/Memory/memory_controller_protocol_tb.v
 vvp Simulation/Memory/memory_controller_protocol_sim
+
+iverilog -g2012 -o Simulation/Day19/npu_systolic_sim \
+  RTL/Day19/npu_systolic_top.v RTL/Day19/fetch16.v \
+  RTL/Day14/Memory/weight_buffer.v RTL/Day14/Memory/activation_buffer.v \
+  RTL/Day14/Memory/output_buffer.v RTL/Day19/systolic_matmul.v \
+  RTL/Day14/Compute/pe_unit.v Testbench/Day19/npu_systolic_tb.v
+vvp Simulation/Day19/npu_systolic_sim
 
 for latency_define in LATENCY_N4; do
   iverilog -g2012 -s systolic_latency_case -D"$latency_define" \

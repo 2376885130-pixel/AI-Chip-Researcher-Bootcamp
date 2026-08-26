@@ -318,3 +318,48 @@ It is not a mutually exclusive decomposition of all latency causes. The trace
 cannot distinguish physical memory latency from synchronous buffer latency, and
 it cannot measure output consumer stalls because the historical Day23 interface
 does not implement ready/valid. No RTL or benchmark behavior was changed.
+
+## Phase 6C: Baseline/Optimized Measurement Closure
+
+The Day19 baseline testbench now uses the same passive start-to-done boundary
+and emits `Simulation/Day19/day19_cycle_trace.csv`. The existing Day19 testbench
+contains two independent 4x4 tasks; each produced the same measured result:
+
+| Metric | Day19 baseline, per task | Day23 optimized, four tasks |
+|---|---:|---:|
+| External cycles | 78 measured | 92 measured |
+| Compute-state cycles | 11 measured | 48 measured total |
+| Load/fetch cycles | 49 measured | 18 measured total |
+| Store cycles | 16 measured | 32 measured total |
+| Memory transactions | 16 internal reads measured | 48 combined observed |
+| Output transactions | 16 measured after done | 32 measured |
+| MAC operations | 64 per task | 256 total |
+
+The historical four-task Day19 baseline is `4 * 78 = 312` cycles, matching the
+previous benchmark record. This is a per-task measurement plus a workload-size
+equivalence, not a newly executed four-task baseline run.
+
+The aligned workload-level comparison is:
+
+```text
+Baseline:  312 cycles, 256 MACs
+Optimized:  92 cycles,  256 MACs
+Speedup:   312 / 92 = 3.39x
+```
+
+The baseline uses serial scalar movement and a serial 16-entry output store.
+Day23 uses packed/wide movement and overlaps next-task fetch and store activity
+with compute. The phase counters are observations and are not an additive
+decomposition because the optimized pipeline overlaps activities.
+
+### Measurement Limitations
+
+- Baseline phase counters are measured per task; the four-task 312-cycle value
+  remains the historical equivalent until a dedicated four-task Day19 harness
+  is introduced.
+- Baseline output reads occur after `done` by interface definition, while Day23
+  output transactions are counted in its packed store/read path. Transaction
+  counts are reported with their interface semantics, not treated as identical
+  physical memory traffic.
+- No RTL, scheduler, systolic engine, PE, benchmark data or expected result was
+  changed for Phase 6C.
