@@ -136,12 +136,14 @@ module npu_wstore_tb;
                     load_compute_overlap <= load_compute_overlap + 1'b1;
                 if (dut.storing && dut.state == 4'd5)
                     compute_store_overlap <= compute_store_overlap + 1'b1;
-                $fwrite(trace_fd, "%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d\n",
+                $fwrite(trace_fd, "%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d,%0d\n",
                     cycle, dut.state, dut.task_comp, 1'b0, 1'b1,
                     (dut.weight_read_enable || dut.activation_read_enable),
                     result_read_enable, dut.storing,
                     (dut.compute_inst.cnt != 0),
-                    (dut.storing && dut.state == 4'd5));
+                    (dut.storing && dut.state == 4'd5),
+                    dut.fetch_inst.fstate, dut.fetch_done,
+                    dut.store_req, dut.store_state, dut.store_cnt);
             end
             if (measuring) begin
                 measure_total <= measure_total + 1'b1;
@@ -281,7 +283,7 @@ module npu_wstore_tb;
         mac_count = NUM_TASKS * BLOCK * N;
         trace_active = 1'b0;
         trace_fd = $fopen("Simulation/Day23/day23_cycle_trace.csv", "w");
-        $fwrite(trace_fd, "cycle,state,task_id,result_valid,result_ready,memory_tx,output_tx,store_active,pe_clock_active,compute_store_overlap\n");
+        $fwrite(trace_fd, "cycle,state,task_id,result_valid,result_ready,memory_tx,output_tx,store_active,pe_clock_active,compute_store_overlap,fetch_fstate,fetch_done,store_req,store_state,store_cnt\n");
         total_fail = 0;
 
         for (t = 0; t < NUM_TASKS; t = t + 1)

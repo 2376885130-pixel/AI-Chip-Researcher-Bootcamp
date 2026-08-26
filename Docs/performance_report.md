@@ -236,3 +236,85 @@ boundary cost. The measured trace does not satisfy those assumptions.
   mutually exclusive performance decomposition.
 - No architecture, scheduler, PE, systolic engine, workload or expected result
   was changed.
+
+## Phase 6B: Wait-State Root Cause Analysis
+
+The cycle trace was extended with fetch FSM state, `fetch_done`, `store_req`,
+`store_state`, and `store_cnt`. The Day23 interface has no memory `ready/valid`
+or output `ready/valid`; those fields are therefore reported as unavailable,
+not inferred.
+
+| State | Cycles | Root cause | Confidence |
+|---|---:|---|---|
+| Fetch wait | 14 | fixed fetch FSM read/capture latency | measured/inferred |
+| Wait next fetch | 6 | synchronization on `fetch_done` before next bank copy/compute | measured |
+| Final store drain | 10 | store request startup plus packed store pipeline drain | measured |
+
+### Fetch Wait Decomposition
+
+The trace shows the 14 controller `S_FETCH_WAIT` samples distributed across the
+fetch FSM's ISSUE, WAIT_READ and CAPTURE observations. The fetch RTL explicitly
+issues a read, waits one cycle for the buffer read, then captures the returned
+word. There is no buffer-ready input or protocol retry in this path.
+
+Therefore:
+
+- memory-ready wait: unknown/unobservable
+- buffer-ready wait: not present as an interface signal
+- protocol wait: not present as an interface signal
+- scheduler wait: the controller is waiting for the fetch module's fixed
+  `fetch_done` contract
+- root cause classification: fixed fetch/capture latency, measured in state
+  progression and inferred from the fetch FSM implementation
+
+The 14 cycles should not be called external memory stalls. The current RTL only
+exposes synchronous buffer read enables and a one-cycle capture sequence.
+
+### Wait-Next-Fetch Decomposition
+
+The six `S_WAIT_NEXT_F` samples split into three samples before `fetch_done`
+and three samples at the completion boundary in the sampled trace. This is
+consistent with the double-buffer synchronization path: compute continues with
+the current bank while the next task is fetched, then the controller waits for
+the next bank's `fetch_done` before `COPY2` and the next compute start.
+
+Classification:
+
+- double-buffer synchronization: measured/inferred, high confidence
+- next-task data not ready: measured through `fetch_done=0`
+- deliberate arbitrary delay: not observed
+- memory protocol stall: unknown, because no ready/valid exists
+
+The trace therefore shows that double buffering hides part of the fetch work,
+but not all of the next-task synchronization boundary.
+
+### Final Store Drain Decomposition
+
+The final drain contains 10 controller samples. The store sub-FSM has a request
+handoff from `store_req` to `ST_RUN`, followed by `OUT_WORDS=8` packed store
+counts. The trace observes the store state and counter advancing; no output
+ready signal exists to introduce a back-pressure explanation.
+
+Classification:
+
+- output bandwidth bound: not directly proven; the historical interface has no
+  ready/valid consumer
+- ready/valid stall: not measurable and not present in this interface
+- store pipeline drain: measured/inferred, high confidence
+- controller sequencing overhead: measured at the request handoff boundary
+
+The most defensible explanation is store pipeline drain plus startup/handshake
+overhead, not output back-pressure.
+
+### Remaining Limitation
+
+The 30-cycle total is a state-occupancy observation:
+
+```text
+14 Fetch wait + 6 Wait next fetch + 10 Final store drain = 30 cycles
+```
+
+It is not a mutually exclusive decomposition of all latency causes. The trace
+cannot distinguish physical memory latency from synchronous buffer latency, and
+it cannot measure output consumer stalls because the historical Day23 interface
+does not implement ready/valid. No RTL or benchmark behavior was changed.
