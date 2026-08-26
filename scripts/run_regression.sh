@@ -5,6 +5,11 @@ ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT"
 
 mkdir -p Simulation/Day23 Simulation/Day24
+mkdir -p Simulation/Control
+
+iverilog -g2012 -o Simulation/Control/task_controller_start_sim \
+  RTL/Control/task_controller.v Testbench/Control/task_controller_start_tb.v
+vvp Simulation/Control/task_controller_start_sim
 
 COMMON=(
   RTL/Day19/systolic_matmul.v
