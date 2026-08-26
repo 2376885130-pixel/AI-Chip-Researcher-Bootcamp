@@ -66,6 +66,10 @@ vvp Simulation/Day24/ai_accelerator_mvp_sim
 
 "$ROOT/scripts/run_mvp_regression.sh"
 "$ROOT/scripts/run_python_reference.sh"
+iverilog -g2012 -s verification_closure_tb -o Simulation/MVP/verification_closure_sim \
+  RTL/MVP/ai_accelerator_system.v RTL/Compute/systolic_engine.v RTL/Day19/systolic_matmul.v \
+  RTL/Day14/Compute/pe_unit.v Testbench/MVP/verification_closure_tb.v
+vvp Simulation/MVP/verification_closure_sim
 mkdir -p Simulation/Phase2 Simulation/Phase3
 iverilog -g2012 -s ai_accelerator_top_tb -o Simulation/Phase3/ai_accelerator_top_sim \
   RTL/Top/ai_accelerator_top.v RTL/Control/task_controller.v RTL/Memory/memory_controller.v \
