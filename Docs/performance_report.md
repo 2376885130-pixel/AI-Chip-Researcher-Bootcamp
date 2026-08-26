@@ -129,3 +129,110 @@ classifier; they are not additional cycles outside the 92-cycle latency.
 - No output back-pressure exists in the historical Day23 interface; result
   valid/ready fields in the trace are fixed placeholders for that interface.
 - No RTL or benchmark behavior was changed for this characterization.
+
+## Phase 6A: Compute Bottleneck Characterization
+
+### Per-PE Activity Availability
+
+The existing `pe_unit` exposes `compute_enable` but does not expose a
+per-PE valid, MAC-enable, or input-valid signal. The array therefore cannot
+distinguish a useful MAC from a clocked zero/flush value without changing the
+RTL interface. This phase uses the array-level `cnt != 0` signal only as a
+clock-active proxy.
+
+### Active PE Histogram
+
+For the measured four-task 4x4 trace:
+
+| Active PE count proxy | Cycles |
+|---:|---:|
+| 0 | 52 |
+| 16 | 40 |
+
+Derived proxy metrics:
+
+- average active PE proxy over 92 cycles: `640 / 92 = 6.96`
+- maximum proxy-active PEs: 16
+- minimum proxy-active PEs: 0
+- proxy occupancy: `640 / (16 * 92) = 43.48%`
+
+This is not true PE utilization. It is a clock-active array proxy. No claim is
+made about the number of useful MACs issued by an individual PE in a cycle.
+
+### Task-Level Timeline
+
+The controller trace uses these states:
+
+| State | Meaning |
+|---:|---|
+| 1 | fetch start |
+| 2 | fetch wait |
+| 3/8 | input copy |
+| 4 | compute start |
+| 5 | compute wait |
+| 6 | result latch |
+| 7 | wait for next fetch |
+| 9 | final store drain |
+| 10 | done |
+
+Measured state histogram:
+
+| State | Cycles |
+|---:|---:|
+| 1 | 1 |
+| 2 | 14 |
+| 3 | 1 |
+| 4 | 4 |
+| 5 | 48 |
+| 6 | 4 |
+| 7 | 6 |
+| 8 | 3 |
+| 9 | 10 |
+| 10 | 1 |
+
+The four task compute windows account for the 48 state-5 cycles. Fetch/copy
+for later tasks is overlapped with earlier compute where the scheduler has the
+next bank ready. The trace measured 12 load/compute-overlap cycles and 15
+compute/store-overlap cycles. The trace does not show output back-pressure in
+this historical Day23 interface; its result read interface is not ready/valid.
+
+### Bottleneck Classification
+
+The strongest conclusion supported by the trace is **A: systolic per-task
+execution window including fill/drain and control boundaries**, combined with
+some **B: inter-task scheduling boundaries**. Evidence:
+
+- 48 compute-state cycles are exactly four repeated 12-cycle windows in the
+  optimized controller observation.
+- The 16-PE proxy is active for only 40 of the 92-cycle window.
+- Load and store activity overlaps compute, so memory movement is not the sole
+  explanation for the 48 compute-state cycles.
+- The current trace has no per-PE valid signal, so input-valid gaps and useful
+  MAC bubbles cannot be separated from systolic fill/drain behavior.
+
+This does not prove that all 48 cycles are pure systolic fill/drain; it rules
+out claiming a more specific cause without additional RTL-visible activity
+signals.
+
+### Compute Efficiency
+
+- MAC count: 256
+- external execution latency: 92 cycles
+- MAC throughput: `256 / 92 = 2.78 MAC/cycle`
+- nominal array capacity over the external window: `16 * 92 = 1472 PE-cycles`
+- clock-active proxy: `640 / 1472 = 43.48%`
+
+The 16-cycle lower bound is only a work/capacity bound that assumes all 16 PEs
+perform one useful MAC every cycle with no fill, drain, data movement or task
+boundary cost. The measured trace does not satisfy those assumptions.
+
+### Limitations
+
+- True per-PE MAC-valid activity is not measurable without adding a PE-level
+  signal or assertion point; neither was added in this phase.
+- Baseline Day19 has no equivalent saved trace, so baseline task timelines and
+  histograms are not measured.
+- State occupancy is an observation of the existing controller and is not a
+  mutually exclusive performance decomposition.
+- No architecture, scheduler, PE, systolic engine, workload or expected result
+  was changed.
