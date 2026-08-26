@@ -53,6 +53,9 @@ module npu_wstore_tb;
     reg [31:0] start_cycle;
     reg [31:0] done_cycle;
     reg [31:0] total_cycles;
+    reg measuring;
+    reg [31:0] measure_total, compute_cycles, load_cycles, store_cycles, stall_cycles;
+    reg [31:0] mac_count, output_transactions, memory_transactions;
 
     //--------------------------------------------------
     // DUT
@@ -92,6 +95,31 @@ module npu_wstore_tb;
     end
 
     always @(posedge clk) cycle <= cycle + 1'b1;
+
+    // Passive performance instrumentation. These counters observe the DUT
+    // hierarchy and never drive functional signals.
+    always @(posedge clk) begin
+        if (reset) begin
+            measuring <= 1'b0;
+            measure_total <= 0; compute_cycles <= 0; load_cycles <= 0;
+            store_cycles <= 0; stall_cycles <= 0; mac_count <= 0;
+            output_transactions <= 0; memory_transactions <= 0;
+        end else begin
+            if (measuring) begin
+                measure_total <= measure_total + 1'b1;
+                if (dut.state == 4'd5) compute_cycles <= compute_cycles + 1'b1;
+                if (dut.state == 4'd2 || dut.state == 4'd3 || dut.state == 4'd8)
+                    load_cycles <= load_cycles + 1'b1;
+                if (dut.storing) store_cycles <= store_cycles + 1'b1;
+                if (dut.state != 4'd5 && dut.state != 4'd2 &&
+                    dut.state != 4'd3 && dut.state != 4'd8 && !dut.storing)
+                    stall_cycles <= stall_cycles + 1'b1;
+                if (dut.weight_read_enable || dut.activation_read_enable)
+                    memory_transactions <= memory_transactions + 1'b1;
+            end
+            if (done) measuring <= 1'b0;
+        end
+    end
     //--------------------------------------------------
     // Write one 32-bit word (4 packed elements)
     //--------------------------------------------------
@@ -105,10 +133,12 @@ module npu_wstore_tb;
     );
         begin
             @(negedge clk);
+            memory_transactions = memory_transactions + 1'b1;
             activation_write_enable  = 1'b1;
             activation_write_address = addr;
             activation_write_data    = {e3, e2, e1, e0};
             @(negedge clk);
+            memory_transactions = memory_transactions + 1'b1;
             activation_write_enable  = 1'b0;
         end
     endtask
@@ -207,6 +237,9 @@ module npu_wstore_tb;
         result_read_address = 0;
 
         cycle = 0;
+        measuring = 1'b0;
+        output_transactions = 0;
+        mac_count = NUM_TASKS * BLOCK * N;
         total_fail = 0;
 
         for (t = 0; t < NUM_TASKS; t = t + 1)
@@ -255,6 +288,7 @@ module npu_wstore_tb;
         load_all();
 
         ref_matmul();
+        mac_count = NUM_TASKS * BLOCK * N;
 
         //--------------------------------------------------
         // Start the pipelined NPU
@@ -270,11 +304,13 @@ module npu_wstore_tb;
 
         @(posedge clk);       // start sampled
         start_cycle = cycle;
+        measuring = 1'b1;
 
         @(posedge done);      // all tasks done
         done_cycle = cycle;
 
         total_cycles = done_cycle - start_cycle;
+        output_transactions = NUM_TASKS * (BLOCK/2);
 
         read_all();
 
@@ -329,6 +365,14 @@ module npu_wstore_tb;
         $display("  Day21 wide fetch       :  147 cycles");
         $display("  Day22 pipelined store  :  100 cycles");
         $display("  Day23 wide store       : %0d cycles", total_cycles);
+        $display("  Instrumentation total  : %0d", measure_total);
+        $display("  Compute cycles         : %0d", compute_cycles);
+        $display("  Load/copy cycles       : %0d", load_cycles);
+        $display("  Store cycles           : %0d", store_cycles);
+        $display("  Stall/overhead cycles  : %0d", stall_cycles);
+        $display("  MAC operations         : %0d", mac_count);
+        $display("  Memory transactions    : %0d", memory_transactions);
+        $display("  Output transactions    : %0d", output_transactions);
 
         $display("");
         if (total_fail == 0) begin
@@ -355,4 +399,3 @@ module npu_wstore_tb;
     end
 
 endmodule
-
