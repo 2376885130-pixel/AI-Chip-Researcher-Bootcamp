@@ -64,8 +64,6 @@ else
     // Test 2
     activation = 8'd4;
     weight = 8'd5;
-activation = 8'd4;
-weight = 8'd5;
 
 #10;
 
